@@ -1,0 +1,265 @@
+//style for all basic tables
+.table {
+	
+	@include respond('tab-land') {
+		font-size: 0.875rem !important;
+	}
+	strong{
+		color:$dark;
+	}
+    td {
+        border-color: $border;
+		padding: 12px 9px;
+		
+		@at-root [data-theme-version="dark"] & {
+            border-color: $d-border;
+        }
+    }
+	&.shadow-hover tr:hover{
+	    background-color:$white;
+		box-shadow: 0 0px 30px rgba($primary, 0.15);
+		@at-root [data-theme-version="dark"] & {
+            background-color: $d-bg;
+        }
+	}
+	&.bg-secondary-hover{
+		th,td{
+			border:none;
+			font-weight:500;
+		}
+		tr:hover{
+			background:$secondary;
+			td,th{
+				color:$white!important;
+			}
+		}	
+	}	
+	&.bg-info-hover{
+		th,td{
+			border:none;
+			font-weight:500;
+		}
+		tr:hover{
+			background:$info;
+			td,th{
+				color:$white!important;
+			}
+		}	
+	}	
+	&.bg-warning-hover{
+		th,td{
+			border:none;
+			font-weight:500;
+		}
+		tr:hover{
+			background:$warning;
+			td,th{
+				color:$white!important;
+			}
+		}	
+	}	
+
+    thead th {
+        border-bottom-width: 1px;
+        // color: $dark ;
+        font-size: 14px;
+        font-weight: 600;
+        letter-spacing: 0.5px;
+        border-color: $border;
+        @at-root [data-theme-version="dark"] & {
+            border-color: $d-border;
+        }
+    }
+    tbody  tr td {
+        // color: $l-ctd;
+        // line-height: 2.5rem;
+        vertical-align: middle;
+        border-color: $border;
+        @at-root [data-theme-version="dark"] & {
+            border-color: $d-border;
+        }
+    }
+	
+	//delete header borders without '.borders tables'
+    &:not(.table-bordered) {
+        thead th {
+            border-top: none;
+        }
+    }
+
+    //heading background
+    .thead-primary th {
+        background-color: $primary;
+        color: $white;
+    }
+	.thead-info th {
+        background-color: $info;
+        color: $white;
+    }
+	.thead-warning th {
+        background-color: $warning;
+        color: $white;
+    }
+	.thead-danger th {
+        background-color: $danger;
+        color: $white;
+    }
+	.thead-success th {
+        background-color: $success;
+        color: $white;
+    }
+
+    //table border
+    &.primary-table-bordered {
+        border: 1px solid $border;
+		@at-root [data-theme-version="dark"] & {
+            border-color: $d-border;
+        }
+    }
+
+    //table hover
+    &.primary-table-bg-hover {
+        thead th {
+            background-color: darken($color: $primary, $amount: 5%);
+            color: $white;
+            border-bottom: none;
+        }
+
+        tbody tr {
+            background-color: $primary;
+            color: $white;
+            transition: all .1s ease;
+
+            &:hover {
+                background-color: lighten($color: $primary, $amount: 5%);
+            }
+
+            &:not(:last-child) {
+                td, th {
+                    border-bottom: 1px solid darken($color: $primary, $amount: 5%);
+                }
+            }
+        }
+    }
+
+    //responsive table width
+    &-responsive {
+        &-tiny {
+            // @include media-breakpoint-down(xs) {
+                min-width: 18.75rem;
+            // }
+        }
+
+        &-sm {
+            // @include media-breakpoint-down(sm) {
+                min-width: 30rem !important;
+            // }
+        }
+
+        &-md {
+            // @include media-breakpoint-down(sm) {
+                min-width: 36rem !important;
+            // }
+        }
+
+        &-lg {
+            min-width: 60.9375rem !important;
+        }
+
+        &-xl {
+            min-width: 70.9375rem !important;
+        }
+    }
+}
+.table-primary, 
+.table-primary > th, 
+.table-primary > td {
+	background-color: $primary-light;
+	color: $primary;
+	@at-root [data-theme-version="dark"] & {
+        background-color: $primary-opacity;
+    }
+}
+.table-success, 
+.table-success > th, 
+.table-success > td {
+	background-color: $success-light;
+	color: $success;
+	@at-root [data-theme-version="dark"] & {
+        background-color: $success-opacity;
+    }
+}
+.table-info, 
+.table-info > th, 
+.table-info > td {
+	background-color: $info-light;
+	color: $info;
+	@at-root [data-theme-version="dark"] & {
+        background-color: $info-opacity;
+    }
+}
+.table-warning, 
+.table-warning > th, 
+.table-warning > td {
+	background-color: $warning-light;
+	color: $warning;
+	@at-root [data-theme-version="dark"] & {
+        background-color: $warning-opacity;
+    }
+}
+.table-danger, 
+.table-danger > th, 
+.table-danger > td {
+	background-color: $danger-light;
+	color: $danger;
+	@at-root [data-theme-version="dark"] & {
+        background-color: $danger-opacity;
+    }
+}
+.table-active, 
+.table-active > th, 
+.table-active > td {
+    background-color: $l-bg;
+	@at-root [data-theme-version="dark"] & {
+        background-color: $d-bg;
+    }
+}
+
+.card-table{
+	th, td{
+        &:first-child{
+			padding-left: 30px;
+			@include respond('phone') {
+				padding-left: 15px;
+			}
+		}
+		&:last-child{
+			padding-right:30px;
+			@include respond('phone') {
+				padding-right: 15px;
+			}
+		}
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

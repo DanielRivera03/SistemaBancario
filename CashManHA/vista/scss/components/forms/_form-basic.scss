@@ -1,0 +1,223 @@
+
+// Basic Input
+
+.form-control{
+    border-radius: 0;
+    background: $white;
+    border: 1px solid $border;
+    // height: 45px;
+    color: $dark;
+	height: 56px;
+	@include respond('tab-land') {
+		height: 41px;
+	}
+    &:hover,&:focus,&.active{
+        box-shadow: none;
+        background: $white;
+        color: $dark;
+    }
+}
+
+
+.input-rounded {
+    border-radius: 100px;
+}
+
+
+// Input Color
+[data-theme-version="light"],
+[data-theme-version="dark"] {
+	.input-primary{
+		.form-control{
+			border-color:$primary;
+		}	
+		.input-group-text{
+			background-color:$primary;
+			color:$white;
+		}
+	}
+	.input-danger{
+		.form-control{
+			border-color:$danger;
+		}	
+		.input-group-text{
+			background-color:$danger;
+			color:$white;
+		}
+	}
+	.input-info{
+		.form-control{
+			border-color:$info;
+		}	
+		.input-group-text{
+			background-color:$info;
+			color:$white;
+		}
+	}
+	.input-success{
+		.form-control{
+			border-color:$success;
+		}	
+		.input-group-text{
+			background-color:$success;
+			color:$white;
+		}
+	}
+	.input-warning{
+		.form-control{
+			border-color:$warning;
+		}	
+		.input-group-text{
+			background-color:$warning;
+			color:$white;
+		}
+	}
+}
+// Input Outline
+[data-theme-version="light"],
+[data-theme-version="dark"] {
+	.input-primary-o{
+		.form-control{
+			border-color:$primary;
+			
+		}	
+		.input-group-text{
+			background-color:transparent;
+			border-color:$primary;
+			color:$primary;
+		}
+	}
+	.input-danger-o{
+		.form-control{
+			border-color:$danger;
+		}	
+		.input-group-text{
+			background-color:transparent;
+			border-color:$danger;
+			color:$danger;
+		}
+	}
+	.input-info-o{
+		.form-control{
+			border-color:$info;
+		}	
+		.input-group-text{
+			background-color:transparent;
+			border-color:$info;
+			color:$info;
+		}
+	}
+	.input-success-o{
+		.form-control{
+			border-color:$success;
+		}	
+		.input-group-text{
+			background-color:transparent;
+			border-color:$success;
+			color:$success;
+		}
+	}
+	.input-warning-o{
+		.form-control{
+			border-color:$warning;
+		}	
+		.input-group-text{
+			background-color:transparent;
+			border-color:$warning;
+			color:$warning;
+		}
+	}
+}
+
+// Input Size/
+// .form-control{
+    // min-height: 40px;
+// }
+// .form-control-sm{
+//     min-height: 36px;
+// }
+// .form-control-lg{
+//     min-height: 52px;
+// }
+
+
+
+// Input Group
+.input-group-text{
+    background: #d7dae3;
+    border: 1px solid transparent;
+    min-width: 50px;
+    display: flex;
+    justify-content: center;
+	padding: 0.532rem 0.75rem;
+	border-radius: 0;
+		
+    i{
+        font-size: 16px;
+    }
+}
+.custom-file-label{
+    height: 40px;
+	padding: 0.5rem 0.75rem;
+	border-radius: 0;
+}
+.input-group-prepend .btn,
+.input-group-append .btn {
+    z-index: 0;
+}
+.custom-select{
+    background: none;
+    // height: 45px;
+    border-color: $border;
+    color: $dark;
+    // border-radius: 0px!important;
+    &:focus{
+        box-shadow: none;
+        border-color: $primary;
+        color: $primary;
+    }
+}
+.custom-file-label{
+    // height: 45px;
+    // border-radius: 0px!important;
+	
+    &:after{
+        background: #656C73;
+        border: 1px solid $border;
+        color: $white;
+		border-radius: 0;
+		@at-root [data-theme-version="dark"] & {
+			background: $d-border;
+			border-color: $d-border;
+			color: $body-color;
+		}
+    }
+}
+
+.custom_file_input {
+    .input-group-prepend, 
+    .input-group-append {
+        // height: 45px;
+    }
+
+    .custom-file-label::after {
+        height: 100%;
+        // line-height: 2.4;
+    }
+}
+
+
+.form-control:disabled,
+ .form-control[readonly] {
+    background: $white;
+    opacity: 1;
+}
+
+.custom-file-label{
+    background: $white;
+    border-color: $border;
+	@at-root [data-theme-version="dark"] & {
+        background: $d-bg;
+		border-color: $d-border;
+    }
+}

@@ -1,0 +1,87 @@
+.full-map-area{
+	position:relative;
+	border-radius: 12px;
+    overflow: hidden;
+	
+	a{
+		position:absolute;
+		bottom:30px;
+		left:30px;
+	}
+	i{
+		background: #3e4954;
+		position: absolute;
+		top: 30px;
+		right: 30px;
+		width: 56px;
+		height: 56px;
+		text-align: center;
+		line-height: 56px;
+		font-size: 24px;
+		color: #fff;
+		border-radius: 56px;
+	}
+	img
+	{
+		width:100%;
+	}
+}
+.iconbox{
+    position: relative;
+    padding-left: 70px;
+	
+	i{
+		background:$primary;
+		width:50px;
+		height:50px;
+		line-height:50px;
+		border-radius:50px;
+		text-align:center;
+		font-size:28px;
+		color:$white;
+		position:absolute;
+		left:0;
+		top:0;
+	}
+	p{
+		margin: 0;
+		color: #484848;
+		font-size: 18px;
+		line-height: 1.3;
+		font-weight: 500;
+	}
+	small{
+		margin-bottom: 5px;
+		font-size: 16px;
+		display: block;
+	}
+}
+.widget-timeline-icon{
+	li{
+		padding-left: 25px;
+		position: relative;
+		margin-left: 11px;
+		border-left: 3px solid $primary;
+		min-height: 80px;
+		padding-top: 1px;
+	
+		.icon{
+			position: absolute;
+			width: 22px;
+			height: 22px;
+			font-size: 24px;
+			color: #fff;
+			text-align: center;
+			line-height: 22px;
+			border-radius: 22px;
+			left:-13px;
+			top: 0;
+		}
+		.timeline-panel{
+		
+		}
+		&:last-child{
+			border-left: 3px solid transparent;
+		}
+	}
+}

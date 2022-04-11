@@ -1,0 +1,78 @@
+// html[dir="rtl"] {
+
+    //content body
+    [direction="rtl"] {
+		.list-group{
+			padding-left: 0;
+		}
+		.form-check-input{
+		    margin-left: -1.25rem;
+			margin-right: inherit;
+		}
+		.form-check-inline .form-check-input{
+			margin-right: 0;
+			margin-left: 10px;
+		}
+		.radio input, 
+		.radio-inline, 
+		.checkbox input, 
+		.checkbox-inline input{
+		    margin-left: 0;
+			margin-right: 0;
+		}
+        .content-body {
+            margin-right: 17.1875rem;
+            margin-left: auto;
+			@at-root [data-sidebar-style="modern"]#{&} {
+				margin-right: 9.375rem;
+			}
+            .page-titles {
+                text-align: right;
+            }
+        }
+
+        &[data-layout="horizontal"] {
+            .content-body {
+                margin-right: 0;
+            }
+			.deznav .metismenu li li .has-arrow:after{
+				-webkit-transform: rotate(-4deg) translateY(-50%);
+				transform: rotate(-45deg) translateY(-50%);
+			}
+        }
+
+        &[data-sidebar-style="mini"]:not([data-layout="horizontal"]) {
+            .content-body {
+                margin-right: 3.75rem;
+            }
+        }
+
+        &[data-sidebar-style="compact"]:not([data-layout="horizontal"]) {
+            .content-body {
+                margin-right: 9.375rem;
+            }
+        }
+
+        &[data-sidebar-style="overlay"] {
+            .content-body {
+                margin-right: 0;
+            }
+        }
+		#external-events .external-event:before{
+			margin-right: 0;
+			margin-left: .9rem;
+		}
+		.post-input a i{
+		    margin-left: 15px;
+		    margin-right: 0;
+		}
+    }
+
+// }
+@media only screen and (max-width: 1350px) and (min-width: 1200px){
+    [direction="rtl"] {
+		.content-body {
+			margin-right: 14.375rem;
+		}
+	}
+}

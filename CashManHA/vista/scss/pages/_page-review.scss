@@ -1,0 +1,259 @@
+.newest-tag li a{
+    background: #26303c;
+    color: #798ea4;
+    font-size: 14px;
+    font-weight: 500;
+}
+.testimonial-one{
+	.media img{
+		max-width:50px;
+	}
+}
+.testimonial-one-navigation{
+	.prev,
+	.next{
+		font-size:14px;
+		padding:0 4px;
+		cursor:pointer;
+		color:#fff;
+		opacity:0.5;
+		&:hover{
+			opacity:1;
+		}
+	}
+}
+.widget-carousel{
+	position:relative;
+	.owl-item img{
+		max-width:85px;
+	}
+	.owl-next,
+	.owl-prev{
+		position: absolute;
+		width: 60px;
+		height: 60px;
+		line-height: 60px;
+		border-radius: 0.75rem;
+		top: 50%;
+		background: $white;
+		color: $primary;
+		font-size: 18px;
+		margin-top: -30px;
+		text-align: center;
+		@include transitionMedium;
+		cursor:pointer;
+		box-shadow:0 13px 25px 0 rgba(0,0,0,0.13);
+		@include respond('phone') {
+			width: 45px;
+			height: 45px;
+			line-height: 45px;
+		}	
+		&:hover{
+			background: $primary;
+			color: #fff;
+		}
+	}
+	.owl-next{
+		right:-25px;
+		@include respond('phone') {
+			right:-15px;
+		}	
+	}
+	.owl-prev{
+		left:-25px;
+		@include respond('phone') {
+			left:-15px;
+		}	
+	}
+}
+.review-box{
+	padding: 30px 30px 10px 30px;
+    border-bottom: 1px solid $border;
+	
+	@include respond('phone-land') {
+		display:block !important;
+	}
+	h4{
+		font-size:20px;
+	}
+	p{
+		font-size:16px;
+		line-height:1.5;
+	}
+	img{
+		@include respond('phone-land') {
+			width: 60px;
+			float:left;
+		}
+	}
+	.media-footer{
+		min-width: 150px;
+		@include respond('laptop') {
+			min-width: 110px;
+		}
+	}
+	.star-review{
+		@include respond('phone-land') {
+			margin-top: 15px;
+		}
+		span{
+			display: block;
+			font-size: 30px;
+			font-weight: 600;
+			margin-bottom: 15px;
+			line-height: 1.3;
+			@include respond('phone-land') {
+				font-size: 16px;
+				display: inline-block;
+				margin-bottom: 0;
+			}
+		}
+		i{
+		    font-size: 18px;
+			margin: 0 2px;
+			@include respond('laptop') {
+				font-size: 16px;
+				margin: 0 1px;
+			}
+		}
+	}
+}
+.review-table{
+	padding: 25px;
+    box-shadow: none;
+    border-radius: 0;
+    border-bottom: 1px solid #eee;
+	height: auto;
+    margin-bottom: 0;
+	
+	.disease {
+		border-left: 1px solid #eee;
+		padding-left: 20px;
+		@include respond('tab-port') {
+			border-left: 0;
+			padding-left: 0;	
+			margin-right:10px !important;
+			margin-left:0;
+		}
+	}
+	.star-review i{
+	
+		font-size:20px;
+		@include respond('tab-port') {
+			font-size:216x;
+		}
+	}
+	.media-body{
+		p{
+			color:#3e4954;
+			font-size:18px;
+			line-height:1.5;
+			@include respond('tab-port') {
+				font-size:14px;
+			}
+		}
+	}
+	.media-footer{
+		min-width:500px;
+		@include respond('laptop') {
+			min-width:300px;
+			margin-left:10px;
+		}
+		@include respond('tab-port') {
+			margin-left:0;
+			margin-top:25px;
+		}
+	}
+	img{
+		@include respond('tab-port') {
+			float:left;
+			width: 80px;
+		}
+	}
+	.media{
+		@include respond('tab-port') {
+			display:block !important;
+		}
+		
+	}
+	@include respond('tab-land') {
+		.custom-control{
+			float:right;
+		}
+			
+	}
+	@include respond('tab-port') {
+		padding: 15px;
+	}
+}
+.review-tab.nav-pills{
+	margin-bottom:0;
+	li{
+		display:inline-block;
+		
+		a.nav-link{
+			color: #6b6b6b;
+			background: #e9e9e9;
+			box-shadow: none;
+			border-radius: 0;
+			font-weight: 600;
+			font-size: 16px;
+			padding: 15px 40px;
+			margin-right: 1px;
+			&.active{
+				color: $primary;
+				background: $white;
+			}
+			@include respond('tab-port') {
+				font-size: 14px;
+				padding: 10px 15px;
+			}
+		}
+		&:first-child a.nav-link{
+			border-radius:$radius 0 0 0;
+		}
+		&:last-child a.nav-link{
+			border-radius:0 $radius 0 0;
+		}
+		
+	}
+}
+.reviewer-box{
+	margin:0 -10px -10px -10px;
+	background: #2c3b83;
+	background: -moz-linear-gradient(left, #2c3b83 0%, #3d018a 100%);
+	background: -webkit-linear-gradient(left, #2c3b83 0%,#3d018a 100%);
+	background: linear-gradient(to right, #2c3b83 0%,#3d018a 100%);
+	padding:20px 25px;
+	border-radius: 12px;
+	
+	@include respond('laptop') {
+		padding:10px 15px;
+	}	
+	@include respond('phone-land') {
+		img{
+			width:40px;
+		}
+	}	
+	.media img{
+		max-width:55px !important;
+		width:55px !important;
+		border-radius:50px !important; 
+	}
+	.star-review{
+		i{
+			font-size:28px;
+			@include respond('phone-land') {
+				font-size:16px;
+			}	
+		}
+		span{
+			font-size: 22px;
+			font-weight: 600;
+			color: #fff;
+			@include respond('phone-land') {
+				font-size:16px;
+			}	
+		}
+	}
+}

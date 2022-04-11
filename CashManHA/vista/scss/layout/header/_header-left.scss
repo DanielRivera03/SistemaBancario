@@ -1,0 +1,150 @@
+.header-left {
+    height: 100%;
+    display: flex;
+    align-items: center;
+	
+	.dashboard_bar {
+		font-size: 28px;
+		font-weight: 600;
+		color:$black;
+		@include respond('laptop') {
+			font-size: 24px;
+		}
+		@include respond('phone-land') {
+			display:none;
+		}
+	}
+	
+    input {
+        background: $body-bg !important;
+        min-width: 170px;
+        min-height: 40px;
+        border-color: transparent;
+        color: $dark!important;
+        border-top-left-radius: 0.375rem;
+        border-bottom-left-radius: 0.375rem;
+		border-top-right-radius: 0;
+        border-bottom-right-radius: 0;
+        box-shadow: none;
+		padding: 10px 20px;
+		font-size: 16px;
+		border: 1px solid #ebebeb;
+		border-width: 1px 0px 1px 1px;
+		font-weight: 300;
+			
+        @include respond('desktop') {
+            // margin-top: 3px;
+        }
+        @at-root [direction="rtl"] & {
+            border-top-right-radius: 0.375rem;
+            border-bottom-right-radius: 0.375rem;
+            border-top-left-radius: 0;
+            border-bottom-left-radius: 0;
+        }
+        &:focus,
+        &:active,
+        &.active {
+            border-color: transparent;
+            box-shadow: none;
+        }
+        &::-webkit-input-placeholder {
+            /* Edge */
+            color: $dark;
+        }
+        &:-ms-input-placeholder {
+            /* Internet Explorer */
+            color: $dark;
+        }
+        &::placeholder {
+            color: $dark;
+        }
+    }
+    // .btn {
+    //     border-top-left-radius: 0;
+    //     border-bottom-left-radius: 0;
+    //     height: 45px;
+    //     @at-root [direction="rtl"] & {
+    //         border-top-right-radius: 0;
+    //         border-bottom-right-radius: 0; 
+    //         border-top-left-radius: .25rem;
+    //         border-bottom-left-radius: .25rem;
+    //     }
+    // }
+    .search_bar {
+        display: flex;
+        align-items: center;
+        height: 100%;
+		@include respond('phone-land') {
+			display:none;
+		}
+        .dropdown-menu {
+            box-shadow: none;
+           
+			
+        }
+        .search_icon {
+            background: $body-bg !important;
+            height: 56px;
+            padding: 15px 20px 15px 0 !important;
+            border-top-right-radius: 0.375rem;
+            border-bottom-right-radius: 0.375rem;
+			border: 1px solid #ebebeb;
+			border-width: 1px 1px 1px 0;
+			
+            i {
+                font-size: 24px;
+                color: $dark;
+				line-height: 1;
+            }
+			@include respond('tab-land') {
+				height: 41px;
+				padding: 8px 15px 8px 0 !important;
+			}
+        }
+        @include custommq($max: 767px) {
+            position: static;
+            .dropdown-menu {
+                width: 300px;
+				left: -15vw;
+				box-shadow: 0px 5px 10px 0 rgba(0,0,0,0.1);
+				border-radius: 4px !important;
+				@include respond('phone') {
+					width: 250px;
+					left: -25vw;
+				}	
+				.form-control{
+					border-radius: 4px !important;
+					width:100%;
+				}
+                @at-root [direction="rtl"] & {
+                    right: -98px;
+                }
+            }
+        }
+		
+        // .form-inline {
+        //     flex-flow: row nowrap;
+        // }
+        .dropdown-menu,
+        .dropdown-menu.show {
+            // box-shadow: 0px 0px 10px rgba(120, 130, 140, 0.13);
+            border: 0px;
+            background-color: transparent;
+            border-top-right-radius: 5rem;
+            border-bottom-right-radius: 5rem;
+            @include custommq($min: 768px) {
+				left: 0;
+				top: 0;
+				transform: none;
+				display: block;
+				position: unset;
+            }
+        }
+    }
+}
+
+[data-sidebar-style="compact"] {
+    .header-left {
+        margin-left: 0;
+    }
+}

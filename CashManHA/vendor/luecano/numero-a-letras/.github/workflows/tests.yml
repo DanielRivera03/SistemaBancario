@@ -1,0 +1,38 @@
+name: tests
+
+on:
+  push:
+    branches: [ master ]
+    paths-ignore: 
+      - README.md
+  pull_request:
+    branches: [ master ]
+
+jobs:
+  build:
+  
+    strategy:
+      matrix:
+        php-versions: ['7.2', '7.3', '7.4', '8.0']
+
+    runs-on: ubuntu-latest
+
+    name: PHP ${{ matrix.php }}
+    
+    steps:
+    - uses: actions/checkout@v2
+    
+    - name: Setup PHP
+      uses: shivammathur/setup-php@v2
+      with:
+        php-version: ${{ matrix.php-versions }}
+        tools: composer:v2
+
+    - name: Validate composer.json and composer.lock
+      run: composer validate
+
+    - name: Install dependencies
+      run: composer install --prefer-dist --no-progress --no-suggest
+
+    - name: Run test suite
+      run: vendor/bin/phpunit --verbose

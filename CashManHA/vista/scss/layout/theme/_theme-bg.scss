@@ -1,0 +1,231 @@
+//background for nav header
+@each $name, $color in $theme_backgrounds {
+  [data-nav-headerbg="#{$name}"][data-theme-version="dark"],
+  [data-nav-headerbg="#{$name}"] {
+    @if $name != "color_1" {
+      .nav-header {
+        background-color: $color;
+
+        .brand-logo {
+          color: $white;
+
+          &:hover {
+            color: $white;
+          }
+        }
+        .hamburger .line {
+          background: #fff;
+        }
+      }
+      &[data-sidebar-style="full"][data-layout="vertical"] {
+        .menu-toggle .nav-header .nav-control .hamburger .line {
+          background: #fff;
+        }
+      }
+    }
+  }
+}
+
+//background for header
+@each $name, $color in $theme_backgrounds {
+  [data-headerbg="#{$name}"][data-theme-version="dark"],
+  [data-headerbg="#{$name}"] {
+    @if $name != "color_1" {
+      .header {
+        background-color: $color;
+        color: $white;
+      }
+      .header-left {
+        input {
+          border-color: lighten($color: $color, $amount: 10%);
+          background-color: lighten($color: $color, $amount: 10%) !important;
+          color: $white;
+          // border-right-color: transparent;
+
+          &::placeholder {
+            color: $white;
+          }
+
+          &:focus {
+            border-color: darken($color: $color, $amount: 10%);
+          }
+        }
+        .search_icon {
+          background-color: lighten($color: $color, $amount: 10%) !important;
+          i {
+            color: #fff;
+          }
+        }
+
+        .btn {
+          background-color: darken($color: $color, $amount: 10%);
+          border-color: darken($color: $color, $amount: 10%);
+
+          &:hover,
+          &:focus,
+          &:active {
+            background-color: darken($color: $color, $amount: 20%);
+            border-color: darken($color: $color, $amount: 20%);
+          }
+        }
+      }
+
+      .header-right {
+        .dropdown {
+          & > a {
+            color: $white;
+          }
+        }
+        .pulse-css {
+          background-color: $white;
+          &:after,
+          &:before {
+            background-color: inherit;
+          }
+        }
+        .notification_dropdown .nav-link {
+          background-color: lighten($color: $color, $amount: 10%) !important;
+        }
+        .right-sidebar a {
+          border-color: rgba(255, 255, 255, 0.1);
+          color: $white;
+        }
+        .header-profile > a.nav-link .header-info {
+          strong {
+            color: $white;
+          }
+          span,
+          small {
+            color: rgba(255, 255, 255, 0.7);
+          }
+        }
+      }
+      .nav-control {
+        background-color: lighten($color: $color, $amount: 10%);
+        color: $white;
+      }
+    }
+  }
+}
+
+//styles for sidebar
+@each $name, $color in $theme_backgrounds {
+  //:not([data-sidebar-style="modern"])
+  [data-sibebarbg="#{$name}"][data-theme-version="dark"],
+  [data-sibebarbg="#{$name}"] {
+    @if $name != "color_1" {
+      .deznav {
+        background-color: $color;
+        .menu-tabs li a.active {
+          color: $color;
+        }
+        .metismenu {
+          .nav-label {
+            color: rgba(255, 255, 255, 0.7);
+            border-color: rgba(255, 255, 255, 0.2);
+          }
+          & > li {
+            & > a {
+              color: rgba(
+                255,
+                255,
+                255,
+                0.7
+              ); //darken($color: $white, $amount: 0%);
+              svg {
+                color: rgba(255, 255, 255, 0.7);
+              }
+              g [fill] {
+                fill: rgba(255, 255, 255, 0.7);
+              }
+            }
+
+            &:hover,
+            &:focus,
+            &.mm-active {
+              & > a {
+                color: $white;
+                g [fill] {
+                  fill: $white;
+                }
+                svg {
+                  color: $white;
+                }
+                // &::after {
+                //     border-color: transparent transparent $white transparent;
+                // }
+              }
+            }
+            @at-root [data-layout="horizontal"]#{&} {
+              // &:not(:last-child) {
+              border-color: lighten($color: $color, $amount: 10%);
+              // }
+            }
+          }
+
+          a {
+            color: rgba(255, 255, 255, 0.7);
+
+            &:hover,
+            &:focus,
+            &.mm-active {
+              color: $white;
+            }
+          }
+
+          ul {
+            border-color: rgba(255, 255, 255, 0.2);
+            &:after {
+              background-color: rgba(255, 255, 255, 0.2);
+            }
+          }
+
+          // .has-arrow {
+          //     &:after {
+          //         border-color: transparent transparent darken($color: $white, $amount: 30%) transparent;
+          //     }
+          // }
+        }
+      }
+      &[data-sidebar-style="mini"][data-layout="vertical"] {
+        .deznav .metismenu li > ul {
+          background-color: lighten($color: $color, $amount: 10%);
+        }
+        .deznav .metismenu > li.mm-active > a,
+        .deznav .metismenu > li:hover > a {
+          background-color: lighten($color: $color, $amount: 10%);
+        }
+      }
+      &[data-sidebar-style="full"][data-layout="vertical"] {
+        .menu-toggle .deznav .metismenu li > ul,
+        .menu-toggle .deznav .metismenu > li.mm-active > a,
+        .menu-toggle .deznav .metismenu > li:hover > a {
+          background-color: lighten($color: $color, $amount: 10%);
+        }
+      }
+      &[data-sidebar-style="icon-hover"][data-layout="vertical"] {
+        .deznav .metismenu ul {
+          border-color: rgba(255, 255, 255, 0.2);
+        }
+      }
+      &[data-layout="horizontal"] {
+        .deznav .metismenu > li {
+          border-color: rgba(255, 255, 255, 0.2);
+        }
+      }
+    }
+  }
+}
+
+[data-headerbg="transparent"] {
+  .header {
+    box-shadow: none;
+    background: transparent;
+  }
+}
+[data-headerbg="color_1"] {
+  .nav-header .hamburger.is-active .line,
+  .nav-header .hamburger .line {
+    background: $primary !important;
+  }
+}

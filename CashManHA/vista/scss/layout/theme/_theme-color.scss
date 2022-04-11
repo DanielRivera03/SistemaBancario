@@ -1,0 +1,605 @@
+//Theme color for Primary Variable
+@each $name, $color in $theme_backgrounds {
+    [data-primary="#{$name}"] {
+        @if $name != "color_1"  {
+		
+			a {
+				&:hover,
+				&:focus,
+				&.active {
+					color: $color;
+				}
+			}
+			[data-class="bg-primary"]:before{
+				background: $color;
+			}
+			.email-left-box .intro-title{
+				background: rgba($color, .1);
+				i{
+					color: $color;
+				}
+			}
+			.widget-stat .media .media-body h4{
+			    color: $color !important;
+			}
+			.email-right-box .right-box-border{
+				border-right: 2px solid rgba($color, .1);
+			}
+			.mail-list .list-group-item.active i{
+                color: $color;
+			}
+			.single-mail.active{
+				background: $color;
+			}
+			.profile-info h4.text-primary {
+				color: $color!important;
+			}
+			.profile-tab .nav-item .nav-link{
+				&:hover,
+				&.active{
+					border-bottom: .20px solid $color;
+					color: $color;
+				}
+			}
+			.amChartsInputField {
+				border: 0;
+				background: $color;
+			}
+			.amcharts-period-input,
+			.amcharts-period-input-selected {
+				background: $color;
+			}
+			.morris-hover {
+				background: $color;
+			}
+			.select2-container--default .select2-results__option--highlighted[aria-selected] {
+				background-color: $color;
+			}
+			.custom-select:focus{
+				border-color: $color;
+				color: $color;
+			}
+			.daterangepicker {
+				td.active {
+					background-color: $color;
+
+					&:hover {
+						background-color: $color;
+					}
+				}
+
+				button.applyBtn {
+					background-color: $color;
+					border-color: $color;
+				}
+			}
+			.wizard {
+				&>.steps li.current a { 
+					background-color: $color; 
+				}
+				.skip-email a {
+					color: $color;
+				}
+				&>.actions li:not(.disabled) a {
+					background-color: $color;
+				}
+			}
+			.step-form-horizontal {
+				.wizard {
+					.steps {
+						li {
+							&.done {
+								a {
+									.number {
+										background: $color;
+									}
+								}
+							}
+							&.current a {
+								.number {
+									color: $color;
+									border-color: $color; 
+								}
+							}
+							&.disabled a {
+								.number {
+									color: $color;
+								}
+							}
+							&:not(:last-child) {
+								&::after {
+									background-color: $color;
+								}
+							}
+						}
+					}					
+				}
+			}        
+			.is-invalid .input-group-prepend .input-group-text i {
+				color: lighten($color, 15%);
+			}	
+			.datamaps-hoverover {
+				color: $color;
+				border: 1px solid rgba($color, .3);
+			}
+			.jqvmap-zoomin,
+			.jqvmap-zoomout {
+				background-color: $color;
+			}
+			.table {
+				.thead-primary th {
+					background-color: $color;
+				}
+				&.primary-table-bg-hover {
+					thead th {
+						background-color: darken($color: $color, $amount: 5%);
+					}
+					tbody tr {
+						background-color: $color;
+						&:hover {
+							background-color: lighten($color: $color, $amount: 5%);
+						}
+
+						&:not(:last-child) {
+							td, th {
+								border-bottom: 1px solid darken($color: $color, $amount: 5%);
+							}
+						}
+					}
+					
+				}
+			}
+			
+			table.dataTable tr.selected{
+				color: $color;
+			}
+			.dataTables_wrapper .dataTables_paginate .paginate_button.current{
+				color: $color !important;
+				background: rgba($color, .1);
+			}
+			.dataTables_wrapper .dataTables_paginate .paginate_button:hover{
+				color: $color !important;
+				background: rgba($color, .1);
+			}
+			.clipboard-btn:hover {
+				background-color: $color;
+			}
+			.cd-h-timeline__dates {
+				&::before {
+					background: $color;
+				}
+				&::after {
+					background: $color;
+				}
+			}
+			.cd-h-timeline__line {
+				background-color: $color;
+			}
+			.cd-h-timeline__date:after {
+				border-color: lighten($color, 0.9);
+				background-color: $color;
+			}
+			.cd-h-timeline__navigation {
+				border-color: lighten($color, 0.9);
+			}
+			.cd-h-timeline__navigation--inactive:hover {
+				border-color: lighten($color, 0.9);
+			}
+			.dd-handle {
+				background: $color;
+			}
+			.dd-handle:hover {
+				background: $color;
+			}
+			.dd3-content:hover {
+				background: $color;
+			}
+			.noUi-connect {
+				background-color: $color;
+				&.c-3-color {
+					background-color: $color;
+				}
+			}
+			.noUi-horizontal .noUi-handle, .noUi-vertical .noUi-handle {
+				background-color: $color;
+			}
+			#slider-toggle.off .noUi-handle {
+				border-color: $color;
+			}
+			.pignose-calendar {
+				border-color: $color;
+				
+				.pignose-calendar-top-date {
+					background-color: $color;
+				}
+			}
+			.pignose-calendar.pignose-calendar-blue .pignose-calendar-body .pignose-calendar-row .pignose-calendar-unit.pignose-calendar-unit-active a {
+				background-color: $color;
+			}
+			.bootstrap-tagsinput .tag {
+				background-color: $color;
+			}
+			.toast {
+				&-success {
+					background-color: $color;
+				}
+			}
+			.twitter-typeahead .tt-menu .tt-suggestion:hover {
+				background-color: $color;
+			}
+			.accordion {
+				&-header-bg {
+					.accordion__header {
+						&--primary {
+							background-color: $color;
+						}
+					}
+				}
+			}
+			.alert-primary{
+				background: lighten($color, 25%);
+				border-color: lighten($color, 25%);
+				color: $color;
+			}
+			.alert-alt.alert-primary{
+				border-left: 4px solid $color;
+			}
+			.alert-alt.alert-primary.solid{
+				border-left: 4px solid darken($color,25%)!important;
+			}
+			.alert.alert-primary.solid{
+				background: $color;
+				border-color: $color;
+			}
+			.alert.alert-outline-primary{
+				color: $color;
+				border-color: $color;
+			}
+			.badge-outline-primary{
+				border: 1px solid $color;
+				color: $color;
+			}
+			.badge-primary {
+				background-color: $color;
+			}
+			.page-titles h4 {
+				color: $color;
+			}
+			.card-action{
+				&>a{
+					background: darken($color,57%);
+				}
+				//&:hover,&:focus{
+				//	background: darken($color,57%);
+				//}
+				.dropdown{
+					background: darken($color,57%);
+					color: $color;
+					&:hover,&:focus{
+						background: darken($color,57%);
+					}
+				}
+			}
+			.card-loader i {
+				background: darken($color,7%);
+			}
+			
+			.dropdown-outline{
+				border: .1rem solid $color;
+			}
+			.custom-dropdown .dropdown-menu .dropdown-item:hover{
+				color: $color;
+			}
+			.card-action .custom-dropdown{
+				background: lighten($color, 30%);
+				 &.show,&:focus,&:hover{
+					background: $color;
+				}
+			}
+			.label-primary{
+				background: $color;
+			}
+			.pagination {
+				.page-item {
+					.page-link {
+						&:hover{
+							background: $color;
+							border-color: $color;
+						}
+					}
+					&.active .page-link {
+						background-color: $color;
+						border-color: $color;
+					}
+				}
+			}
+			.bootstrap-popover-wrapper .bootstrap-popover{
+				button:hover,
+				button:focus{
+					background: $color;
+				}
+			}
+			.progress-bar {
+				background-color: $color;
+			}
+			.progress-bar-primary {
+				 background-color: $color;
+			}
+			.ribbon {
+				&__four {
+					background-color: $color;
+					&:after, &:before {
+						background-color: lighten($color: $color, $amount: 20%);
+					}
+				}	
+				&__five {
+					background-color: $color;
+
+					&::before {
+						border-color: transparent transparent $color transparent;
+					}
+				}
+				&__six {
+					background-color: $color;
+				}
+			}
+			.multi-steps{
+				& > li {
+					color: $color;	
+					&:after {
+						background-color: $color;
+					}
+					&.is-active:before {
+							border-color: $color;
+					}
+				}			
+			}			
+			.timeline-badge.primary {
+				background-color: $color !important;
+			}
+			.tooltip{
+				&-wrapper{
+					button:hover{
+						background: $color;
+					}
+				}
+			}
+			
+			.chart_widget_tab_one {
+				.nav-link {
+					&.active {
+						background-color: $color;
+						border: 1px solid $color;
+						&:hover {
+							border: 1px solid $color;
+						}
+					}
+				}
+			}
+			.social-icon2{
+				a{
+					border: .1rem solid $color;
+				}
+				i{
+					color: $color;
+				}
+			}
+			.social-icon3 ul li a:hover i{
+				color: $color;
+			}
+			.bgl-primary{
+				background: lighten($color, 30%);
+				border-color: lighten($color, 30%);
+				color: $color;
+			}
+			.tdl-holder input[type=checkbox]:checked  + i {
+				background: $color;
+			}
+			.footer .copyright a{
+				color: $color;
+			}
+			.hamburger .line {
+				background: $color;
+			}
+			svg.pulse-svg .first-circle {
+				fill: $color;
+			}
+			.pulse-css {
+				background: $color;
+				&:after,
+				&:before {
+					background-color: $color;
+				}
+			}
+			.notification_dropdown .dropdown-menu-right .notification_title {
+				background: $color;
+			}
+			.header-right {
+				.header-profile {
+					.dropdown-menu {
+						a {
+							&:hover,
+							&:focus,
+							&.active {
+								color: $color;
+							}
+						}
+					}
+					.profile_title {
+						background: $color;
+					}
+				}
+			}
+			&[data-sidebar-style="full"][data-layout="vertical"] {
+				.menu-toggle .nav-header .nav-control .hamburger .line {
+					background-color: $color!important;
+				}
+			}
+			.deznav .metismenu{
+				& > li{
+					& > a svg {
+						color: $color;
+					}
+					&:hover,
+					&:focus {
+						&>a {
+							color: $color;
+						}
+					}
+					&.mm-active {
+						&>a {
+							color: $color;
+						}
+					}
+				}
+				ul a {
+					&:hover,
+					&:focus,
+					&.mm-active {
+						color: $color;
+					}
+				}
+			}
+			@media (min-width:767px) {
+				[data-sidebar-style="modern"] {
+					.deznav {
+						.metismenu {
+							&>li {
+								&>a {
+									&:hover, 
+									&:focus, 
+									&:active, 
+									&.mm-active {
+										&>a {
+											background-color: lighten($color: $color, $amount: 50%);
+										}
+									}
+								}
+							}
+						}
+					}
+				}
+			}
+			&[data-sidebar-style="overlay"] {
+				.nav-header .hamburger.is-active .line {
+					background-color: $color;
+				}
+			}
+			.nav-user {
+				background: $color;
+			}
+			.sidebar-right .sidebar-right  .sidebar-right-trigger {
+				color: $color;
+				&:hover {
+					color: $color;
+				}
+			}	
+			&[data-theme-version="dark"] {
+				.pagination .page-item{
+					.page-link:hover{
+						background: $color;
+						border-color: $color;
+					}
+					&.active .page-link{
+						background: $color;
+						border-color: $color;
+					}
+				}
+				.header-left input:focus {
+					border-color: $color;
+				}
+				.loader {
+					&__bar {
+						background: $color;
+					}
+					&__ball {
+						background: $color;
+					}
+				}
+			}
+			&[data-theme-version="transparent"] {
+				.header-left input:focus {
+					border-color: $color;
+				}
+			}
+			.new-arrival-content .price {
+				color: $color;
+			}
+			.chart-link a i.text-primary {
+				color: $color;
+			}
+			#user-activity .nav-tabs .nav-link.active {
+				background: $color;
+				border-color: $color;
+			}
+			span#counter {
+				color: $color;
+			}
+
+			.welcome-content:after{
+				background: $color;
+			}
+			.timeline-badge {
+                background-color: $color;
+			}	
+			.page-timeline{
+				.timeline {
+					&-workplan#{&} {
+						.timeline-badge:after {
+							background-color: rgba($color: $color, $alpha: .4);
+						}
+					}
+				}
+			}
+			.sk-three-bounce .sk-child {
+				background-color: $color;
+			}
+			.dropdown-item.active, 
+			.dropdown-item:active{
+				color: #fff;
+				background-color:$color;
+			}
+			.overlay-box:after {
+				background: $color;
+			}
+			.btn-primary{
+			    background-color: $color;
+				border-color: $color;
+			}
+			.bg-primary{
+				background-color: $color !important;
+			}
+			.text-primary{
+				color:$color  !important;
+			}
+			.btn-primary:hover {
+				background-color:darken($color, 15);
+				border-color: darken($color, 15);
+			}
+			.btn-outline-primary {
+				color:$color;
+				border-color: $color;
+			}
+			.btn-outline-primary:hover {
+				background-color: $color;
+				border-color: $color;
+			}
+			.btn-primary:not(:disabled):not(.disabled):active, 
+			.btn-primary:not(:disabled):not(.disabled).active, 
+			.show > .btn-primary.dropdown-toggle,
+			.btn-outline-primary:not(:disabled):not(.disabled):active, 
+			.btn-outline-primary:not(:disabled):not(.disabled).active, 
+			.show > .btn-outline-primary.dropdown-toggle{
+				background-color:darken($color, 15);
+				border-color: darken($color, 15);
+			}
+		// End Css	
+        }
+    }
+}
+
+@each $color, $value in $theme-colors {
+    .bg-#{$color}-alt {
+        background-color: rgba($value, .1);
+    }
+}

@@ -1,0 +1,113 @@
+
+.welcome-text{
+	span,
+	p{
+		display:none;
+	}
+}
+.page-titles {
+    margin-bottom: 40px;
+    display: block;
+    margin-left: -40px;
+    margin-right: -40px;
+    padding: 20px 40px;
+    margin-top: -40px;
+    background: #f1f1f1;
+    display: block;
+	
+	
+	
+	
+	[class*="col-"]{
+		display: block !important;
+		max-width: 100%;
+		width: 100%;
+		margin: 0;
+	}
+	@include custommq($max: 1600px) {
+		margin-left: -30px;
+        margin-top: -30px;
+        margin-right: -30px;
+        margin-bottom: 30px;
+		padding: 15px 30px;
+	}
+    @include respond('phone-land') {
+        margin-left: -15px;
+        margin-top: -15px;
+        margin-right: -15px;
+        margin-bottom: 15px;
+        padding: 15px;
+    }
+
+    .justify-content-sm-end{
+        align-items: center;
+    }
+
+    h4 {
+        margin-bottom: 10px;
+		margin-top: 0;
+		color: #000;
+		font-size: 1.75rem;
+		font-weight: 600;
+		
+        span {
+            font-size: 1.25rem;
+        }
+    }
+    .breadcrumb {
+        margin-bottom: 0;
+        padding: 0;
+        background: transparent;
+        // font-size: 0.875rem;
+        li {
+            margin-top: 0;
+            margin-bottom: 0;
+			font-size: 18px;
+			@include respond('phone-land') {
+				font-size: 15px;
+			}
+            a{
+               color: $primary; 
+
+            }
+
+            &.active a{
+                color: $body-color;
+            }
+        }
+        
+        .breadcrumb-item + .breadcrumb-item {
+            &:before {
+                content: "\e606";
+                font-family: 'simple-line-icons';
+                // font-weight: 4;
+                font-size: 10px;
+            }
+        }
+
+        &-datepicker{
+            font-size: 0.75rem;
+            color: $muted;
+
+            &__icon{
+                font-size: 0.875rem;
+            }
+        }
+    }
+
+    .breadcrumb-widget{
+        .border-dark{
+            border-color: $gray-300!important;
+        }
+        h4{
+            color: $strong;
+            font-weight: 600;
+        }
+        @include respond('phone') {
+            text-align: left!important;
+            margin-bottom: 0.9375rem;
+        }
+    }
+    
+}
+

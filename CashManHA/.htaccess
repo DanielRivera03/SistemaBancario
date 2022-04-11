@@ -1,0 +1,6 @@
+# NO PERMITIR LA VISTA DE LOS DIRECTORIOS DEL SITIO
+Options +FollowSymLinks
+Options All -Indexes
+RewriteEngine on
+ErrorDocument 403 http://localhost:90/CashManHA/controlador/cGestionesCashman.php?cashmanhagestion=error-403
+

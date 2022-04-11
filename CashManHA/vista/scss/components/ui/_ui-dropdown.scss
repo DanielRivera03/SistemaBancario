@@ -1,0 +1,140 @@
+.dropdown-toggle:focus {
+    box-shadow: none!important;
+  }
+
+  .dropdown-outline{
+      border: .1rem solid $primary;
+  }
+
+.dropdown-menu{
+	font-size: inherit;
+	border: 0;
+	box-shadow: 0 10px 40px 0 rgba(32,28,69,0.1);
+	margin-top:0;
+	border-radius: 0;
+		
+	.dropdown-item{
+		font-size: 16px;
+		color:$body-color;
+		padding: 0.5rem 1.75rem;
+		
+		@include respond('laptop') {
+			padding: 0.375rem 1rem;
+			font-size: 14px;
+		}
+		&:hover,
+		&:focus,
+		&:active,
+		&.active{
+			color: #514e5f;
+		}
+		&.active, 
+		&:active{
+			color: $white  !important;
+		}
+	}
+	
+	@at-root [direction="rtl"] #{&} {
+		right: auto !important;
+	}
+}
+
+////////////////////
+// Custom Dropdown
+///////////////////
+.dropdown-toggle-split {
+    padding: 0 10px;
+    opacity: 0.85;
+	&:after{
+		margin-left:0 !important;
+	}
+	&:active,
+	&:focus,
+	&:hover{
+		opacity:1;
+	}
+}
+.dropleft .dropdown-toggle:before,
+.dropright .dropdown-toggle:before,
+.dropup .dropdown-toggle:after,
+.dropdown-toggle:after {
+	content:"\f107";
+	font-family:FontAwesome;
+	border: 0;
+    vertical-align: middle;
+    margin-left: 0.25em;
+	line-height: 1;
+}
+.dropup .dropdown-toggle:after{
+	content:"\f106";
+}
+.dropleft .dropdown-toggle::before {
+	content:"\f104";
+}
+.dropright .dropdown-toggle::before {
+	content:"\f105";
+}
+.dropright .dropdown-toggle::after {
+	content:none;
+}
+.custom-dropdown{
+    display: inline-block;
+    margin-bottom: 1rem;
+
+    .dropdown-menu{
+        border: 0px;
+        min-width: 160px;
+        // padding: 1rem;
+		
+    }
+}
+.card-action{
+    .custom-dropdown{
+        // padding: 15px;
+        margin: 0px;
+        background: lighten($primary, 30%);
+        &.show,&:focus,&:hover{
+            background: $primary;
+            color: $white;
+        }
+
+        i{
+            display: inline-block;
+            padding-top: 9px;
+        }
+    }
+}
+
+.dropdown{
+	.dropdown-dots{
+		position: relative;
+		height: 5px;
+		width: 5px;
+		background: rgba($dark, 0.4);
+		border-radius: 5px;
+		display: block;	
+		&:after,
+		&:before{
+			content: "";
+			height: 5px;
+			width: 5px;
+			background: rgba($dark, 0.4);
+			position: absolute;
+			border-radius: 5px;
+		}
+		&:after{
+			right: -8px;
+		}
+		&:before{
+			left: -8px;			
+		}
+		
+		&.text-white{
+			background: rgba($white, 0.7);
+			&:after,
+			&:before{
+				background: rgba($white, 0.7);				
+			}
+		}
+	}
+}

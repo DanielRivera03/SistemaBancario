@@ -1,0 +1,109 @@
+
+
+//header styles
+[direction="rtl"] {
+    .header {
+        padding: 0 0.9375rem;
+        padding-right: 17.1875rem;
+
+        @include media-breakpoint-down(sm) {
+            padding-right: 3.75rem;
+            padding-left: 0;
+        }
+		
+        .header-content {
+            padding-left: 0;
+            padding-right: 5.3125rem;
+
+            @include custommq($max: 575px) {
+                padding-right: 4.5rem;
+            }
+			@at-root [data-sidebar-style="compact"]#{&}{
+				padding-right: 1.875rem;
+            } 
+			@at-root [data-sidebar-style="modern"]#{&}{
+				padding-right: 5.3125rem;
+            } 
+			@at-root [data-sidebar-style="overlay"]#{&}{
+				padding-right: 5.3125rem;
+            } 
+        }
+
+        .nav-control {
+            right: 0.4375rem;
+            left: auto;
+        }
+    }
+	.header-left{
+	
+		
+		.search_bar{ 
+			.dropdown-menu,
+			.dropdown-menu.show{
+			    right: 40px !important;
+				@include respond('phone') {
+					right: -100px !important;
+				}
+			}
+			.search_icon{
+				border-top-left-radius: 0;
+				border-bottom-left-radius: 0;
+				border-top-right-radius: 5rem;
+				border-bottom-right-radius: 5rem;
+				@include respond('phone') {
+					border-radius: 5rem;
+				}
+			}
+		}
+		
+	}
+	
+    &[data-layout="horizontal"] {
+        .header {
+            padding: 0;
+            padding-right: 16rem;
+			
+			.header-content{
+				padding-right: 1.875rem;
+				padding-left: 1.875rem;
+			}
+        }
+    }
+	&[data-layout="horizontal"][data-sidebar-style="mini"] {
+		.header {
+			 padding-right: 6rem;
+		}
+	}
+    &[data-sidebar-style="mini"] {
+        .header {
+            padding: 0 0.9375rem;
+            padding-right: 3.75rem;
+        }
+    }
+
+    &[data-sidebar-style="compact"] {
+        .header {
+            padding: 0 0.9375rem;
+            padding-right: 9.375rem;
+        }
+		&[data-layout="horizontal"]{
+			.header{
+				padding:0;
+				padding-right: 16rem;
+			}
+		}
+    }
+	&[data-sidebar-style="modern"] {
+        .header {
+            padding: 0 0.9375rem;
+            padding-right: 9.375rem;
+        }
+		&[data-layout="horizontal"]{
+			.header{
+				padding:0;
+				padding-right: 16rem;
+			}
+		}
+    }
+}
+

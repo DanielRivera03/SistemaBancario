@@ -1,0 +1,86 @@
+.owl-bank-wallet{
+	
+	.owl-stage-outer{
+	    padding: 9% 0;
+	}
+	.owl-item{
+		img{
+			width:100%!important;
+			@include transitionMedium;
+			position:relative;
+		}
+		
+	}
+	.active.center{
+	
+		img{
+			transform: scale(1.5);
+			z-index:1;
+			position:relative;
+		}
+	}
+}
+.top-up-bx{
+	background:$primary;
+	position:relative;
+	overflow:hidden;
+	float:left;
+	z-index:1;
+	.icon-btn{
+		height:63px;
+		width:63px;
+		background:$white;
+		text-align:center;
+		line-height:63px;
+		border-radius:3px;
+	}
+	&:after{
+		content:"";
+		background-image:url('../images/top.svg');
+		top:20px;
+		left:20px;
+		position:absolute;
+		z-index:-1;
+		height: 100%;
+		width: 100%;
+		background-repeat: no-repeat;
+	}
+}
+.withdraw-bx{
+	background:darken($primary,15%);
+	z-index:1;
+	overflow:hidden;
+	float:left;
+	position:relative;
+	.icon-btn{
+		height:63px;
+		width:63px;
+		background:$white;
+		text-align:center;
+		line-height:63px;
+		border-radius:3px;
+	}
+	&:after{
+		content:"";
+		background-image:url('../images/bottom.svg');
+		bottom:20px;
+		left:20px;
+		z-index:-1;
+		position:absolute;
+		height: 100%;
+		width: 100%;
+		background-repeat: no-repeat;
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+

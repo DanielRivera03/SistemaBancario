@@ -1,0 +1,30 @@
+[data-sidebar-position="fixed"][data-layout="vertical"] {
+    .nav-header {
+        position: fixed;
+        // left: auto;
+        border-top-left-radius: 0px;
+        border-top-right-radius: 0px;
+    }
+
+    .deznav {
+        position: fixed;
+        // z-index: 0;
+        .deznav-scroll {
+            border-top-left-radius: 0px;
+            border-top-right-radius: 0px;
+        }
+    }
+
+    .menu-toggle {
+        .deznav {
+            position: fixed;
+        }
+    }
+}
+[data-header-position="fixed"][data-sidebar-position="fixed"][data-sidebar-style="overlay"][data-layout="vertical"][data-container="boxed"] {
+    .deznav {
+        position: absolute;
+    }
+}
+
+

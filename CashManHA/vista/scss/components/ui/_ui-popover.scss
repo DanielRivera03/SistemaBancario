@@ -1,0 +1,73 @@
+.popover{
+    border: 2px solid $secondary;
+    min-width: 210px;
+    box-shadow: 0 0 30px 0 rgba(0,0,0,0.1);
+	border-radius:0;
+	@at-root [data-theme-version="dark"] & {
+        background-color: $d-bg;
+    }
+    &-header{
+        background: $secondary;
+        color: $white;
+        font-weight: 300;
+		border-radius:0;
+        &::before{
+            border-bottom: 0 !important;
+        }
+    }
+
+    &-body{
+        font-size: 0.75rem;
+		
+    }
+	.popover-header{
+		@at-root [data-theme-version="dark"] & {
+			border-color: $dark-card;
+		}
+    }
+}
+
+.bootstrap-popover-wrapper{
+    .bootstrap-popover:not(:last-child){
+        margin-right: 8px;
+    }
+
+    .bootstrap-popover{
+        margin-bottom: .5rem;
+
+        button:hover,button:focus{
+            background: $primary;
+            color: $white;
+            box-shadow: none;
+        }
+    }
+}
+
+// .tooltip {
+//     font-size: 15px;
+// }
+
+
+.bs-popover-top .arrow::after, .bs-popover-auto[x-placement^="top"] .arrow::after {
+    bottom: 0px;
+    border-top-color: $secondary;
+}
+
+.bs-popover-left .arrow::after, .bs-popover-auto[x-placement^="left"] .arrow::after {
+    right: 0px;
+    border-left-color: $secondary;
+}
+
+.bs-popover-right .arrow::after, .bs-popover-auto[x-placement^="right"] .arrow::after {
+    left: 0px;
+    border-right-color: $secondary;
+}
+
+.bs-popover-bottom .arrow::after, .bs-popover-auto[x-placement^="bottom"] .arrow::after {
+    top: 0px;
+    border-bottom-color: $secondary;
+}
+
+.note-popover{
+    display: none;
+}

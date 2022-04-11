@@ -1,0 +1,119 @@
+////////////////
+// Compact Nav
+////////////////
+
+@media (min-width:767px) {
+    [data-sidebar-style="compact"] {
+
+        .deznav {
+            
+            .nav-user{
+                display: none;
+            }
+        
+            .metismenu {
+                li {
+                    text-align: center;
+                    a {
+                        padding: 0.625rem 0.9375rem 0.625rem 0.9375rem;
+						svg{
+						
+							max-width: 21px;
+							max-height: 21px;
+							display: block;
+							margin-left: auto;
+							margin-right: auto;	
+						}
+						
+                    }
+					ul:after{
+						content:none;
+					}
+                }
+            }
+        }
+
+        .nav-text {
+            display: inline-block;
+            margin-top: 0.3125rem;
+        }
+
+        .nav-label {
+            &.first{
+                display: none;
+            }
+        }
+
+        .nav-badge {
+            display: none;
+        }
+
+        .footer {
+            padding-left: 9.375rem;
+        }
+
+        .content-body {
+            margin-left: 9.375rem;
+        }
+    }
+}
+[data-layout="horizontal"][data-sidebar-style="compact"] {
+	.footer {
+		padding-left: 0;
+	}
+	.content-body {
+		margin-left:0;
+	}
+	.deznav .metismenu{
+	    padding: 0 30px;
+	}
+}
+[data-layout="vertical"][data-sidebar-style="compact"] {
+    .deznav {
+        width: 9.375rem;
+        
+        .metismenu {
+		
+            ul{
+				margin-left:0;
+				border:0;
+				background: rgba(0,0,0,0.02);
+				padding: 10px 0;
+				
+				@at-root [data-theme-version="dark"]#{&} {
+					background:(255, 255, 255, 0.05);
+				}
+					
+				a{
+					&:before{
+						content:none;
+					}
+				}
+				
+				ul a {
+					padding: 0.625rem 0.9375rem;
+					
+				}
+            }
+
+            &>li {
+                &>a.has-arrow::after {
+                    top: 1px;
+					display: inline-block;
+					right: auto;
+					margin-left: 5px;
+					position: relative;
+					width: 7px;
+					height: 7px;
+					border-width: 2px 0px 0px 2px;
+					@at-root [direction="rtl"]#{&} {
+						left: auto;
+						margin-left: 0;
+						margin-right: 5px;
+					}
+                }
+            }
+        }
+
+    }
+}

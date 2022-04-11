@@ -1,0 +1,262 @@
+@import "../../abstracts/variable";
+@import "../../abstracts/mixin";
+[data-sidebar-style="full"][data-layout="vertical"] {
+    .deznav{
+		
+		.metismenu{
+
+			& > li{
+				padding:0;
+				
+				& > a{
+					font-size: 18px;
+					padding: 20px 50px;
+					color: #969ba0;
+					@include transitionMedium;
+					position:relative;
+					@include respond('laptop') {
+						padding: 15px 25px;
+						font-size: 16px;
+					}
+					i{
+						color: #969ba0;
+					}
+					&:before{
+						content:"";
+						height:100%;
+						width:0;
+						position:absolute;
+						left:0;
+						top:0;
+						background:$primary;
+						@include transitionMedium;
+					}
+				}
+				&.mm-active{
+
+					& > a{
+						background:rgba($primary-light,0.1);
+						color:$primary;
+						i{
+							color: $primary;
+						}
+						&:before{
+							width:20px;
+							@include respond('laptop') {
+								width:8px;
+							}
+						}
+					}
+				}
+				.has-arrow:after{
+					right: 2.5rem;
+					@include respond('laptop') {
+						right: 1.5rem;
+					}
+				}
+			}
+			
+		}
+		
+	}
+	.menu-toggle {
+        .nav-header {
+            width: 5rem;
+            z-index: 999;
+            .brand-logo {
+                padding-left: 0;
+                padding-right: 0;
+                justify-content: center;
+            }
+            .nav-control {
+                .hamburger {
+                    .line {
+                        background-color: $primary!important;
+                    }
+                }
+            }
+        }
+		.copyright,
+		.add-menu-sidebar{
+			display:none;
+		}
+        .header {
+            padding-left: 5rem;
+            width: 100%;
+            @at-root [direction="rtl"]#{&} {
+                padding: 0 0.9375rem;
+                padding-right: 5rem;
+            }
+        }
+        .deznav {
+            width: 5rem;
+            overflow: visible;
+            position: absolute;
+            .nav-text {
+                display: none;
+            }
+            .slimScrollDiv,
+            .deznav-scroll {
+                overflow: visible !important;
+            }
+            .metismenu {
+			
+				
+                li {
+                    position: relative;
+					
+                    a {
+                        padding: 0.8125rem 0.9375rem;
+						
+						svg{
+						    max-width: 24px;
+							max-height: 24px;
+							margin-right: 0;
+						}
+						&:before{
+							content:none;
+						}
+                    }
+                    &>ul {
+                        position: absolute;
+						left: 5rem;
+						top: 0;
+						width: 12rem;
+						z-index: 1001;
+						display: none;
+						padding-left: 1px;
+						height: auto !important;
+						box-shadow: 0px 0px 40px 0px rgba(82, 63, 105, 0.1);
+						border-radius: 6px;
+						margin-left: 0;
+						border:0;
+						background:$white;
+						&:after{
+							content: "";
+							position: absolute;
+							background: inherit;
+							width: 10px;
+							height: 10px;
+							transform: rotate(45deg);
+							-webkit-transform: rotate(45deg);
+							-ms-transform: rotate(45deg);
+							-moz-transform: rotate(45deg);
+							left: -5px;
+							top: 20px;
+						}
+                        @at-root [direction="rtl"]#{&} {
+                            left: auto;
+                            right: 3rem;
+                            // box-shadow: -6px 6px 10px rgba(0, 0, 0, 0.15);
+                        }
+                        li:hover {
+                            ul {
+                                // display: block;
+                                left: 11.8125rem;
+                                top: 0;
+								&:after{
+									content:none;
+								}
+                            }
+                        }
+                    }
+                    &:hover>ul {
+                        display: block;
+                        height: auto;
+                        overflow: visible;
+                    }
+                }
+                &>li {
+                    transition: all 0.4s ease-in-out;
+					padding: 0 13px;
+					
+                    &>a {
+						text-align: center;
+                        &.has-arrow {
+                            &:after {
+                                display: none;
+                            }
+                        }
+						i{
+							padding: 0;
+						}
+                    }
+                    &.mm-active > a{
+						background:$primary;
+						border-radius:$radius;
+						color:$white;
+						
+							
+						i{
+							color: $white;
+							padding: 0;
+						}
+					}
+                    &:hover{
+                        &:nth-last-child(-n + 1) {
+                            &>ul {
+                                bottom: 0;
+                                top: auto;
+                            }
+                        }
+                        &>a {
+							border-radius: $radius;
+							background:$primary;
+							color:$white;
+							@at-root [data-theme-version="dark"]#{&} {
+								background:$dark-card;
+							}
+							i{
+								color: $white;
+							}
+                        }
+                        &>ul {
+                            height: auto !important;
+							padding: 10px 0;						
+							
+                            a {
+                                padding: 6px 20px 6px 20px;
+                                margin-left: -.1rem;
+                            }
+                            ul{
+								padding: 10px 0;
+								a {
+									padding: 6px 20px 6px 20px;
+									margin-left: -.1rem;
+								}
+                            }
+                        }
+                    }
+                }
+                .nav-label,
+                .nav-badge {
+                    display: none;
+					
+                }
+            }
+        }
+        .content-body {
+            margin-left: 5rem;
+            @at-root [direction="rtl"]#{&} {
+                margin-right: 5rem;
+                margin-left: auto;
+				border: 0;
+            }
+        }
+        &+.footer {
+            padding-left: 5rem;
+            @at-root [direction="rtl"]#{&} {
+                padding-left: 0;
+                padding-right: 5rem;
+            }
+        }
+    }
+}
+[data-sidebar-style="full"][data-layout="horizontal"] {
+	.deznav .metismenu{
+	    padding: 0 30px;
+	}
+	.header .header-content{
+		padding-left: 1.875rem;
+	}
+}

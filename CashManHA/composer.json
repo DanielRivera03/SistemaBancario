@@ -1,0 +1,6 @@
+{
+    "require": {
+        "bramus/router": "~1.6",
+        "luecano/numero-a-letras": "^3.0"
+    }
+}

@@ -1,0 +1,108 @@
+// .modal{
+//     border: 0;
+//     z-index: 9999999999;
+    
+//     &-content{
+//         border: 0;
+//         box-shadow: 0px 2px 21px 6px rgba(70, 66, 66, 0.26);
+//     }
+// }
+
+// // primary modal rule
+// #primaryModal{
+
+//     .modal-header{
+//         background: $primary;
+
+//         .modal-title,button{
+//             color: #fff;
+//             opacity: 1;
+//         }
+//     }
+// }
+// //danger modal rule
+// #dangerModal{
+
+//     .modal-header{
+//         background: $danger;
+
+//         .modal-title,button{
+//             color: #fff;
+//             opacity: 1;
+//         }
+//     }
+// }
+
+// //warning modal rule
+// #warningModal{
+
+//     .modal-header{
+//         background: $warning;
+
+//         .modal-title,button{
+//             color: #a39e06 ;
+//             opacity: 1;
+//         }
+//     }
+// }
+
+// //success modal rule
+// #successModal{
+
+//     .modal-header{
+//         background: $success;
+
+//         .modal-title,button{
+//             color: #fff;
+//             opacity: 1;
+//         }
+//     }
+// }
+
+
+
+
+
+
+
+// .bootstrap-modal-wrapper{
+
+//     button:not(:last-child){
+//         margin-right: 7px;
+//     }
+
+//     button{
+//         margin-bottom: .5rem;
+
+//         &:focus{
+//             box-shadow: none;
+//         }
+//     }
+// }
+
+.modal-header{
+	padding: 1rem 1.875rem;
+
+	.close{
+		padding: 0.875rem 1.815rem;
+		margin: 0;
+		position: absolute;
+		right: 0;
+		float: none;
+		top: 0;
+		font-size: 30px;
+		font-weight: 100;
+	}
+}
+.modal-body{
+	padding: 1.875rem;
+}
+.modal-footer{
+	padding: 1rem 1.875rem;
+}
+.modal-content{
+	border-radius:$radius;
+}
+.modal-backdrop{
+    z-index: 10!important;
+}

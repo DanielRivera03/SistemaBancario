@@ -1,0 +1,20 @@
+.currency-icon {
+    background: #fff;
+    padding: 9px;
+    border-radius: 4px;
+}
+.currency-bx{
+	.card-body{
+		position:relative;
+		z-index:1;
+	}
+	.bg-img{
+		position: absolute;
+		width: 162px;
+		bottom: -30px;
+		left: -30px;
+		transform: rotate(-45deg);
+		z-index: 0;
+		opacity: 0.06;
+	}
+}

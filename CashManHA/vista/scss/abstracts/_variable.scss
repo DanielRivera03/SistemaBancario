@@ -1,0 +1,122 @@
+//customize bootstrap
+@import './bs-custom';
+
+$strong:#646c9a;
+$border: #f0f1f5;
+$shadow: 0px 0px 40px 0px rgba(82,63,105,0.1);
+$body-bg: #fbfbfb;
+
+
+///////////////
+// Solid Color
+///////////////
+$white: #fff;
+$black: #000;
+$charade: #23252F;
+
+/////////////////////////
+// Dark Version Color
+/////////////////////////
+$d-ctd: #ddd;
+$d-ctl: #828690;
+$d-border: #333a54;
+$d-bg: #181f39;
+$dark-card: #1e2746;
+$dark_bg_lighter: #1E2A4A;
+
+/////////////////////////
+// Primary Light
+/////////////////////////
+$primary-light: lighten($primary, 50%);
+$secondary-light: lighten($secondary, 40%);
+$success-light: lighten($success, 48%);
+$warning-light: lighten($warning, 38%);
+$danger-light: lighten($danger, 38%);
+$info-light: lighten($info, 47%);
+$dark-light: lighten($dark, 50%);
+
+/////////////////////////
+// Opacity 
+/////////////////////////
+$primary-opacity: rgba($primary, 0.2);
+$secondary-opacity: rgba($secondary, 0.5);
+$success-opacity: rgba($success, 0.1);
+$warning-opacity: rgba($warning, 0.1);
+$danger-opacity: rgba($danger, 0.15);
+$info-opacity: rgba($info, 0.1);
+$dark-opacity: rgba($dark, 0.35);
+
+////////////////////////
+// Light Version Color
+////////////////////////
+$l-ctd: #464a53;
+$l-ctl: #828690;
+$l-border: #eaeaea;
+$l-bg: #f2f4fa;
+$heading: #333;
+
+///////////////////
+// Material Colors
+///////////////////
+$dusty-gray: #999999;
+$gallery: #EEEEEE;
+$gray: #898989;
+$input-border-color: $border;
+
+
+///////////////////
+// Social Colors
+///////////////////
+$facebook: #3b5998;
+$twitter: #1da1f2;
+$youtube: #FF0000;
+$google-plus: #db4439;
+$linkedin: #007bb6;
+$instagram: #c32aa3;
+$pinterest: #bd081c;
+$google: #4285f4;
+$snapchat: #fffc00;
+$whatsapp: #25d366;
+$tumblr: #35465d;
+$reddit: #ff4500;
+$spotify: #1ed760;
+$yahoo: #430297;
+$dribbble: #ea4c89;
+$skype: #00aff0;
+$quora: #aa2200;
+$riverBed: #4C585C;
+$vimeo: #1ab7ea;
+
+
+///////////////////
+// Misc Colors
+///////////////////
+$iron: #DDDFE1;
+$grey: #D2D6DE;
+$pale-sky: #6a707e;
+$athensGray: #F0F0F2;
+$sky: #2290FF;
+
+
+//color for coller pallate
+$color_pallate_1: $white;
+$color_pallate_2: #143b64;
+$color_pallate_3: $primary;
+$color_pallate_4: #4527a0;
+$color_pallate_5: #c62828;
+$color_pallate_6: #283593;
+$color_pallate_7: #7356f1;
+$color_pallate_8: #3695eb;
+$color_pallate_9: #00838f;
+$color_pallate_10: #ff8f16;
+$color_pallate_11: #6673fd;
+$color_pallate_12: #558b2f;
+$color_pallate_13: #2a2a2a;
+$color_pallate_14: #1367c8;
+$color_pallate_15: #ed0b4c;
+
+//utility variables
+$radius: 0.375rem; 
+
+
+
