@@ -1738,7 +1738,7 @@ DELIMITER $$
 CREATE TRIGGER `RecalcularSaldoFinal_CreditosClientes` AFTER INSERT ON `transacciones` FOR EACH ROW BEGIN
 	-- VARIABLES DE DATOS CLIENTES
    DECLARE _montocredito decimal(9,2);
-   DECLARE _saldocredito decimal(9,2);
+   DECLARE _saldocredito decimal(15,6);
    DECLARE _plazocredito INT;
    DECLARE _idproducto INT;
     -- CALCULAR EL CAPITAL AUTOMATICAMENTE
