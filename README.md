@@ -1,4 +1,10 @@
-# CashMan H.A s.a de c.v | Sistema bancario financiero / banca en línea
+# CashMan H.A - Sistema Bancario Financiero / Banca en Línea
+
+
+
+
+
+![Portada](https://user-images.githubusercontent.com/44457989/162852787-9390b870-1901-439e-a365-1dd09a167e69.png)
 
 
 
@@ -30,6 +36,13 @@
 <p><b>4) Enlace descarga carpeta imágenes:</b> Si por alguna razón tiene problemas en visualizar todas las imágenes de este proyecto, por favor sustituya la carpeta de imagenes por este archivo. Alojado en Google Drive = Enlace: https://drive.google.com/file/d/1BUKOcMmnws7Am91ilkKR6j9IoDXlmzkd/view?usp=sharing (CashManHa/vista/pegaraquí)</p>
 
 <p><b>5) Base de datos:</b> Si por alguna razón al momento de importar la base de datos a su servidor existen errores o alertas de advertencia, quiere decir que parcialmente se ha importado la base de datos y no en su totalidad. Se ha incluido cada uno de los query sql para que usted proceda manualmente a ejecutarlos en su SGBD. (Más detalles de los elementos en total más abajo).</p>
+
+
+
+<h2>Importante - Nuevos ajustes trigger base de datos</h2>
+
+
+<p>Se ha realizado una pequeña correción al trigger / disparador llamado (RecalcularSaldoFinal_CreditosClientes) y ubicar la variable _saldocredito. Originalmente aparece como DECLARE _saldocredito decimal(9,2); <b>Por favor realizar el cambio únicamente a los valores y no al tipo de dato de la siguiente manera: DECLARE _saldocredito decimal(15,6);</b>. Motivo: no realizaba el cálculo exacto de los saldos finales de las solicitudes crediticias al momento de procesar los pagos de las cuotas mensuales asignadas. A LOS USUARIOS QUE CLONARON O DESCARGARON ESTE REPOSITORIO ANTES DE ESTA EDICION, FAVOR REALIZAR EL CAMBIO. NUEVAS CLONACIONES Y DESCARGAS SE HA SOLVENTADO EXITOSAMENTE ESE ERROR.</p>
 
 
 
@@ -86,6 +99,13 @@
   <li>Clientes: usuario = 	leonel.franco | correo: modificarcorreoreal@gmail.com | clave: 123456789</li>
   <li>Para la recepción de correos automáticos, debe establecer su correo real; de lo contrario lamentamos informarle que no podrá visualizar el contenido deseado.</li>
 </ul>Accesos validados dentro de la plataforma, por favor tome nota de cada uno de los roles de usuario asignados.</p>
+
+
+<h2>Modelo Entidad Relación (m-ER) Base de Datos</h2>
+
+
+![MER](https://user-images.githubusercontent.com/44457989/162854283-df1bf407-afca-4cbf-ad6d-cb17a25852d8.png)
+
 
 
 <h2>Adicional</h2>
@@ -192,6 +212,30 @@
 
 ![15](https://user-images.githubusercontent.com/44457989/162675301-66f6e22a-056b-46ac-a5bb-17e7b8eac9dc.png)
 
+<h4>* Inicio Portal Administradores</h4>
+
+
+![admin](https://user-images.githubusercontent.com/44457989/162853568-807bc907-ab9a-4623-8fe5-46e9469a7f9e.png)
+
+
+
+<h4>* Inicio Portal Presidencia</h4>
+
+![presidencia](https://user-images.githubusercontent.com/44457989/162853573-83b08872-2361-4a8e-abe6-1a0b50d1a859.png)
+
+
+<h4>* Inicio Portal Gerencia</h4>
+
+
+![gerencia](https://user-images.githubusercontent.com/44457989/162853576-50a346b1-f94d-4f58-bf08-c4a846e01ee1.png)
+
+
+
+<h4>* Inicio Portal Atención al Cliente</h4>
+
+
+
+![atencioncliente](https://user-images.githubusercontent.com/44457989/162853578-bfdee37c-6a95-431e-b355-c09234d8d52a.png)
 
 
 <h4>* Inicio Portal Clientes</h4>
