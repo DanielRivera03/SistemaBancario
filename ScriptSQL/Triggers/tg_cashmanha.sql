@@ -1,61 +1,58 @@
--- TODO TRIGGERS {DISPARADORES} PARA EL FUNCIONAMIENTO DE ESTE PROYECTO
---  21 TRIGGERS {DISPARADORES} -> SOLO COPIAR Y PEGAR DE PRINCIPIO A FIN.
-
-DROP TRIGGER IF EXISTS `EnviarSolicitudesCreditosDenegadas_HistoricoCreditos`;
+DROP TRIGGER IF EXISTS EnviarSolicitudesCreditosDenegadas_HistoricoCreditos;
 DELIMITER $$
-CREATE TRIGGER `EnviarSolicitudesCreditosDenegadas_HistoricoCreditos` AFTER DELETE ON `creditos` FOR EACH ROW INSERT INTO historicocreditos (idusuarios,idproducto,idcreditos,montocredito,interescredito,plazocredito,cuotamensual,estado) VALUES (old.idusuarios,old.idproducto,old.idcreditos,old.montocredito,old.interescredito,old.plazocredito,old.cuotamensual,old.estado)
+CREATE TRIGGER EnviarSolicitudesCreditosDenegadas_HistoricoCreditos AFTER DELETE ON creditos FOR EACH ROW INSERT INTO historicocreditos (idusuarios,idproducto,idcreditos,montocredito,interescredito,plazocredito,cuotamensual,estado) VALUES (old.idusuarios,old.idproducto,old.idcreditos,old.montocredito,old.interescredito,old.plazocredito,old.cuotamensual,old.estado)
 $$
 DELIMITER ;
 
-DROP TRIGGER IF EXISTS `HabilitarSistemaCuentasClientes_PortalCashman`;
+DROP TRIGGER IF EXISTS HabilitarSistemaCuentasClientes_PortalCashman;
 DELIMITER $$
-CREATE TRIGGER `HabilitarSistemaCuentasClientes_PortalCashman` AFTER INSERT ON `cuentas` FOR EACH ROW UPDATE usuarios SET poseecuenta="si" WHERE idusuarios=NEW.idusuarios
+CREATE TRIGGER HabilitarSistemaCuentasClientes_PortalCashman AFTER INSERT ON cuentas FOR EACH ROW UPDATE usuarios SET poseecuenta="si" WHERE idusuarios=NEW.idusuarios
 $$
 DELIMITER ;
 
-DROP TRIGGER IF EXISTS `CambioEstadoComprobadorCuotasMensualesClientes`;
+DROP TRIGGER IF EXISTS CambioEstadoComprobadorCuotasMensualesClientes;
 DELIMITER $$
-CREATE TRIGGER `CambioEstadoComprobadorCuotasMensualesClientes` AFTER INSERT ON `cuotas` FOR EACH ROW UPDATE creditos SET cuotas_generadas="si" WHERE idcreditos=NEW.idcreditos
+CREATE TRIGGER CambioEstadoComprobadorCuotasMensualesClientes AFTER INSERT ON cuotas FOR EACH ROW UPDATE creditos SET cuotas_generadas="si" WHERE idcreditos=NEW.idcreditos
 $$
 DELIMITER ;
-DROP TRIGGER IF EXISTS `HabilitarSistemaPortalClientes_Creditos`;
+DROP TRIGGER IF EXISTS HabilitarSistemaPortalClientes_Creditos;
 DELIMITER $$
-CREATE TRIGGER `HabilitarSistemaPortalClientes_Creditos` AFTER INSERT ON `cuotas` FOR EACH ROW UPDATE usuarios SET habilitarsistema="si" WHERE idusuarios=NEW.idusuarios
-$$
-DELIMITER ;
-
-DROP TRIGGER IF EXISTS `ComprobacionCompletarPerfilUsuarios`;
-DELIMITER $$
-CREATE TRIGGER `ComprobacionCompletarPerfilUsuarios` AFTER INSERT ON `detalleusuarios` FOR EACH ROW UPDATE usuarios SET completoperfil="si" WHERE idusuarios=NEW.idusuarios
+CREATE TRIGGER HabilitarSistemaPortalClientes_Creditos AFTER INSERT ON cuotas FOR EACH ROW UPDATE usuarios SET habilitarsistema="si" WHERE idusuarios=NEW.idusuarios
 $$
 DELIMITER ;
 
-DROP TRIGGER IF EXISTS `HabilitarNuevasSolicitudesCrediticias_Clientes`;
+DROP TRIGGER IF EXISTS ComprobacionCompletarPerfilUsuarios;
 DELIMITER $$
-CREATE TRIGGER `HabilitarNuevasSolicitudesCrediticias_Clientes` AFTER INSERT ON `historicocreditos` FOR EACH ROW UPDATE usuarios SET habilitarnuevoscreditos="si" WHERE idusuarios=new.idusuarios
+CREATE TRIGGER ComprobacionCompletarPerfilUsuarios AFTER INSERT ON detalleusuarios FOR EACH ROW UPDATE usuarios SET completoperfil="si" WHERE idusuarios=NEW.idusuarios
 $$
 DELIMITER ;
 
-DROP TRIGGER IF EXISTS `ComprobacionSolicitudCrediticiaCanceladaClientes_EnvioHistorico`;
+DROP TRIGGER IF EXISTS HabilitarNuevasSolicitudesCrediticias_Clientes;
 DELIMITER $$
-CREATE TRIGGER `ComprobacionSolicitudCrediticiaCanceladaClientes_EnvioHistorico` AFTER INSERT ON `historicocuotascreditos` FOR EACH ROW UPDATE creditos SET enviaralhistorico="si" WHERE idcreditos =NEW.idcreditos
-$$
-DELIMITER ;
-DROP TRIGGER IF EXISTS `OcultarTransaccionesProcesadasPortalClientes_CreditosCancelados`;
-DELIMITER $$
-CREATE TRIGGER `OcultarTransaccionesProcesadasPortalClientes_CreditosCancelados` AFTER INSERT ON `historicocuotascreditos` FOR EACH ROW UPDATE creditos SET ocultartransacciones_clientes="si" WHERE idcreditos=new.idcreditos
+CREATE TRIGGER HabilitarNuevasSolicitudesCrediticias_Clientes AFTER INSERT ON historicocreditos FOR EACH ROW UPDATE usuarios SET habilitarnuevoscreditos="si" WHERE idusuarios=new.idusuarios
 $$
 DELIMITER ;
 
-DROP TRIGGER IF EXISTS `EnvioNotificacionNuevosMensajesUsuarios`;
+DROP TRIGGER IF EXISTS ComprobacionSolicitudCrediticiaCanceladaClientes_EnvioHistorico;
 DELIMITER $$
-CREATE TRIGGER `EnvioNotificacionNuevosMensajesUsuarios` AFTER INSERT ON `mensajeria` FOR EACH ROW INSERT INTO notificaciones (idusuarios,titulonotificacion,descripcionnotificacion,clasificacionnotificacion) VALUES (new.idusuariosdestinatario,"Nuevo Mensaje Recibido","Por favor revisa tu bandeja de entrada, has recibido un nuevo mensaje","nuevomensaje")
+CREATE TRIGGER ComprobacionSolicitudCrediticiaCanceladaClientes_EnvioHistorico AFTER INSERT ON historicocuotascreditos FOR EACH ROW UPDATE creditos SET enviaralhistorico="si" WHERE idcreditos =NEW.idcreditos
+$$
+DELIMITER ;
+DROP TRIGGER IF EXISTS OcultarTransaccionesProcesadasPortalClientes_CreditosCancelados;
+DELIMITER $$
+CREATE TRIGGER OcultarTransaccionesProcesadasPortalClientes_CreditosCancelados AFTER INSERT ON historicocuotascreditos FOR EACH ROW UPDATE creditos SET ocultartransacciones_clientes="si" WHERE idcreditos=new.idcreditos
 $$
 DELIMITER ;
 
-DROP TRIGGER IF EXISTS `CambioEstadoCancelacionCreditosClientes_UltimaCuotaPagada`;
+DROP TRIGGER IF EXISTS EnvioNotificacionNuevosMensajesUsuarios;
 DELIMITER $$
-CREATE TRIGGER `CambioEstadoCancelacionCreditosClientes_UltimaCuotaPagada` AFTER INSERT ON `transacciones` FOR EACH ROW BEGIN
+CREATE TRIGGER EnvioNotificacionNuevosMensajesUsuarios AFTER INSERT ON mensajeria FOR EACH ROW INSERT INTO notificaciones (idusuarios,titulonotificacion,descripcionnotificacion,clasificacionnotificacion) VALUES (new.idusuariosdestinatario,"Nuevo Mensaje Recibido","Por favor revisa tu bandeja de entrada, has recibido un nuevo mensaje","nuevomensaje")
+$$
+DELIMITER ;
+
+DROP TRIGGER IF EXISTS CambioEstadoCancelacionCreditosClientes_UltimaCuotaPagada;
+DELIMITER $$
+CREATE TRIGGER CambioEstadoCancelacionCreditosClientes_UltimaCuotaPagada AFTER INSERT ON transacciones FOR EACH ROW BEGIN
 	-- VARIABLE DE DATO SALDO CREDITO CLIENTES
    DECLARE _saldocredito decimal(15,6);
    -- OBTENER LAS CONSULTA DE LOS DATOS REQUERIDOS
@@ -78,9 +75,9 @@ CREATE TRIGGER `CambioEstadoCancelacionCreditosClientes_UltimaCuotaPagada` AFTER
 END
 $$
 DELIMITER ;
-DROP TRIGGER IF EXISTS `CambioEstadoCrediticio_EstadoExcelenteCreditosClientes`;
+DROP TRIGGER IF EXISTS CambioEstadoCrediticio_EstadoExcelenteCreditosClientes;
 DELIMITER $$
-CREATE TRIGGER `CambioEstadoCrediticio_EstadoExcelenteCreditosClientes` AFTER INSERT ON `transacciones` FOR EACH ROW BEGIN
+CREATE TRIGGER CambioEstadoCrediticio_EstadoExcelenteCreditosClientes AFTER INSERT ON transacciones FOR EACH ROW BEGIN
 	-- VARIABLE GLOBAL PARA OBTENER CONSULTA
 	DECLARE _cuotas_pagadas INT;
     DECLARE _estadocrediticio varchar(255);
@@ -105,9 +102,9 @@ CREATE TRIGGER `CambioEstadoCrediticio_EstadoExcelenteCreditosClientes` AFTER IN
 END
 $$
 DELIMITER ;
-DROP TRIGGER IF EXISTS `CambioEstadoCuotasVencidas`;
+DROP TRIGGER IF EXISTS CambioEstadoCuotasVencidas;
 DELIMITER $$
-CREATE TRIGGER `CambioEstadoCuotasVencidas` AFTER INSERT ON `transacciones` FOR EACH ROW BEGIN
+CREATE TRIGGER CambioEstadoCuotasVencidas AFTER INSERT ON transacciones FOR EACH ROW BEGIN
 	DECLARE _incumplimiento_pago char(2);
     SET
     _incumplimiento_pago := (
@@ -121,14 +118,14 @@ CREATE TRIGGER `CambioEstadoCuotasVencidas` AFTER INSERT ON `transacciones` FOR 
 END
 $$
 DELIMITER ;
-DROP TRIGGER IF EXISTS `CambioEstadoCuotas_OrdenPagoCreditosClientes`;
+DROP TRIGGER IF EXISTS CambioEstadoCuotas_OrdenPagoCreditosClientes;
 DELIMITER $$
-CREATE TRIGGER `CambioEstadoCuotas_OrdenPagoCreditosClientes` AFTER INSERT ON `transacciones` FOR EACH ROW UPDATE cuotas SET estadocuota="cancelado" WHERE idcuotas=new.idcuotas
+CREATE TRIGGER CambioEstadoCuotas_OrdenPagoCreditosClientes AFTER INSERT ON transacciones FOR EACH ROW UPDATE cuotas SET estadocuota="cancelado" WHERE idcuotas=new.idcuotas
 $$
 DELIMITER ;
-DROP TRIGGER IF EXISTS `CambioEstadoRecordCrediticio_CreditocClientes`;
+DROP TRIGGER IF EXISTS CambioEstadoRecordCrediticio_CreditocClientes;
 DELIMITER $$
-CREATE TRIGGER `CambioEstadoRecordCrediticio_CreditocClientes` AFTER INSERT ON `transacciones` FOR EACH ROW BEGIN
+CREATE TRIGGER CambioEstadoRecordCrediticio_CreditocClientes AFTER INSERT ON transacciones FOR EACH ROW BEGIN
 	-- VARIABLE GLOBAL PARA OBTENER CONSULTA
 	DECLARE _cuotas_pagadas_tarde INT;
  	SET
@@ -148,14 +145,14 @@ CREATE TRIGGER `CambioEstadoRecordCrediticio_CreditocClientes` AFTER INSERT ON `
 END
 $$
 DELIMITER ;
-DROP TRIGGER IF EXISTS `EnvioNotificacionPagoRecibidoClientesCashmanHa`;
+DROP TRIGGER IF EXISTS EnvioNotificacionPagoRecibidoClientesCashmanHa;
 DELIMITER $$
-CREATE TRIGGER `EnvioNotificacionPagoRecibidoClientesCashmanHa` AFTER INSERT ON `transacciones` FOR EACH ROW INSERT INTO notificaciones (idusuarios,titulonotificacion,descripcionnotificacion,clasificacionnotificacion) SELECT CONCAT(new.idusuarios),CONCAT("Pago Cuota Mensual Recibido"),CONCAT("Pago efectuado con éxito referencia ",new.referencia),CONCAT("pagorecibido")
+CREATE TRIGGER EnvioNotificacionPagoRecibidoClientesCashmanHa AFTER INSERT ON transacciones FOR EACH ROW INSERT INTO notificaciones (idusuarios,titulonotificacion,descripcionnotificacion,clasificacionnotificacion) SELECT CONCAT(new.idusuarios),CONCAT("Pago Cuota Mensual Recibido"),CONCAT("Pago efectuado con éxito referencia ",new.referencia),CONCAT("pagorecibido")
 $$
 DELIMITER ;
-DROP TRIGGER IF EXISTS `RecalcularSaldoFinal_CreditosClientes`;
+DROP TRIGGER IF EXISTS RecalcularSaldoFinal_CreditosClientes;
 DELIMITER $$
-CREATE TRIGGER `RecalcularSaldoFinal_CreditosClientes` AFTER INSERT ON `transacciones` FOR EACH ROW BEGIN
+CREATE TRIGGER RecalcularSaldoFinal_CreditosClientes AFTER INSERT ON transacciones FOR EACH ROW BEGIN
 	-- VARIABLES DE DATOS CLIENTES
    DECLARE _montocredito decimal(9,2);
    DECLARE _saldocredito decimal(15,6);
@@ -200,15 +197,15 @@ CREATE TRIGGER `RecalcularSaldoFinal_CreditosClientes` AFTER INSERT ON `transacc
 END
 $$
 DELIMITER ;
-DROP TRIGGER IF EXISTS `RegistroTransaccionesCuotasCreditosClientes_Historico`;
+DROP TRIGGER IF EXISTS RegistroTransaccionesCuotasCreditosClientes_Historico;
 DELIMITER $$
-CREATE TRIGGER `RegistroTransaccionesCuotasCreditosClientes_Historico` AFTER INSERT ON `transacciones` FOR EACH ROW INSERT INTO historicotransacciones (idusuarios,idproducto,idcreditos,idcuotas,referencia,monto,fecha,dias_incumplimiento,empleado_gestion) VALUES (NEW.idusuarios,NEW.idproducto,NEW.idcreditos,NEW.idcuotas,NEW.referencia,NEW.monto,NEW.fecha,NEW.dias_incumplimiento,NEW.empleado_gestion)
+CREATE TRIGGER RegistroTransaccionesCuotasCreditosClientes_Historico AFTER INSERT ON transacciones FOR EACH ROW INSERT INTO historicotransacciones (idusuarios,idproducto,idcreditos,idcuotas,referencia,monto,fecha,dias_incumplimiento,empleado_gestion) VALUES (NEW.idusuarios,NEW.idproducto,NEW.idcreditos,NEW.idcuotas,NEW.referencia,NEW.monto,NEW.fecha,NEW.dias_incumplimiento,NEW.empleado_gestion)
 $$
 DELIMITER ;
 
-DROP TRIGGER IF EXISTS `AnularTransaccionesCuentasClientes`;
+DROP TRIGGER IF EXISTS AnularTransaccionesCuentasClientes;
 DELIMITER $$
-CREATE TRIGGER `AnularTransaccionesCuentasClientes` AFTER UPDATE ON `transaccionescuentasclientes` FOR EACH ROW BEGIN
+CREATE TRIGGER AnularTransaccionesCuentasClientes AFTER UPDATE ON transaccionescuentasclientes FOR EACH ROW BEGIN
 	-- VARIABLES DE DATOS CLIENTES
    DECLARE _estadotransaccion varchar(50);
    DECLARE _monto decimal(9,2);
@@ -235,9 +232,9 @@ CREATE TRIGGER `AnularTransaccionesCuentasClientes` AFTER UPDATE ON `transaccion
 END
 $$
 DELIMITER ;
-DROP TRIGGER IF EXISTS `RecalcularSaldoFinal_CuentasAhorroClientes`;
+DROP TRIGGER IF EXISTS RecalcularSaldoFinal_CuentasAhorroClientes;
 DELIMITER $$
-CREATE TRIGGER `RecalcularSaldoFinal_CuentasAhorroClientes` AFTER INSERT ON `transaccionescuentasclientes` FOR EACH ROW BEGIN
+CREATE TRIGGER RecalcularSaldoFinal_CuentasAhorroClientes AFTER INSERT ON transaccionescuentasclientes FOR EACH ROW BEGIN
 	-- VARIABLES DE DATOS CLIENTES
    DECLARE _montocuenta decimal(9,2);
    DECLARE _monto decimal(9,2);
@@ -272,9 +269,9 @@ END
 $$
 DELIMITER ;
 
-DROP TRIGGER IF EXISTS `RecalcularSaldoFinal_TransferenciasClientes`;
+DROP TRIGGER IF EXISTS RecalcularSaldoFinal_TransferenciasClientes;
 DELIMITER $$
-CREATE TRIGGER `RecalcularSaldoFinal_TransferenciasClientes` AFTER INSERT ON `transferencias` FOR EACH ROW BEGIN
+CREATE TRIGGER RecalcularSaldoFinal_TransferenciasClientes AFTER INSERT ON transferencias FOR EACH ROW BEGIN
 	-- VARIABLES DE DATOS CLIENTES
    DECLARE _montocuenta decimal(9,2);
    DECLARE _monto decimal(9,2);
@@ -299,9 +296,9 @@ CREATE TRIGGER `RecalcularSaldoFinal_TransferenciasClientes` AFTER INSERT ON `tr
 END
 $$
 DELIMITER ;
-DROP TRIGGER IF EXISTS `RegistroMovimientosTransferencias_EnvioTransferencias`;
+DROP TRIGGER IF EXISTS RegistroMovimientosTransferencias_EnvioTransferencias;
 DELIMITER $$
-CREATE TRIGGER `RegistroMovimientosTransferencias_EnvioTransferencias` AFTER INSERT ON `transferencias` FOR EACH ROW BEGIN
+CREATE TRIGGER RegistroMovimientosTransferencias_EnvioTransferencias AFTER INSERT ON transferencias FOR EACH ROW BEGIN
 	-- VARIABLES DE DATOS CLIENTES
    DECLARE _montocuenta decimal(9,2);
    DECLARE _monto decimal(9,2);
