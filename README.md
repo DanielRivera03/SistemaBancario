@@ -46,6 +46,26 @@
 
 
 
+<h2>Recomendación:</h2>
+
+
+<p>Se recomienda encarecidamente el uso del SGBD Mysql Workbench, de esta manera la importación de todos los datos que este sistema necesita se realiza de mejor manera que usando phpMyAdmin. Para ello debe seguir los siguientes pasos:
+<ul>
+  <li>Primero cree el esquema de la base de datos. Se recomienda el nombre <b>cashmanha</b>. Ya que ese es el nombre de conexión el cuál se refleja en la aplicación. Usted es libre de elegir el nombre de esquema que desee crear. Cualquier cambio se deben realizar los respectivos ajustes en el archivo de conexión de la aplicación.</li>
+  <li>En este punto puede importar el respectivo archivo sql que contiene todo lo que la aplicación necesita. Sí por alguna razón no utiliza el SGBD mencionado, puede realizarlo manualmente, en este caso primero ejecute archivo sql que contiene todas las tablas del sistema.</li>
+  <li>Inserte todos los registros (datos) de las tablas del sistema.</li>
+  <li>Agregué los índices respectivos de relaciones de las tablas del sistema.</li>
+  <li>Ejecute todas las instrucciones sql de las respectivas vistas de las tablas del sistema.</li>
+  <li>Ejecute todas las instrucciones sql de las respectivos procedimientos almacenados de las tablas del sistema.</li>
+  <li>Ejecute todas las instrucciones sql de las respectivos disparadores de las tablas del sistema.</li>
+  <li>Ejecute todas las instrucciones sql de las respectivos eventos de las tablas del sistema.</li>
+  </ul>
+  Y de este modo, usted ha importado con éxito toda la información e instrucciones que la base de datos necesita para comunicarse óptimamente con la aplicación. Sí registra fallos, ejecute las instrucciones una por una para así descartar cualquier fallo (punto de pocas probabilidades sí ha seguido los pasos como deben ser). Por favor verifique que la cantidad de elementos coindicen con lo detallado más abajo.
+
+</p>
+
+
+
 <h2>Información General</h2>
 
 
@@ -260,6 +280,18 @@
 ![20](https://user-images.githubusercontent.com/44457989/162676206-f53c33b9-b461-4c6d-b53a-6204f314b300.png)
 
 ![21](https://user-images.githubusercontent.com/44457989/162676209-6a98d0f0-868c-422a-b28f-c081d91df784.png)
+
+
+
+<h2>Créditos Especiales:</h2>
+<p>Para la realización de este proyecto, se ha utilizado diferentes recursos, los cuales se mencionan a continuación:
+
+ <b>1. API Climatica: OpenWeather -> https://openweathermap.org/</b><br>
+ <b>2. Iconos animados SVG Clima: basmilius -> https://github.com/basmilius/weather-icons</b><br>
+ <b>3. Conversión cifras números a letras: lecano -> https://github.com/lecano/php-numero-a-letras</b><br>
+ <b>4. Documentos PDF: FPDF -> http://www.fpdf.org/</b><br>
+  
+</p>
 
 
 
