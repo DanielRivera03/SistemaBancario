@@ -40,7 +40,7 @@
         }else{ // USUARIO NO EXISTENTE
             // USUARIOS NO REGISTRADOS EN EL SISTEMA
             // IMPRESIO DE BOTON -> RESTRICCION PARA REESTABLECER CONTRASEÑA [BLOQUEADO]
-            $UsuarioNoDisponible = "<span class='nodisponible'><i class='fa fa-times-circle'></i> Lo sentimos, el c&oacute;digo de seguridad ingresado no es v&aacute;lido. Ingrese el &uacute;ltimo c&oacute;digo de seguridad recibido si ha realizado m&uacute;ltiples peticiones. [Error: Expirado y/o Inv&aacute;lido].</span><br><br><div class='text-center'><button style='cursor: no-drop;' id='enviodatos' type='submit' class='btn btn-primary btn-block' disabled>Comprobar C&oacute;digo de Recuperaci&oacute;n</button></div>";
+            $UsuarioNoDisponible = "<span class='nodisponible'><i class='fa fa-times-circle'></i> Lo sentimos, el c&oacute;digo de seguridad ingresado no es v&aacute;lido. Ingrese el &uacute;ltimo c&oacute;digo de seguridad recibido si ha realizado m&uacute;ltiples peticiones. [Error: Expirado y/o Inv&aacute;lido].</span><br><br><div class='text-center'></div>";
             echo $UsuarioNoDisponible;
         }
     }
