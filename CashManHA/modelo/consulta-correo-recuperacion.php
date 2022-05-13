@@ -39,7 +39,7 @@
         }else{ // USUARIO NO EXISTENTE
             // USUARIOS NO REGISTRADOS EN EL SISTEMA
             // IMPRESIO DE BOTON -> RESTRICCION PARA REESTABLECER CONTRASEÑA [BLOQUEADO]
-            $UsuarioNoDisponible = "<span class='nodisponible'><i class='fa fa-times-circle'></i> Lo sentimos, no podemos proceder con la recuperación. Usuario no encontrado y/o registrado.</span><br><br><div class='text-center'><button style='cursor: no-drop;' id='enviodatos' type='submit' class='btn btn-primary btn-block' disabled>Recuperar Contrase&ntilde;a</button></div>";
+            $UsuarioNoDisponible = "<span class='nodisponible'><i class='fa fa-times-circle'></i> Lo sentimos, no podemos proceder con la recuperación. Usuario no encontrado y/o registrado.</span><br><br><div class='text-center'></div>";
             echo $UsuarioNoDisponible;
         }
     }
