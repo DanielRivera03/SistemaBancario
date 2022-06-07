@@ -147,22 +147,42 @@
 <h4>* Registro Nuevos Usuarios</h4>
 
 
-![2](https://user-images.githubusercontent.com/44457989/162673153-5880980d-4b9f-4753-a283-f3790059dde6.png)
+![RegistroUsuarios](https://user-images.githubusercontent.com/44457989/172267726-3f71e22c-dd20-43db-b056-a77b6c91a37d.jpeg)
+
 
 
 
 <h4>* Consulta usuarios y asignación nuevas solicitudes crediticias</h4>
 
 
-
-![3](https://user-images.githubusercontent.com/44457989/162673256-d70f62ef-491e-417a-a6aa-2f1f9ea7cb10.png)
-
+![NuevosCreditos](https://user-images.githubusercontent.com/44457989/172268097-ba3b3182-44b0-485d-94e1-4a4b1f8dda7e.jpeg)
 
 
-![4](https://user-images.githubusercontent.com/44457989/162673535-d9d3f643-97ff-4e22-91bf-2e9b1fe542bf.png)
 
 
-![5](https://user-images.githubusercontent.com/44457989/162673540-2d23d009-6571-43a4-bf4e-a520b078069a.png)
+![InformacionNuevosCreditos](https://user-images.githubusercontent.com/44457989/172268378-da38e308-1550-48dc-92e2-e1cca4da263e.jpeg)
+
+
+
+
+![InformacionProductosCreditos](https://user-images.githubusercontent.com/44457989/172268549-4f6b2b02-c07e-4e9b-8cfb-d410aa91cbc5.jpeg)
+
+
+
+
+
+![NuevoCreditoAsignacion](https://user-images.githubusercontent.com/44457989/172268762-372f181d-e4ed-4586-bdca-5130b1edf034.jpeg)
+
+
+
+
+
+![ReferenciasPersonales](https://user-images.githubusercontent.com/44457989/172269059-48d0156d-fe5b-4644-8259-f9ce7b3dbf5b.jpeg)
+
+
+
+
+
 
 
 
@@ -170,21 +190,19 @@
 <h4>* Consulta créditos aprobados</h4>
 
 
-
-![6](https://user-images.githubusercontent.com/44457989/162673783-bc7e0e3b-624a-4960-bb15-477106c2001f.png)
+![CreditosAprobados](https://user-images.githubusercontent.com/44457989/172267908-d6438aa8-8f5f-4eff-ab96-6414af03e500.jpeg)
 
 
 
 
 <h4>* Sistema de pagos CashMan H.A</h4>
 
-![7](https://user-images.githubusercontent.com/44457989/162674136-7fb3d172-3c5e-438b-9724-ac7767ae377d.png)
+![SistemaPagos](https://user-images.githubusercontent.com/44457989/172269258-a9b3472d-aea5-4502-b043-9cc133f34fb1.jpeg)
 
 
-![8](https://user-images.githubusercontent.com/44457989/162674129-020636ea-fded-44ca-8fa8-c9f135d2c5c4.png)
 
+![OrdenPagos](https://user-images.githubusercontent.com/44457989/172269554-0f600f39-b3b5-4682-b250-4c3c07f911f5.jpeg)
 
-![9](https://user-images.githubusercontent.com/44457989/162674134-a89dc30a-afe8-429f-a1e7-30e35f195114.png)
 
 
 
@@ -192,33 +210,76 @@
 <h4>* Transferencias Dinero Otras Cuentas</h4>
 
 
-![10](https://user-images.githubusercontent.com/44457989/162674502-3a9a95df-59e8-40e3-a295-a49d0e3827f4.png)
+![TransferenciasCuentasDatos](https://user-images.githubusercontent.com/44457989/172269961-448ccce8-4ca5-4a20-8b83-88d83fcb282d.jpeg)
+
+
+
+
+![TransferenciasCuentasEnvio](https://user-images.githubusercontent.com/44457989/172270114-0614aae0-18da-420b-9344-0e083d5526ee.jpeg)
+
+
 
 
 
 <h4>* Comprobante pago créditos (mismo modelo aplica con transacciones cuentas de ahorro clientes)</h4>
 
+![Comprobante3](https://user-images.githubusercontent.com/44457989/172273658-7771bc81-08e2-491e-9fc8-f775fc075b32.png)
 
-![11](https://user-images.githubusercontent.com/44457989/162674580-3e1c2cd7-d70b-4d6e-bb83-49bd88075b24.png)
+
+
+
+![Comprobante1](https://user-images.githubusercontent.com/44457989/172273028-738b2ebe-b86f-4c69-aba2-c09ce77e1f55.png)
+
+
+
+![Comprobante2](https://user-images.githubusercontent.com/44457989/172273491-0f259c27-66ed-434b-96a8-fa3091e36d76.png)
+
+
+
 
 
 <h4>* Perfil de usuarios</h4>
 
-![12](https://user-images.githubusercontent.com/44457989/162674856-b2db70c5-9270-418c-96d3-9aea86b8a288.png)
+
+![Perfil1](https://user-images.githubusercontent.com/44457989/172270694-5f0f6d55-0857-415d-81a4-8111883f2494.jpeg)
+
+
+![Perfil2](https://user-images.githubusercontent.com/44457989/172270697-cfe35ba0-8b8e-4e29-8dc8-fb1f9add1c40.jpeg)
+
+
+![Perfil3](https://user-images.githubusercontent.com/44457989/172270700-58293d0d-630a-4a67-9d1c-e5a83d6e25cd.jpeg)
+
+
+![Perfil4](https://user-images.githubusercontent.com/44457989/172270702-ed40f20f-15c1-448d-8ad7-1dcef1630a56.jpeg)
 
 
 
-<h4>* Envío de mensajes a otros usuarios</h4>
+
+<h4>* Envío de mensajes a otros usuarios (Bandeja de Entrada, Lectura Mensajes y Envío Mensajes)</h4>
 
 
-![13](https://user-images.githubusercontent.com/44457989/162674861-438a2f6b-d2ab-4f7f-9c91-524138516b79.png)
+![Mensaje1](https://user-images.githubusercontent.com/44457989/172271038-ab88a6a6-96bc-43fc-b4a9-c5061deb424c.jpeg)
+
+
+![Mensaje2](https://user-images.githubusercontent.com/44457989/172271041-a9d23848-89ec-455a-97ee-c5870e14a914.jpeg)
+
+
+![Mensaje3](https://user-images.githubusercontent.com/44457989/172271042-bdc445fc-efae-4e54-a048-22e757d7d668.jpeg)
+
+
+<h4>* Consulta notificaciones recibidas</h4>
+
+
+![Notificaciones](https://user-images.githubusercontent.com/44457989/172271258-c8a3f3bf-915f-44cd-8243-98a415ccdd0d.jpeg)
+
 
 
 
 <h4>* Consulta estado de cuenta créditos y vista impresión</h4>
 
 
-![14](https://user-images.githubusercontent.com/44457989/162675297-d44593b8-58fa-4851-9b64-e74a9950627a.png)
+![EstadodeCuenta](https://user-images.githubusercontent.com/44457989/172271851-a4ceed98-defe-44ba-8451-58919026ceb8.jpeg)
+
 
 
 
@@ -230,7 +291,27 @@
 <h4>* Contrato generado automáticamente, según producto asociado créditos clientes</h4>
 
 
-![15](https://user-images.githubusercontent.com/44457989/162675301-66f6e22a-056b-46ac-a5bb-17e7b8eac9dc.png)
+![CopiaContratoHipoteca](https://user-images.githubusercontent.com/44457989/172271973-1dde6934-d271-45b4-877f-dd3814277318.png)
+
+
+
+<h4>* Consulta cliente moroso (problemas de impagos en su responsabilidad crediticia)</h4>
+
+![CuotasImpagoMoras](https://user-images.githubusercontent.com/44457989/172272462-49d316b0-4883-47fb-a2de-43d365ee1db9.jpeg)
+
+
+![EstadoCuotaMoraCliente](https://user-images.githubusercontent.com/44457989/172272464-f6eda666-96e4-42b1-8bba-0b37c7110f10.jpeg)
+
+
+
+<h4>* Vista General Todas Las Transacciones Procesadas (Cuentas de Ahorro)</h4>
+
+
+![VistaTransaccionesCuentas](https://user-images.githubusercontent.com/44457989/172272689-641b8b95-c19c-40f4-b4c1-0c1c1572fc0c.jpeg)
+
+
+
+
 
 <h4>* Inicio Portal Administradores</h4>
 
@@ -267,7 +348,17 @@
 <h4>* Recuperación cuentas | contraseñas olvidadas</h4>
 
 
-![18](https://user-images.githubusercontent.com/44457989/162675687-31911ace-4f89-48ca-ba22-684711dc8db8.png)
+![Recuperacion1](https://user-images.githubusercontent.com/44457989/172274186-86ca35da-88d2-4f74-8407-b79ab6f865db.jpeg)
+
+
+![Recuperacion2](https://user-images.githubusercontent.com/44457989/172274189-f6594a2c-17a5-4651-9835-6dbc947566fa.jpeg)
+
+
+![Recuperacion3](https://user-images.githubusercontent.com/44457989/172274192-558e5d93-d685-4dfb-94f1-385324c319ac.jpeg)
+
+
+![Recuperacion4](https://user-images.githubusercontent.com/44457989/172274194-8297cfcc-edb4-4f88-886a-1767c5169d35.jpeg)
+
 
 
 
@@ -281,6 +372,9 @@
 
 ![21](https://user-images.githubusercontent.com/44457989/162676209-6a98d0f0-868c-422a-b28f-c081d91df784.png)
 
+
+
+<h2>** Los datos de usuarios no son reales. Cumplen únicamente la función del llenado de posible información real a gestionar en esta plataforma.</h2>
 
 
 <h2>Créditos Especiales:</h2>
