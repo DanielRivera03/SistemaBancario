@@ -53,7 +53,7 @@ DELIMITER ;
 DROP TRIGGER IF EXISTS CambioEstadoCancelacionCreditosClientes_UltimaCuotaPagada;
 DELIMITER $$
 CREATE TRIGGER CambioEstadoCancelacionCreditosClientes_UltimaCuotaPagada AFTER INSERT ON transacciones FOR EACH ROW BEGIN
-	-- VARIABLE DE DATO SALDO CREDITO CLIENTES
+-- VARIABLE DE DATO SALDO CREDITO CLIENTES
    DECLARE _saldocredito decimal(15,6);
    -- OBTENER LAS CONSULTA DE LOS DATOS REQUERIDOS
    SET
@@ -64,10 +64,10 @@ CREATE TRIGGER CambioEstadoCancelacionCreditosClientes_UltimaCuotaPagada AFTER I
     );
    -- SI EL SALDO ES IGUAL A CERO "0" ENTONCES CLIENTE HA TERMINADO DE PAGAR SU RESPONSABILIDAD CREDITICIA Y AUTOMATICAMENTE EL CREDITO TOMA EL ESTADO << CANCELADO >>
    IF _saldocredito<1 THEN
-   SET _saldocredito=0;
+   UPDATE creditos SET estado="cancelado" WHERE idcreditos=new.idcreditos;
    END IF;
    IF _saldocredito<0 THEN
-   SET _saldocredito=0;
+   UPDATE creditos SET estado="cancelado" WHERE idcreditos=new.idcreditos;
    END IF;
    IF _saldocredito = 0 THEN
    UPDATE creditos SET estado="cancelado" WHERE idcreditos=new.idcreditos;
