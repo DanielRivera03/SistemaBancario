@@ -892,7 +892,7 @@ if ($_SESSION['comprobar_iniciosesion_primeravez'] == "si") {
                                                             echo '<a href="';
 																echo $UrlGlobal;
 																echo 'controlador/cGestionesCashman.php?cashmanhagestion=facturacion-pago-ordenes-pago-cuotas-clientes-historicos&idcuota=';
-																echo $filas['idhistorico'];
+																echo $filas['idcuotas'];
 																echo '&idusuario=';
 																echo $filas['idusuarios'];
                                                                 echo '&idhistoricotransaccion=';
