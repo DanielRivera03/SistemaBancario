@@ -365,7 +365,7 @@ DROP PROCEDURE IF EXISTS MostrarDetallesDatosClientes_FacturacionCreditosCashMan
 CREATE PROCEDURE MostrarDetallesDatosClientes_FacturacionCreditosCashManHa (IN _idcuotas INT, IN _idusuarios INT)   SELECT * FROM vista_detallesfacturacioncreditosclientes WHERE idcuotas=_idcuotas AND idusuarios=_idusuarios$$
 
 DROP PROCEDURE IF EXISTS MostrarDetallesDatosClientes_FacturacionCreditosHistoricos$$
-CREATE PROCEDURE MostrarDetallesDatosClientes_FacturacionCreditosHistoricos (IN _idcuotas INT, IN _idusuarios INT, IN _idhistoricotransaccion INT)   SELECT * FROM vista_detallesfacturacioncreditosclienteshistoricos WHERE idcuotas=_idcuotas AND idusuarios=_idusuarios AND idhistoricotransaccion=_idhistoricotransaccion$$
+CREATE PROCEDURE MostrarDetallesDatosClientes_FacturacionCreditosHistoricos (IN `_idcuotas` INT, IN `_idusuarios` INT, IN `_idhistorico` INT)   SELECT * FROM vista_detallesfacturacioncreditosclienteshistoricos WHERE idcuotas=_idcuotas AND idusuarios=_idusuarios AND idhistorico=_idhistorico$$
 
 DROP PROCEDURE IF EXISTS OcultarMensajesRecibidos_MensajeriaInternaUsuariosCashManHa$$
 CREATE PROCEDURE OcultarMensajesRecibidos_MensajeriaInternaUsuariosCashManHa (IN _idmensajeria INT)   UPDATE mensajeria SET ocultarmensaje="si" WHERE idmensajeria=_idmensajeria$$
