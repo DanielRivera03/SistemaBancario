@@ -56,7 +56,7 @@ $pdf->MultiCell(191, 8, utf8_decode("Facturación CashMan H.A."), 0, 'R');
 $pdf->setTextColor(0, 0, 0);
 $pdf->Ln(3);
 $pdf->SetFont('Arial', '', 8);
-$pdf->MultiCell(199, 4, utf8_decode("Orden de Pago: Bol.->#" . $Gestiones->getIdCuotasClientes()), 0, 'R');
+$pdf->MultiCell(199, 4, utf8_decode("Orden de Pago: Bol.->#" . $Gestiones->getIdCuotasClientesHistorico()), 0, 'R');
 $pdf->MultiCell(199, 4, utf8_decode("Fecha: " . date_format($FechaCancelacion, "d/m/Y")), 0, 'R');
 $pdf->MultiCell(199, 4, utf8_decode("Hora: " . date_format($FechaCancelacion, "H:i:s")), 0, 'R');
 $pdf->MultiCell(199, 4, utf8_decode("Producto: " . $Gestiones->getNombreProductos()), 0, 'R');
@@ -68,7 +68,7 @@ $pdf->MultiCell(190, 0, utf8_decode("Fecha de Vencimiento: " . date_format($Fech
 $pdf->MultiCell(190, 4, utf8_decode("Dui: " . $Gestiones->getDuiUsuarios()));
 $pdf->MultiCell(190, 4, utf8_decode("Nit: " . $Gestiones->getNitUsuarios()));
 $pdf->Ln(40);
-$pdf->MultiCell(190, 4, utf8_decode("Orden de Pago ~ Cuota Mensual: " . $Gestiones->getCodigoProductos() . " | Bol->" . $Gestiones->getIdCuotasClientes() . " " . $Gestiones->getReferenciaTransaccionCreditosClientes() . " ( ~ $" . number_format($Gestiones->getCuotaMensualCreditos(), 2) . " USD)"));
+$pdf->MultiCell(190, 4, utf8_decode("Orden de Pago ~ Cuota Mensual: " . $Gestiones->getCodigoProductos() . " | Bol->" . $Gestiones->getIdCuotasClientesHistorico() . " " . $Gestiones->getReferenciaTransaccionCreditosClientes() . " ( ~ $" . number_format($Gestiones->getCuotaMensualCreditos(), 2) . " USD)"));
 $pdf->Ln(8);
 $pdf->MultiCell(199, 5, utf8_decode("Subtotal: $ " . number_format($Gestiones->getCuotaMensualCreditos(), 2)), 0, 'R');
 $pdf->Ln(7);
