@@ -125,6 +125,7 @@ class GestionesClientes
     private $ColorVehiculo;
     // -> DATOS DE CUOTAS GENERADAS CLIENTES CASHMAN H.A -> CONSULTAS ESPECIFICAS Y COMPLETAS
     private $IdCuotasClientes;
+    private $IdCuotasClientesHistorico; //-> PARA MOSTRAR COMPROBANTES HISTORICOS DE CLIENTES [CREDITOS CANCELADOS Y FINALIZADOS]
     private $MontoCuotaCancelar;
     private $EstadoCuotaClientes;
     private $MontoCapitalClientes;
@@ -945,6 +946,15 @@ class GestionesClientes
     public function getIdCuotasClientes()
     {
         return $this->IdCuotasClientes;
+    }
+    // ID DE TRANSACCIONES CREDITOS HISTORICOS -> VISUALIZAR COMPROBANTE DE PAGO
+    public function setIdCuotasClientesHistorico($valor_retorno)
+    {
+        $this->IdCuotasClientesHistorico = $valor_retorno;
+    }
+    public function getIdCuotasClientesHistorico()
+    {
+        return $this->IdCuotasClientesHistorico;
     }
     // MONTO A CANCELAR ASIGNADO A CLIENTES -> CUOTAS MENSUALES GENERADAS
     public function setMontoCuotaCancelar($valor_retorno)
@@ -1834,7 +1844,8 @@ class GestionesClientes
     public function RegistroNuevosRolesUsuarios($conectarsistema, $NombreRolUsuario, $DescripcionRolUsuario)
     {
         $resultado = mysqli_query($conectarsistema, "CALL RegistroNuevosRolesDeUsuarios('" . $NombreRolUsuario . "','" . $DescripcionRolUsuario . "');");
-        return $resultado;
+        //return $resultado;
+        echo json_encode($resultado);
     }
     // CONSULTA COMPLETA DE ROLES DE USUARIOS REGISTRADOS -> ADMINISTRADORES UNICAMENTE
     public function ConsultarRolesUsuariosRegistrados($conectarsistema)
@@ -2694,6 +2705,7 @@ class GestionesClientes
         if (mysqli_num_rows($resultado) > 0) {
             // OBTENER VALORES EXTRAIDOS EN LA CONSULTA
             $this->setIdCuotasClientes($Gestiones['idcuotas']);
+            $this->setIdCuotasClientesHistorico($Gestiones['idhistorico']);
             $this->setIdCreditos($Gestiones['idcreditos']);
             $this->setIdUsuarios($Gestiones['idusuarios']);
             $this->setIdProductos($Gestiones['idproducto']);
