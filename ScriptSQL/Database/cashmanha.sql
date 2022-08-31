@@ -1,3 +1,5 @@
+CREATE DATABASE  IF NOT EXISTS `cashmanha` /*!40100 DEFAULT CHARACTER SET utf8mb4 */;
+USE `cashmanha`;
 -- MySQL dump 10.13  Distrib 8.0.28, for Win64 (x86_64)
 --
 -- Host: 127.0.0.1    Database: cashmanha
@@ -31,7 +33,7 @@ CREATE TABLE `accesos` (
   PRIMARY KEY (`idacceso`),
   KEY `accesos_ibfk_1` (`idusuarios`),
   CONSTRAINT `accesos_ibfk_1` FOREIGN KEY (`idusuarios`) REFERENCES `usuarios` (`idusuarios`) ON DELETE CASCADE
-) ENGINE=InnoDB AUTO_INCREMENT=152 DEFAULT CHARSET=utf8mb4;
+) ENGINE=InnoDB AUTO_INCREMENT=157 DEFAULT CHARSET=utf8mb4;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -40,7 +42,7 @@ CREATE TABLE `accesos` (
 
 LOCK TABLES `accesos` WRITE;
 /*!40000 ALTER TABLE `accesos` DISABLE KEYS */;
-INSERT INTO `accesos` VALUES (1,'2022-03-22 05:38:11','SONYVAIO','Windows NT',1),(2,'2022-03-22 05:39:09','SONYVAIO','Windows NT',1),(3,'2022-03-22 05:39:53','SONYVAIO','Windows NT',1),(4,'2022-03-22 05:40:28','SONYVAIO','Windows NT',1),(5,'2022-03-22 05:41:25','SONYVAIO','Windows NT',1),(6,'2022-03-23 02:43:47','SONYVAIO','Windows NT',1),(7,'2022-03-23 02:45:40','SONYVAIO','Windows NT',1),(8,'2022-03-23 03:03:02','SONYVAIO','Windows NT',1),(9,'2022-03-23 03:13:40','SONYVAIO','Windows NT',1),(10,'2022-03-23 03:25:46','SONYVAIO','Windows NT',1),(11,'2022-03-23 03:31:31','SONYVAIO','Windows NT',1),(12,'2022-03-23 03:42:25','SONYVAIO','Windows NT',1),(13,'2022-03-23 03:44:44','SONYVAIO','Windows NT',1),(14,'2022-03-23 03:49:17','SONYVAIO','Windows NT',1),(15,'2022-03-23 03:55:55','SONYVAIO','Windows NT',1),(16,'2022-03-23 05:57:23','SONYVAIO','Windows NT',1),(17,'2022-03-23 05:58:04','SONYVAIO','Windows NT',1),(18,'2022-03-23 05:58:25','SONYVAIO','Windows NT',1),(19,'2022-03-23 06:00:41','SONYVAIO','Windows NT',1),(20,'2022-03-23 06:00:59','SONYVAIO','Windows NT',1),(21,'2022-03-23 06:01:33','SONYVAIO','Windows NT',1),(22,'2022-03-23 06:02:00','SONYVAIO','Windows NT',1),(23,'2022-03-23 05:35:31','SONYVAIO','Windows NT',1),(24,'2022-03-23 05:42:00','SONYVAIO','Windows NT',1),(25,'2022-03-23 05:44:34','SONYVAIO','Windows NT',1),(26,'2022-03-23 06:21:05','SONYVAIO','Windows NT',1),(27,'2022-03-23 06:21:57','SONYVAIO','Windows NT',1),(28,'2022-03-24 02:52:58','SONYVAIO','Windows NT',1),(29,'2022-03-24 02:56:33','SONYVAIO','Windows NT',1),(30,'2022-03-24 03:01:00','SONYVAIO','Windows NT',1),(31,'2022-03-24 03:06:15','SONYVAIO','Windows NT',1),(32,'2022-03-24 03:10:35','SONYVAIO','Windows NT',1),(33,'2022-03-24 03:29:00','SONYVAIO','Windows NT',2),(34,'2022-03-24 03:29:17','SONYVAIO','Windows NT',2),(35,'2022-03-24 03:36:40','SONYVAIO','Windows NT',3),(36,'2022-03-24 03:37:05','SONYVAIO','Windows NT',3),(37,'2022-03-24 03:51:18','SONYVAIO','Windows NT',4),(38,'2022-03-24 03:52:03','SONYVAIO','Windows NT',4),(39,'2022-03-24 04:00:56','SONYVAIO','Windows NT',5),(40,'2022-03-24 04:01:21','SONYVAIO','Windows NT',5),(41,'2022-03-24 04:08:16','SONYVAIO','Windows NT',6),(42,'2022-03-24 04:08:38','SONYVAIO','Windows NT',6),(43,'2022-03-24 04:53:31','SONYVAIO','Windows NT',7),(44,'2022-03-24 04:53:49','SONYVAIO','Windows NT',7),(45,'2022-03-24 04:55:30','SONYVAIO','Windows NT',2),(46,'2022-03-24 04:59:21','SONYVAIO','Windows NT',7),(47,'2022-03-24 05:00:13','SONYVAIO','Windows NT',5),(48,'2022-03-24 05:02:10','SONYVAIO','Windows NT',4),(49,'2022-03-24 05:03:12','SONYVAIO','Windows NT',6),(50,'2022-03-24 05:06:03','SONYVAIO','Windows NT',7),(51,'2022-03-24 05:08:36','SONYVAIO','Windows NT',1),(52,'2022-03-24 05:33:26','SONYVAIO','Windows NT',8),(53,'2022-03-24 05:38:27','SONYVAIO','Windows NT',5),(54,'2022-03-24 05:40:14','SONYVAIO','Windows NT',4),(55,'2022-03-24 05:41:06','SONYVAIO','Windows NT',6),(56,'2022-03-24 05:48:10','SONYVAIO','Windows NT',8),(57,'2022-03-24 05:49:52','SONYVAIO','Windows NT',6),(58,'2022-03-24 05:53:45','SONYVAIO','Windows NT',7),(59,'2022-03-24 06:03:02','SONYVAIO','Windows NT',1),(60,'2022-03-24 06:05:46','SONYVAIO','Windows NT',8),(61,'2022-03-24 06:21:24','SONYVAIO','Windows NT',1),(62,'2022-03-25 02:37:32','SONYVAIO','Windows NT',1),(63,'2022-03-25 02:41:38','SONYVAIO','Windows NT',1),(64,'2022-03-25 03:20:38','SONYVAIO','Windows NT',1),(65,'2022-03-25 03:22:43','SONYVAIO','Windows NT',7),(66,'2022-03-25 03:23:12','SONYVAIO','Windows NT',7),(67,'2022-03-25 03:38:40','SONYVAIO','Windows NT',1),(68,'2022-03-25 03:52:13','SONYVAIO','Windows NT',1),(69,'2022-03-25 04:00:30','SONYVAIO','Windows NT',1),(70,'2022-03-25 04:09:24','SONYVAIO','Windows NT',9),(71,'2022-03-25 04:22:16','SONYVAIO','Windows NT',5),(72,'2022-03-25 04:25:32','SONYVAIO','Windows NT',4),(73,'2022-03-25 04:28:04','SONYVAIO','Windows NT',5),(74,'2022-03-25 04:37:12','SONYVAIO','Windows NT',6),(75,'2022-03-25 04:42:54','SONYVAIO','Windows NT',9),(76,'2022-03-25 04:44:13','SONYVAIO','Windows NT',9),(77,'2022-03-25 04:53:10','SONYVAIO','Windows NT',1),(78,'2022-03-25 05:43:08','SONYVAIO','Windows NT',2),(79,'2022-03-25 05:56:09','SONYVAIO','Windows NT',8),(80,'2022-03-25 06:02:11','SONYVAIO','Windows NT',4),(81,'2022-03-25 06:03:20','SONYVAIO','Windows NT',1),(82,'2022-03-25 06:08:29','SONYVAIO','Windows NT',6),(83,'2022-03-25 06:11:32','SONYVAIO','Windows NT',1),(84,'2022-03-25 07:23:32','SONYVAIO','Windows NT',7),(85,'2022-03-26 02:25:43','SONYVAIO','Windows NT',1),(86,'2022-03-26 02:32:48','SONYVAIO','Windows NT',1),(87,'2022-03-26 03:34:54','SONYVAIO','Windows NT',1),(88,'2022-03-26 03:45:21','SONYVAIO','Windows NT',1),(89,'2022-03-26 03:49:59','SONYVAIO','Windows NT',1),(90,'2022-03-26 03:52:00','SONYVAIO','Windows NT',1),(91,'2022-03-26 05:12:34','SONYVAIO','Windows NT',5),(92,'2022-03-26 05:13:36','SONYVAIO','Windows NT',4),(93,'2022-03-26 05:14:34','SONYVAIO','Windows NT',6),(94,'2022-03-26 10:24:44','SONYVAIO','Windows NT',1),(95,'2022-03-26 10:34:26','SONYVAIO','Windows NT',1),(96,'2022-03-26 10:51:12','SONYVAIO','Windows NT',2),(97,'2022-03-26 10:51:22','SONYVAIO','Windows NT',1),(98,'2022-03-28 10:44:14','SONYVAIO','Windows NT',1),(99,'2022-03-28 11:00:20','SONYVAIO','Windows NT',1),(100,'2022-03-28 11:02:01','SONYVAIO','Windows NT',1),(101,'2022-03-29 02:09:32','SONYVAIO','Windows NT',1),(102,'2022-03-29 02:59:13','SONYVAIO','Windows NT',1),(103,'2022-03-29 03:15:42','SONYVAIO','Windows NT',6),(104,'2022-03-29 10:12:04','SONYVAIO','Windows NT',1),(105,'2022-03-29 11:16:31','SONYVAIO','Windows NT',8),(106,'2022-03-30 02:22:41','SONYVAIO','Windows NT',1),(107,'2022-03-30 02:55:04','SONYVAIO','Windows NT',8),(108,'2022-03-30 03:20:15','SONYVAIO','Windows NT',7),(109,'2022-03-31 02:20:06','SONYVAIO','Windows NT',1),(110,'2022-03-31 05:58:29','SONYVAIO','Windows NT',8),(111,'2022-03-31 06:45:14','SONYVAIO','Windows NT',8),(112,'2022-04-01 01:35:29','SONYVAIO','Windows NT',1),(113,'2022-04-01 02:58:08','SONYVAIO','Windows NT',8),(114,'2022-04-01 05:10:01','SONYVAIO','Windows NT',5),(115,'2022-04-01 05:11:14','SONYVAIO','Windows NT',4),(116,'2022-04-01 05:11:59','SONYVAIO','Windows NT',6),(117,'2022-04-01 05:25:13','SONYVAIO','Windows NT',8),(118,'2022-04-01 05:34:10','SONYVAIO','Windows NT',1),(119,'2022-04-01 06:28:10','SONYVAIO','Windows NT',4),(120,'2022-04-01 06:29:36','SONYVAIO','Windows NT',5),(121,'2022-04-01 06:31:08','SONYVAIO','Windows NT',6),(122,'2022-04-01 06:32:17','SONYVAIO','Windows NT',1),(123,'2022-04-02 01:58:39','SONYVAIO','Windows NT',1),(124,'2022-04-02 02:00:44','SONYVAIO','Windows NT',4),(125,'2022-04-02 02:05:33','SONYVAIO','Windows NT',5),(126,'2022-04-02 02:08:46','SONYVAIO','Windows NT',6),(127,'2022-04-02 02:13:19','SONYVAIO','Windows NT',1),(128,'2022-04-02 02:32:21','SONYVAIO','Windows NT',8),(129,'2022-04-02 02:52:21','SONYVAIO','Windows NT',1),(130,'2022-04-02 06:16:29','SONYVAIO','Windows NT',11),(131,'2022-04-02 06:16:53','SONYVAIO','Windows NT',11),(132,'2022-04-02 06:18:34','SONYVAIO','Windows NT',6),(133,'2022-04-02 06:21:39','SONYVAIO','Windows NT',5),(134,'2022-04-02 06:22:35','SONYVAIO','Windows NT',4),(135,'2022-04-02 06:24:05','SONYVAIO','Windows NT',6),(136,'2022-04-02 06:28:25','SONYVAIO','Windows NT',11),(137,'2022-04-02 06:29:21','SONYVAIO','Windows NT',1),(138,'2022-04-08 05:40:56','LEGION5','Windows NT',1),(148,'2022-04-08 06:15:31','LEGION5','Windows NT',5),(149,'2022-04-08 06:24:06','LEGION5','Windows NT',4),(150,'2022-04-08 06:25:16','LEGION5','Windows NT',6),(151,'2022-04-19 21:55:46','LEGION5','Windows NT',1);
+INSERT INTO `accesos` VALUES (1,'2022-03-22 05:38:11','SONYVAIO','Windows NT',1),(2,'2022-03-22 05:39:09','SONYVAIO','Windows NT',1),(3,'2022-03-22 05:39:53','SONYVAIO','Windows NT',1),(4,'2022-03-22 05:40:28','SONYVAIO','Windows NT',1),(5,'2022-03-22 05:41:25','SONYVAIO','Windows NT',1),(6,'2022-03-23 02:43:47','SONYVAIO','Windows NT',1),(7,'2022-03-23 02:45:40','SONYVAIO','Windows NT',1),(8,'2022-03-23 03:03:02','SONYVAIO','Windows NT',1),(9,'2022-03-23 03:13:40','SONYVAIO','Windows NT',1),(10,'2022-03-23 03:25:46','SONYVAIO','Windows NT',1),(11,'2022-03-23 03:31:31','SONYVAIO','Windows NT',1),(12,'2022-03-23 03:42:25','SONYVAIO','Windows NT',1),(13,'2022-03-23 03:44:44','SONYVAIO','Windows NT',1),(14,'2022-03-23 03:49:17','SONYVAIO','Windows NT',1),(15,'2022-03-23 03:55:55','SONYVAIO','Windows NT',1),(16,'2022-03-23 05:57:23','SONYVAIO','Windows NT',1),(17,'2022-03-23 05:58:04','SONYVAIO','Windows NT',1),(18,'2022-03-23 05:58:25','SONYVAIO','Windows NT',1),(19,'2022-03-23 06:00:41','SONYVAIO','Windows NT',1),(20,'2022-03-23 06:00:59','SONYVAIO','Windows NT',1),(21,'2022-03-23 06:01:33','SONYVAIO','Windows NT',1),(22,'2022-03-23 06:02:00','SONYVAIO','Windows NT',1),(23,'2022-03-23 05:35:31','SONYVAIO','Windows NT',1),(24,'2022-03-23 05:42:00','SONYVAIO','Windows NT',1),(25,'2022-03-23 05:44:34','SONYVAIO','Windows NT',1),(26,'2022-03-23 06:21:05','SONYVAIO','Windows NT',1),(27,'2022-03-23 06:21:57','SONYVAIO','Windows NT',1),(28,'2022-03-24 02:52:58','SONYVAIO','Windows NT',1),(29,'2022-03-24 02:56:33','SONYVAIO','Windows NT',1),(30,'2022-03-24 03:01:00','SONYVAIO','Windows NT',1),(31,'2022-03-24 03:06:15','SONYVAIO','Windows NT',1),(32,'2022-03-24 03:10:35','SONYVAIO','Windows NT',1),(33,'2022-03-24 03:29:00','SONYVAIO','Windows NT',2),(34,'2022-03-24 03:29:17','SONYVAIO','Windows NT',2),(35,'2022-03-24 03:36:40','SONYVAIO','Windows NT',3),(36,'2022-03-24 03:37:05','SONYVAIO','Windows NT',3),(37,'2022-03-24 03:51:18','SONYVAIO','Windows NT',4),(38,'2022-03-24 03:52:03','SONYVAIO','Windows NT',4),(39,'2022-03-24 04:00:56','SONYVAIO','Windows NT',5),(40,'2022-03-24 04:01:21','SONYVAIO','Windows NT',5),(41,'2022-03-24 04:08:16','SONYVAIO','Windows NT',6),(42,'2022-03-24 04:08:38','SONYVAIO','Windows NT',6),(43,'2022-03-24 04:53:31','SONYVAIO','Windows NT',7),(44,'2022-03-24 04:53:49','SONYVAIO','Windows NT',7),(45,'2022-03-24 04:55:30','SONYVAIO','Windows NT',2),(46,'2022-03-24 04:59:21','SONYVAIO','Windows NT',7),(47,'2022-03-24 05:00:13','SONYVAIO','Windows NT',5),(48,'2022-03-24 05:02:10','SONYVAIO','Windows NT',4),(49,'2022-03-24 05:03:12','SONYVAIO','Windows NT',6),(50,'2022-03-24 05:06:03','SONYVAIO','Windows NT',7),(51,'2022-03-24 05:08:36','SONYVAIO','Windows NT',1),(52,'2022-03-24 05:33:26','SONYVAIO','Windows NT',8),(53,'2022-03-24 05:38:27','SONYVAIO','Windows NT',5),(54,'2022-03-24 05:40:14','SONYVAIO','Windows NT',4),(55,'2022-03-24 05:41:06','SONYVAIO','Windows NT',6),(56,'2022-03-24 05:48:10','SONYVAIO','Windows NT',8),(57,'2022-03-24 05:49:52','SONYVAIO','Windows NT',6),(58,'2022-03-24 05:53:45','SONYVAIO','Windows NT',7),(59,'2022-03-24 06:03:02','SONYVAIO','Windows NT',1),(60,'2022-03-24 06:05:46','SONYVAIO','Windows NT',8),(61,'2022-03-24 06:21:24','SONYVAIO','Windows NT',1),(62,'2022-03-25 02:37:32','SONYVAIO','Windows NT',1),(63,'2022-03-25 02:41:38','SONYVAIO','Windows NT',1),(64,'2022-03-25 03:20:38','SONYVAIO','Windows NT',1),(65,'2022-03-25 03:22:43','SONYVAIO','Windows NT',7),(66,'2022-03-25 03:23:12','SONYVAIO','Windows NT',7),(67,'2022-03-25 03:38:40','SONYVAIO','Windows NT',1),(68,'2022-03-25 03:52:13','SONYVAIO','Windows NT',1),(69,'2022-03-25 04:00:30','SONYVAIO','Windows NT',1),(70,'2022-03-25 04:09:24','SONYVAIO','Windows NT',9),(71,'2022-03-25 04:22:16','SONYVAIO','Windows NT',5),(72,'2022-03-25 04:25:32','SONYVAIO','Windows NT',4),(73,'2022-03-25 04:28:04','SONYVAIO','Windows NT',5),(74,'2022-03-25 04:37:12','SONYVAIO','Windows NT',6),(75,'2022-03-25 04:42:54','SONYVAIO','Windows NT',9),(76,'2022-03-25 04:44:13','SONYVAIO','Windows NT',9),(77,'2022-03-25 04:53:10','SONYVAIO','Windows NT',1),(78,'2022-03-25 05:43:08','SONYVAIO','Windows NT',2),(79,'2022-03-25 05:56:09','SONYVAIO','Windows NT',8),(80,'2022-03-25 06:02:11','SONYVAIO','Windows NT',4),(81,'2022-03-25 06:03:20','SONYVAIO','Windows NT',1),(82,'2022-03-25 06:08:29','SONYVAIO','Windows NT',6),(83,'2022-03-25 06:11:32','SONYVAIO','Windows NT',1),(84,'2022-03-25 07:23:32','SONYVAIO','Windows NT',7),(85,'2022-03-26 02:25:43','SONYVAIO','Windows NT',1),(86,'2022-03-26 02:32:48','SONYVAIO','Windows NT',1),(87,'2022-03-26 03:34:54','SONYVAIO','Windows NT',1),(88,'2022-03-26 03:45:21','SONYVAIO','Windows NT',1),(89,'2022-03-26 03:49:59','SONYVAIO','Windows NT',1),(90,'2022-03-26 03:52:00','SONYVAIO','Windows NT',1),(91,'2022-03-26 05:12:34','SONYVAIO','Windows NT',5),(92,'2022-03-26 05:13:36','SONYVAIO','Windows NT',4),(93,'2022-03-26 05:14:34','SONYVAIO','Windows NT',6),(94,'2022-03-26 10:24:44','SONYVAIO','Windows NT',1),(95,'2022-03-26 10:34:26','SONYVAIO','Windows NT',1),(96,'2022-03-26 10:51:12','SONYVAIO','Windows NT',2),(97,'2022-03-26 10:51:22','SONYVAIO','Windows NT',1),(98,'2022-03-28 10:44:14','SONYVAIO','Windows NT',1),(99,'2022-03-28 11:00:20','SONYVAIO','Windows NT',1),(100,'2022-03-28 11:02:01','SONYVAIO','Windows NT',1),(101,'2022-03-29 02:09:32','SONYVAIO','Windows NT',1),(102,'2022-03-29 02:59:13','SONYVAIO','Windows NT',1),(103,'2022-03-29 03:15:42','SONYVAIO','Windows NT',6),(104,'2022-03-29 10:12:04','SONYVAIO','Windows NT',1),(105,'2022-03-29 11:16:31','SONYVAIO','Windows NT',8),(106,'2022-03-30 02:22:41','SONYVAIO','Windows NT',1),(107,'2022-03-30 02:55:04','SONYVAIO','Windows NT',8),(108,'2022-03-30 03:20:15','SONYVAIO','Windows NT',7),(109,'2022-03-31 02:20:06','SONYVAIO','Windows NT',1),(110,'2022-03-31 05:58:29','SONYVAIO','Windows NT',8),(111,'2022-03-31 06:45:14','SONYVAIO','Windows NT',8),(112,'2022-04-01 01:35:29','SONYVAIO','Windows NT',1),(113,'2022-04-01 02:58:08','SONYVAIO','Windows NT',8),(114,'2022-04-01 05:10:01','SONYVAIO','Windows NT',5),(115,'2022-04-01 05:11:14','SONYVAIO','Windows NT',4),(116,'2022-04-01 05:11:59','SONYVAIO','Windows NT',6),(117,'2022-04-01 05:25:13','SONYVAIO','Windows NT',8),(118,'2022-04-01 05:34:10','SONYVAIO','Windows NT',1),(119,'2022-04-01 06:28:10','SONYVAIO','Windows NT',4),(120,'2022-04-01 06:29:36','SONYVAIO','Windows NT',5),(121,'2022-04-01 06:31:08','SONYVAIO','Windows NT',6),(122,'2022-04-01 06:32:17','SONYVAIO','Windows NT',1),(123,'2022-04-02 01:58:39','SONYVAIO','Windows NT',1),(124,'2022-04-02 02:00:44','SONYVAIO','Windows NT',4),(125,'2022-04-02 02:05:33','SONYVAIO','Windows NT',5),(126,'2022-04-02 02:08:46','SONYVAIO','Windows NT',6),(127,'2022-04-02 02:13:19','SONYVAIO','Windows NT',1),(128,'2022-04-02 02:32:21','SONYVAIO','Windows NT',8),(129,'2022-04-02 02:52:21','SONYVAIO','Windows NT',1),(130,'2022-04-02 06:16:29','SONYVAIO','Windows NT',11),(131,'2022-04-02 06:16:53','SONYVAIO','Windows NT',11),(132,'2022-04-02 06:18:34','SONYVAIO','Windows NT',6),(133,'2022-04-02 06:21:39','SONYVAIO','Windows NT',5),(134,'2022-04-02 06:22:35','SONYVAIO','Windows NT',4),(135,'2022-04-02 06:24:05','SONYVAIO','Windows NT',6),(136,'2022-04-02 06:28:25','SONYVAIO','Windows NT',11),(137,'2022-04-02 06:29:21','SONYVAIO','Windows NT',1),(138,'2022-04-08 05:40:56','LEGION5','Windows NT',1),(148,'2022-04-08 06:15:31','LEGION5','Windows NT',5),(149,'2022-04-08 06:24:06','LEGION5','Windows NT',4),(150,'2022-04-08 06:25:16','LEGION5','Windows NT',6),(151,'2022-04-19 21:55:46','LEGION5','Windows NT',1),(152,'2022-08-31 20:34:23','LEGION5','Windows NT',1),(153,'2022-08-31 20:36:38','LEGION5','Windows NT',6),(154,'2022-08-31 20:39:33','LEGION5','Windows NT',5),(155,'2022-08-31 20:40:55','LEGION5','Windows NT',4),(156,'2022-08-31 20:41:53','LEGION5','Windows NT',6);
 /*!40000 ALTER TABLE `accesos` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -113,7 +115,7 @@ CREATE TABLE `creditos` (
   KEY `idproducto` (`idproducto`),
   CONSTRAINT `creditos_ibfk_1` FOREIGN KEY (`idusuarios`) REFERENCES `usuarios` (`idusuarios`) ON DELETE CASCADE,
   CONSTRAINT `creditos_ibfk_2` FOREIGN KEY (`idproducto`) REFERENCES `productos` (`idproducto`) ON DELETE CASCADE
-) ENGINE=InnoDB AUTO_INCREMENT=13 DEFAULT CHARSET=utf8mb4;
+) ENGINE=InnoDB AUTO_INCREMENT=14 DEFAULT CHARSET=utf8mb4;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -216,7 +218,7 @@ CREATE TABLE `cuotas` (
   CONSTRAINT `cuotas_ibfk_1` FOREIGN KEY (`idusuarios`) REFERENCES `usuarios` (`idusuarios`) ON DELETE NO ACTION,
   CONSTRAINT `cuotas_ibfk_2` FOREIGN KEY (`idcreditos`) REFERENCES `creditos` (`idcreditos`) ON DELETE CASCADE,
   CONSTRAINT `cuotas_ibfk_3` FOREIGN KEY (`idproducto`) REFERENCES `productos` (`idproducto`) ON DELETE NO ACTION
-) ENGINE=InnoDB AUTO_INCREMENT=379 DEFAULT CHARSET=utf8mb4;
+) ENGINE=InnoDB AUTO_INCREMENT=391 DEFAULT CHARSET=utf8mb4;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -382,7 +384,7 @@ CREATE TABLE `historicocreditos` (
   KEY `idproducto` (`idproducto`),
   KEY `idcreditos` (`idcreditos`),
   CONSTRAINT `historicocreditos_ibfk_2` FOREIGN KEY (`idproducto`) REFERENCES `productos` (`idproducto`)
-) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=utf8mb4;
+) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=utf8mb4;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -391,7 +393,7 @@ CREATE TABLE `historicocreditos` (
 
 LOCK TABLES `historicocreditos` WRITE;
 /*!40000 ALTER TABLE `historicocreditos` DISABLE KEYS */;
-INSERT INTO `historicocreditos` VALUES (1,1,2,8,1550.00,10.05,12,168.48,'cancelado'),(2,1,2,9,340.00,6,6,70.08,'cancelado');
+INSERT INTO `historicocreditos` VALUES (1,1,2,8,1550.00,10.05,12,168.48,'cancelado'),(2,1,2,9,340.00,6,6,70.08,'cancelado'),(3,8,2,13,2500.00,8.6,12,264.65,'cancelado');
 /*!40000 ALTER TABLE `historicocreditos` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!50003 SET @saved_cs_client      = @@character_set_client */ ;
@@ -431,7 +433,7 @@ CREATE TABLE `historicocuotascreditos` (
   KEY `idusuarios` (`idusuarios`),
   KEY `idcreditos` (`idcreditos`),
   CONSTRAINT `historicocuotascreditos_ibfk_2` FOREIGN KEY (`idproducto`) REFERENCES `productos` (`idproducto`)
-) ENGINE=InnoDB AUTO_INCREMENT=19 DEFAULT CHARSET=utf8mb4;
+) ENGINE=InnoDB AUTO_INCREMENT=31 DEFAULT CHARSET=utf8mb4;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -440,7 +442,7 @@ CREATE TABLE `historicocuotascreditos` (
 
 LOCK TABLES `historicocuotascreditos` WRITE;
 /*!40000 ALTER TABLE `historicocuotascreditos` DISABLE KEYS */;
-INSERT INTO `historicocuotascreditos` VALUES (1,8,2,1,168.48,'Préstamos Personales',129.17,'2022-05-06'),(2,8,2,1,168.48,'Préstamos Personales',129.17,'2022-06-06'),(3,8,2,1,168.48,'Préstamos Personales',129.17,'2022-07-06'),(4,8,2,1,168.48,'Préstamos Personales',129.17,'2022-08-08'),(5,8,2,1,168.48,'Préstamos Personales',129.17,'2022-09-06'),(6,8,2,1,168.48,'Préstamos Personales',129.17,'2022-10-06'),(7,8,2,1,168.48,'Préstamos Personales',129.17,'2022-11-07'),(8,8,2,1,168.48,'Préstamos Personales',129.17,'2022-12-06'),(9,8,2,1,168.48,'Préstamos Personales',129.17,'2023-01-06'),(10,8,2,1,168.48,'Préstamos Personales',129.17,'2023-02-06'),(11,8,2,1,168.48,'Préstamos Personales',129.17,'2023-03-06'),(12,8,2,1,168.48,'Préstamos Personales',129.17,'2023-04-06'),(13,9,2,1,70.08,'Préstamos Personales',56.67,'2022-05-06'),(14,9,2,1,70.08,'Préstamos Personales',56.67,'2022-06-06'),(15,9,2,1,70.08,'Préstamos Personales',56.67,'2022-07-06'),(16,9,2,1,70.08,'Préstamos Personales',56.67,'2022-08-08'),(17,9,2,1,70.08,'Préstamos Personales',56.67,'2022-09-06'),(18,9,2,1,70.08,'Préstamos Personales',56.67,'2022-10-06');
+INSERT INTO `historicocuotascreditos` VALUES (1,8,2,1,168.48,'Préstamos Personales',129.17,'2022-05-06'),(2,8,2,1,168.48,'Préstamos Personales',129.17,'2022-06-06'),(3,8,2,1,168.48,'Préstamos Personales',129.17,'2022-07-06'),(4,8,2,1,168.48,'Préstamos Personales',129.17,'2022-08-08'),(5,8,2,1,168.48,'Préstamos Personales',129.17,'2022-09-06'),(6,8,2,1,168.48,'Préstamos Personales',129.17,'2022-10-06'),(7,8,2,1,168.48,'Préstamos Personales',129.17,'2022-11-07'),(8,8,2,1,168.48,'Préstamos Personales',129.17,'2022-12-06'),(9,8,2,1,168.48,'Préstamos Personales',129.17,'2023-01-06'),(10,8,2,1,168.48,'Préstamos Personales',129.17,'2023-02-06'),(11,8,2,1,168.48,'Préstamos Personales',129.17,'2023-03-06'),(12,8,2,1,168.48,'Préstamos Personales',129.17,'2023-04-06'),(13,9,2,1,70.08,'Préstamos Personales',56.67,'2022-05-06'),(14,9,2,1,70.08,'Préstamos Personales',56.67,'2022-06-06'),(15,9,2,1,70.08,'Préstamos Personales',56.67,'2022-07-06'),(16,9,2,1,70.08,'Préstamos Personales',56.67,'2022-08-08'),(17,9,2,1,70.08,'Préstamos Personales',56.67,'2022-09-06'),(18,9,2,1,70.08,'Préstamos Personales',56.67,'2022-10-06'),(19,13,2,8,264.65,'Préstamos Personales',208.33,'2022-09-28'),(20,13,2,8,264.65,'Préstamos Personales',208.33,'2022-10-28'),(21,13,2,8,264.65,'Préstamos Personales',208.33,'2022-11-28'),(22,13,2,8,264.65,'Préstamos Personales',208.33,'2022-12-28'),(23,13,2,8,264.65,'Préstamos Personales',208.33,'2023-01-28'),(24,13,2,8,264.65,'Préstamos Personales',208.33,'2023-02-28'),(25,13,2,8,264.65,'Préstamos Personales',208.33,'2023-03-28'),(26,13,2,8,264.65,'Préstamos Personales',208.33,'2023-04-28'),(27,13,2,8,264.65,'Préstamos Personales',208.33,'2023-05-28'),(28,13,2,8,264.65,'Préstamos Personales',208.33,'2023-06-28'),(29,13,2,8,264.65,'Préstamos Personales',208.33,'2023-07-28'),(30,13,2,8,264.65,'Préstamos Personales',208.33,'2023-08-28');
 /*!40000 ALTER TABLE `historicocuotascreditos` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!50003 SET @saved_cs_client      = @@character_set_client */ ;
@@ -495,7 +497,7 @@ CREATE TABLE `historicotransacciones` (
   PRIMARY KEY (`idhistoricotransaccion`),
   KEY `idproducto` (`idproducto`),
   CONSTRAINT `historicotransacciones_ibfk_1` FOREIGN KEY (`idproducto`) REFERENCES `productos` (`idproducto`)
-) ENGINE=InnoDB AUTO_INCREMENT=24 DEFAULT CHARSET=utf8mb4;
+) ENGINE=InnoDB AUTO_INCREMENT=36 DEFAULT CHARSET=utf8mb4;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -504,7 +506,7 @@ CREATE TABLE `historicotransacciones` (
 
 LOCK TABLES `historicotransacciones` WRITE;
 /*!40000 ALTER TABLE `historicotransacciones` DISABLE KEYS */;
-INSERT INTO `historicotransacciones` VALUES (1,1,2,8,1,'TCH#34d41aafcd',168.48,'2022-04-07 17:11:35',0,'marco.almagro'),(2,1,2,8,2,'TCH#229b89be58',168.48,'2022-04-07 17:11:45',0,'marco.almagro'),(3,1,2,8,3,'TCH#dea8c73929',168.48,'2022-04-07 17:11:57',0,'marco.almagro'),(4,1,2,8,4,'TCH#1f4973ddf2',168.48,'2022-04-07 17:12:13',0,'marco.almagro'),(5,1,2,8,5,'TCH#da52925946',168.48,'2022-04-07 17:12:30',0,'marco.almagro'),(6,1,2,8,6,'TCH#c16b6cfb8b',168.48,'2022-04-07 17:12:49',0,'marco.almagro'),(7,1,2,8,7,'TCH#6974b763c1',168.48,'2022-04-07 17:13:00',0,'marco.almagro'),(8,1,2,8,8,'TCH#ae3f0c14bd',168.48,'2022-04-07 17:13:11',0,'marco.almagro'),(9,1,2,8,9,'TCH#c63864c939',168.48,'2022-04-07 17:13:20',0,'marco.almagro'),(10,1,2,8,10,'TCH#b2d3adde2f',168.48,'2022-04-07 17:13:31',0,'marco.almagro'),(11,1,2,8,11,'TCH#99ef3a857e',168.48,'2022-04-07 17:13:40',0,'marco.almagro'),(12,1,2,8,12,'TCH#6a92299bf2',168.48,'2022-04-07 17:13:59',0,'marco.almagro'),(13,1,2,9,13,'TCH#6796adce31',70.08,'2022-04-07 17:24:37',0,'daniel.rivera'),(14,1,2,9,14,'TCH#43d6bbe88b',70.08,'2022-04-07 17:24:48',0,'daniel.rivera'),(15,1,2,9,15,'TCH#5328ffcee0',70.08,'2022-04-07 17:25:15',0,'daniel.rivera'),(16,1,2,9,16,'TCH#c5a467a7a2',70.08,'2022-04-07 17:25:28',0,'daniel.rivera'),(17,1,2,9,17,'TCH#a1a17cf1dc',70.08,'2022-04-07 17:25:40',0,'daniel.rivera'),(18,1,2,9,18,'TCH#ac01b24e4c',70.08,'2022-04-07 17:26:03',0,'daniel.rivera'),(19,1,2,10,19,'TCH#82517863ac',155.07,'2022-04-07 17:32:35',0,'marco.almagro'),(20,1,2,10,20,'TCH#b35e19c00a',155.07,'2022-04-07 17:32:50',0,'marco.almagro'),(21,1,2,10,21,'TCH#1cdd80a7fc',155.07,'2022-04-07 17:33:04',0,'marco.almagro'),(22,10,3,11,109,'TCH#0ad1ad91a9',20408.05,'2022-04-07 17:52:10',0,'marco.almagro'),(23,10,3,11,110,'TCH#7a64afb416',20408.05,'2022-04-07 17:52:23',0,'marco.almagro');
+INSERT INTO `historicotransacciones` VALUES (1,1,2,8,1,'TCH#34d41aafcd',168.48,'2022-04-07 17:11:35',0,'marco.almagro'),(2,1,2,8,2,'TCH#229b89be58',168.48,'2022-04-07 17:11:45',0,'marco.almagro'),(3,1,2,8,3,'TCH#dea8c73929',168.48,'2022-04-07 17:11:57',0,'marco.almagro'),(4,1,2,8,4,'TCH#1f4973ddf2',168.48,'2022-04-07 17:12:13',0,'marco.almagro'),(5,1,2,8,5,'TCH#da52925946',168.48,'2022-04-07 17:12:30',0,'marco.almagro'),(6,1,2,8,6,'TCH#c16b6cfb8b',168.48,'2022-04-07 17:12:49',0,'marco.almagro'),(7,1,2,8,7,'TCH#6974b763c1',168.48,'2022-04-07 17:13:00',0,'marco.almagro'),(8,1,2,8,8,'TCH#ae3f0c14bd',168.48,'2022-04-07 17:13:11',0,'marco.almagro'),(9,1,2,8,9,'TCH#c63864c939',168.48,'2022-04-07 17:13:20',0,'marco.almagro'),(10,1,2,8,10,'TCH#b2d3adde2f',168.48,'2022-04-07 17:13:31',0,'marco.almagro'),(11,1,2,8,11,'TCH#99ef3a857e',168.48,'2022-04-07 17:13:40',0,'marco.almagro'),(12,1,2,8,12,'TCH#6a92299bf2',168.48,'2022-04-07 17:13:59',0,'marco.almagro'),(13,1,2,9,13,'TCH#6796adce31',70.08,'2022-04-07 17:24:37',0,'daniel.rivera'),(14,1,2,9,14,'TCH#43d6bbe88b',70.08,'2022-04-07 17:24:48',0,'daniel.rivera'),(15,1,2,9,15,'TCH#5328ffcee0',70.08,'2022-04-07 17:25:15',0,'daniel.rivera'),(16,1,2,9,16,'TCH#c5a467a7a2',70.08,'2022-04-07 17:25:28',0,'daniel.rivera'),(17,1,2,9,17,'TCH#a1a17cf1dc',70.08,'2022-04-07 17:25:40',0,'daniel.rivera'),(18,1,2,9,18,'TCH#ac01b24e4c',70.08,'2022-04-07 17:26:03',0,'daniel.rivera'),(19,1,2,10,19,'TCH#82517863ac',155.07,'2022-04-07 17:32:35',0,'marco.almagro'),(20,1,2,10,20,'TCH#b35e19c00a',155.07,'2022-04-07 17:32:50',0,'marco.almagro'),(21,1,2,10,21,'TCH#1cdd80a7fc',155.07,'2022-04-07 17:33:04',0,'marco.almagro'),(22,10,3,11,109,'TCH#0ad1ad91a9',20408.05,'2022-04-07 17:52:10',0,'marco.almagro'),(23,10,3,11,110,'TCH#7a64afb416',20408.05,'2022-04-07 17:52:23',0,'marco.almagro'),(24,8,2,13,379,'TCH#5b03aa70a4',264.65,'2022-08-31 20:44:32',0,'marco.almagro'),(25,8,2,13,380,'TCH#d1a381b716',264.65,'2022-08-31 20:44:45',0,'marco.almagro'),(26,8,2,13,381,'TCH#903507b64f',264.65,'2022-08-31 20:44:57',0,'marco.almagro'),(27,8,2,13,382,'TCH#1629863a86',264.65,'2022-08-31 20:45:03',0,'marco.almagro'),(28,8,2,13,383,'TCH#13a79861e0',264.65,'2022-08-31 20:45:22',0,'marco.almagro'),(29,8,2,13,384,'TCH#ff771c1c17',264.65,'2022-08-31 20:45:28',0,'marco.almagro'),(30,8,2,13,385,'TCH#ea6bd5791f',264.65,'2022-08-31 20:45:34',0,'marco.almagro'),(31,8,2,13,386,'TCH#9a4dcefac9',264.65,'2022-08-31 20:45:41',0,'marco.almagro'),(32,8,2,13,387,'TCH#2ca77dd0dd',264.65,'2022-08-31 20:46:04',0,'marco.almagro'),(33,8,2,13,388,'TCH#a032fcf4de',264.65,'2022-08-31 20:46:10',0,'marco.almagro'),(34,8,2,13,389,'TCH#5928025de4',264.65,'2022-08-31 20:46:22',0,'marco.almagro'),(35,8,2,13,390,'TCH#b8568608e6',264.65,'2022-08-31 20:58:47',0,'daniel.rivera');
 /*!40000 ALTER TABLE `historicotransacciones` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -575,7 +577,7 @@ CREATE TABLE `notificaciones` (
   PRIMARY KEY (`idnotificacion`),
   KEY `idusuarios` (`idusuarios`),
   CONSTRAINT `notificaciones_ibfk_1` FOREIGN KEY (`idusuarios`) REFERENCES `usuarios` (`idusuarios`) ON DELETE CASCADE
-) ENGINE=InnoDB AUTO_INCREMENT=29 DEFAULT CHARSET=utf8mb4;
+) ENGINE=InnoDB AUTO_INCREMENT=43 DEFAULT CHARSET=utf8mb4;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -584,7 +586,7 @@ CREATE TABLE `notificaciones` (
 
 LOCK TABLES `notificaciones` WRITE;
 /*!40000 ALTER TABLE `notificaciones` DISABLE KEYS */;
-INSERT INTO `notificaciones` VALUES (1,1,'Pago Cuota Mensual Recibido','Pago efectuado con éxito referencia TCH#34d41aafcd','2022-04-07 17:11:35','pagorecibido','no'),(2,1,'Pago Cuota Mensual Recibido','Pago efectuado con éxito referencia TCH#229b89be58','2022-04-07 17:11:45','pagorecibido','no'),(3,1,'Pago Cuota Mensual Recibido','Pago efectuado con éxito referencia TCH#dea8c73929','2022-04-07 17:11:57','pagorecibido','no'),(4,1,'Pago Cuota Mensual Recibido','Pago efectuado con éxito referencia TCH#1f4973ddf2','2022-04-07 17:12:13','pagorecibido','no'),(5,1,'Pago Cuota Mensual Recibido','Pago efectuado con éxito referencia TCH#da52925946','2022-04-07 17:12:30','pagorecibido','no'),(6,1,'Pago Cuota Mensual Recibido','Pago efectuado con éxito referencia TCH#c16b6cfb8b','2022-04-07 17:12:49','pagorecibido','no'),(7,1,'Pago Cuota Mensual Recibido','Pago efectuado con éxito referencia TCH#6974b763c1','2022-04-07 17:13:00','pagorecibido','no'),(8,1,'Pago Cuota Mensual Recibido','Pago efectuado con éxito referencia TCH#ae3f0c14bd','2022-04-07 17:13:11','pagorecibido','no'),(9,1,'Pago Cuota Mensual Recibido','Pago efectuado con éxito referencia TCH#c63864c939','2022-04-07 17:13:20','pagorecibido','no'),(10,1,'Pago Cuota Mensual Recibido','Pago efectuado con éxito referencia TCH#b2d3adde2f','2022-04-07 17:13:31','pagorecibido','no'),(11,1,'Pago Cuota Mensual Recibido','Pago efectuado con éxito referencia TCH#99ef3a857e','2022-04-07 17:13:40','pagorecibido','no'),(12,1,'Pago Cuota Mensual Recibido','Pago efectuado con éxito referencia TCH#6a92299bf2','2022-04-07 17:13:59','pagorecibido','no'),(13,1,'Pago Cuota Mensual Recibido','Pago efectuado con éxito referencia TCH#6796adce31','2022-04-07 17:24:37','pagorecibido','no'),(14,1,'Pago Cuota Mensual Recibido','Pago efectuado con éxito referencia TCH#43d6bbe88b','2022-04-07 17:24:48','pagorecibido','no'),(15,1,'Pago Cuota Mensual Recibido','Pago efectuado con éxito referencia TCH#5328ffcee0','2022-04-07 17:25:15','pagorecibido','no'),(16,1,'Pago Cuota Mensual Recibido','Pago efectuado con éxito referencia TCH#c5a467a7a2','2022-04-07 17:25:28','pagorecibido','no'),(17,1,'Pago Cuota Mensual Recibido','Pago efectuado con éxito referencia TCH#a1a17cf1dc','2022-04-07 17:25:40','pagorecibido','no'),(18,1,'Pago Cuota Mensual Recibido','Pago efectuado con éxito referencia TCH#ac01b24e4c','2022-04-07 17:26:03','pagorecibido','no'),(19,1,'Pago Cuota Mensual Recibido','Pago efectuado con éxito referencia TCH#82517863ac','2022-04-07 17:32:35','pagorecibido','no'),(20,1,'Pago Cuota Mensual Recibido','Pago efectuado con éxito referencia TCH#b35e19c00a','2022-04-07 17:32:50','pagorecibido','no'),(21,1,'Pago Cuota Mensual Recibido','Pago efectuado con éxito referencia TCH#1cdd80a7fc','2022-04-07 17:33:04','pagorecibido','no'),(22,10,'Pago Cuota Mensual Recibido','Pago efectuado con éxito referencia TCH#0ad1ad91a9','2022-04-07 17:52:10','pagorecibido','no'),(23,10,'Pago Cuota Mensual Recibido','Pago efectuado con éxito referencia TCH#7a64afb416','2022-04-07 17:52:23','pagorecibido','no'),(24,1,'Pago Cuota Mensual Recibido','Pago efectuado con éxito referencia TCH#82517863ac','2022-04-08 05:52:49','pagorecibido','no'),(25,1,'Pago Cuota Mensual Recibido','Pago efectuado con éxito referencia TCH#b35e19c00a','2022-04-08 05:52:49','pagorecibido','no'),(26,1,'Pago Cuota Mensual Recibido','Pago efectuado con éxito referencia TCH#1cdd80a7fc','2022-04-08 05:52:49','pagorecibido','no'),(27,10,'Pago Cuota Mensual Recibido','Pago efectuado con éxito referencia TCH#0ad1ad91a9','2022-04-08 05:52:49','pagorecibido','no'),(28,10,'Pago Cuota Mensual Recibido','Pago efectuado con éxito referencia TCH#7a64afb416','2022-04-08 05:52:49','pagorecibido','no');
+INSERT INTO `notificaciones` VALUES (1,1,'Pago Cuota Mensual Recibido','Pago efectuado con éxito referencia TCH#34d41aafcd','2022-04-07 17:11:35','pagorecibido','no'),(2,1,'Pago Cuota Mensual Recibido','Pago efectuado con éxito referencia TCH#229b89be58','2022-04-07 17:11:45','pagorecibido','no'),(3,1,'Pago Cuota Mensual Recibido','Pago efectuado con éxito referencia TCH#dea8c73929','2022-04-07 17:11:57','pagorecibido','no'),(4,1,'Pago Cuota Mensual Recibido','Pago efectuado con éxito referencia TCH#1f4973ddf2','2022-04-07 17:12:13','pagorecibido','no'),(5,1,'Pago Cuota Mensual Recibido','Pago efectuado con éxito referencia TCH#da52925946','2022-04-07 17:12:30','pagorecibido','no'),(6,1,'Pago Cuota Mensual Recibido','Pago efectuado con éxito referencia TCH#c16b6cfb8b','2022-04-07 17:12:49','pagorecibido','no'),(7,1,'Pago Cuota Mensual Recibido','Pago efectuado con éxito referencia TCH#6974b763c1','2022-04-07 17:13:00','pagorecibido','no'),(8,1,'Pago Cuota Mensual Recibido','Pago efectuado con éxito referencia TCH#ae3f0c14bd','2022-04-07 17:13:11','pagorecibido','no'),(9,1,'Pago Cuota Mensual Recibido','Pago efectuado con éxito referencia TCH#c63864c939','2022-04-07 17:13:20','pagorecibido','no'),(10,1,'Pago Cuota Mensual Recibido','Pago efectuado con éxito referencia TCH#b2d3adde2f','2022-04-07 17:13:31','pagorecibido','no'),(11,1,'Pago Cuota Mensual Recibido','Pago efectuado con éxito referencia TCH#99ef3a857e','2022-04-07 17:13:40','pagorecibido','no'),(12,1,'Pago Cuota Mensual Recibido','Pago efectuado con éxito referencia TCH#6a92299bf2','2022-04-07 17:13:59','pagorecibido','no'),(13,1,'Pago Cuota Mensual Recibido','Pago efectuado con éxito referencia TCH#6796adce31','2022-04-07 17:24:37','pagorecibido','no'),(14,1,'Pago Cuota Mensual Recibido','Pago efectuado con éxito referencia TCH#43d6bbe88b','2022-04-07 17:24:48','pagorecibido','no'),(15,1,'Pago Cuota Mensual Recibido','Pago efectuado con éxito referencia TCH#5328ffcee0','2022-04-07 17:25:15','pagorecibido','no'),(16,1,'Pago Cuota Mensual Recibido','Pago efectuado con éxito referencia TCH#c5a467a7a2','2022-04-07 17:25:28','pagorecibido','no'),(17,1,'Pago Cuota Mensual Recibido','Pago efectuado con éxito referencia TCH#a1a17cf1dc','2022-04-07 17:25:40','pagorecibido','no'),(18,1,'Pago Cuota Mensual Recibido','Pago efectuado con éxito referencia TCH#ac01b24e4c','2022-04-07 17:26:03','pagorecibido','no'),(19,1,'Pago Cuota Mensual Recibido','Pago efectuado con éxito referencia TCH#82517863ac','2022-04-07 17:32:35','pagorecibido','no'),(20,1,'Pago Cuota Mensual Recibido','Pago efectuado con éxito referencia TCH#b35e19c00a','2022-04-07 17:32:50','pagorecibido','no'),(21,1,'Pago Cuota Mensual Recibido','Pago efectuado con éxito referencia TCH#1cdd80a7fc','2022-04-07 17:33:04','pagorecibido','no'),(22,10,'Pago Cuota Mensual Recibido','Pago efectuado con éxito referencia TCH#0ad1ad91a9','2022-04-07 17:52:10','pagorecibido','no'),(23,10,'Pago Cuota Mensual Recibido','Pago efectuado con éxito referencia TCH#7a64afb416','2022-04-07 17:52:23','pagorecibido','no'),(24,1,'Pago Cuota Mensual Recibido','Pago efectuado con éxito referencia TCH#82517863ac','2022-04-08 05:52:49','pagorecibido','no'),(25,1,'Pago Cuota Mensual Recibido','Pago efectuado con éxito referencia TCH#b35e19c00a','2022-04-08 05:52:49','pagorecibido','no'),(26,1,'Pago Cuota Mensual Recibido','Pago efectuado con éxito referencia TCH#1cdd80a7fc','2022-04-08 05:52:49','pagorecibido','no'),(27,10,'Pago Cuota Mensual Recibido','Pago efectuado con éxito referencia TCH#0ad1ad91a9','2022-04-08 05:52:49','pagorecibido','no'),(28,10,'Pago Cuota Mensual Recibido','Pago efectuado con éxito referencia TCH#7a64afb416','2022-04-08 05:52:49','pagorecibido','no'),(29,8,'Pago Cuota Mensual Recibido','Pago efectuado con éxito referencia TCH#5b03aa70a4','2022-08-31 20:44:32','pagorecibido','no'),(30,8,'Pago Cuota Mensual Recibido','Pago efectuado con éxito referencia TCH#d1a381b716','2022-08-31 20:44:45','pagorecibido','no'),(31,8,'Pago Cuota Mensual Recibido','Pago efectuado con éxito referencia TCH#903507b64f','2022-08-31 20:44:57','pagorecibido','no'),(32,8,'Pago Cuota Mensual Recibido','Pago efectuado con éxito referencia TCH#1629863a86','2022-08-31 20:45:03','pagorecibido','no'),(33,8,'Pago Cuota Mensual Recibido','Pago efectuado con éxito referencia TCH#13a79861e0','2022-08-31 20:45:22','pagorecibido','no'),(34,8,'Pago Cuota Mensual Recibido','Pago efectuado con éxito referencia TCH#ff771c1c17','2022-08-31 20:45:28','pagorecibido','no'),(35,8,'Pago Cuota Mensual Recibido','Pago efectuado con éxito referencia TCH#ea6bd5791f','2022-08-31 20:45:34','pagorecibido','no'),(36,8,'Pago Cuota Mensual Recibido','Pago efectuado con éxito referencia TCH#9a4dcefac9','2022-08-31 20:45:41','pagorecibido','no'),(37,8,'Pago Cuota Mensual Recibido','Pago efectuado con éxito referencia TCH#2ca77dd0dd','2022-08-31 20:46:04','pagorecibido','no'),(38,8,'Pago Cuota Mensual Recibido','Pago efectuado con éxito referencia TCH#a032fcf4de','2022-08-31 20:46:10','pagorecibido','no'),(39,8,'Pago Cuota Mensual Recibido','Pago efectuado con éxito referencia TCH#5928025de4','2022-08-31 20:46:22','pagorecibido','no'),(40,8,'Pago Cuota Mensual Recibido','Pago efectuado con éxito referencia TCH#cf16391750','2022-08-31 20:46:37','pagorecibido','no'),(41,8,'Pago Cuota Mensual Recibido','Pago efectuado con éxito referencia TCH#e9b85b65ce','2022-08-31 20:55:32','pagorecibido','no'),(42,8,'Pago Cuota Mensual Recibido','Pago efectuado con éxito referencia TCH#b8568608e6','2022-08-31 20:58:47','pagorecibido','no');
 /*!40000 ALTER TABLE `notificaciones` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -673,7 +675,7 @@ CREATE TABLE `referenciaspersonales` (
   CONSTRAINT `referenciaspersonales_ibfk_1` FOREIGN KEY (`idcreditos`) REFERENCES `creditos` (`idcreditos`) ON DELETE CASCADE ON UPDATE CASCADE,
   CONSTRAINT `referenciaspersonales_ibfk_2` FOREIGN KEY (`idproducto`) REFERENCES `productos` (`idproducto`) ON DELETE NO ACTION ON UPDATE CASCADE,
   CONSTRAINT `referenciaspersonales_ibfk_3` FOREIGN KEY (`idusuarios`) REFERENCES `usuarios` (`idusuarios`) ON DELETE NO ACTION ON UPDATE CASCADE
-) ENGINE=InnoDB AUTO_INCREMENT=6 DEFAULT CHARSET=utf8mb4;
+) ENGINE=InnoDB AUTO_INCREMENT=7 DEFAULT CHARSET=utf8mb4;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -772,7 +774,7 @@ CREATE TABLE `transacciones` (
   CONSTRAINT `transacciones_ibfk_2` FOREIGN KEY (`idcreditos`) REFERENCES `creditos` (`idcreditos`) ON DELETE CASCADE,
   CONSTRAINT `transacciones_ibfk_3` FOREIGN KEY (`idproducto`) REFERENCES `productos` (`idproducto`) ON DELETE CASCADE,
   CONSTRAINT `transacciones_ibfk_4` FOREIGN KEY (`idcuotas`) REFERENCES `cuotas` (`idcuotas`) ON DELETE CASCADE
-) ENGINE=InnoDB AUTO_INCREMENT=24 DEFAULT CHARSET=utf8mb4;
+) ENGINE=InnoDB AUTO_INCREMENT=36 DEFAULT CHARSET=utf8mb4;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -784,41 +786,6 @@ LOCK TABLES `transacciones` WRITE;
 INSERT INTO `transacciones` VALUES (19,1,2,10,19,'TCH#82517863ac',155.07,'2022-04-07 17:32:35',0,'marco.almagro'),(20,1,2,10,20,'TCH#b35e19c00a',155.07,'2022-04-07 17:32:50',0,'marco.almagro'),(21,1,2,10,21,'TCH#1cdd80a7fc',155.07,'2022-04-07 17:33:04',0,'marco.almagro'),(22,10,3,11,109,'TCH#0ad1ad91a9',20408.05,'2022-04-07 17:52:10',0,'marco.almagro'),(23,10,3,11,110,'TCH#7a64afb416',20408.05,'2022-04-07 17:52:23',0,'marco.almagro');
 /*!40000 ALTER TABLE `transacciones` ENABLE KEYS */;
 UNLOCK TABLES;
-/*!50003 SET @saved_cs_client      = @@character_set_client */ ;
-/*!50003 SET @saved_cs_results     = @@character_set_results */ ;
-/*!50003 SET @saved_col_connection = @@collation_connection */ ;
-/*!50003 SET character_set_client  = utf8mb4 */ ;
-/*!50003 SET character_set_results = utf8mb4 */ ;
-/*!50003 SET collation_connection  = utf8mb4_general_ci */ ;
-/*!50003 SET @saved_sql_mode       = @@sql_mode */ ;
-/*!50003 SET sql_mode              = 'NO_ZERO_IN_DATE,NO_ZERO_DATE,NO_ENGINE_SUBSTITUTION' */ ;
-DELIMITER ;;
-/*!50003 CREATE*/ /*!50017 DEFINER=`root`@`localhost`*/ /*!50003 TRIGGER CambioEstadoCancelacionCreditosClientes_UltimaCuotaPagada AFTER INSERT ON transacciones FOR EACH ROW BEGIN
-	-- VARIABLE DE DATO SALDO CREDITO CLIENTES
-   DECLARE _saldocredito decimal(15,6);
-   -- OBTENER LAS CONSULTA DE LOS DATOS REQUERIDOS
-   SET
-    _saldocredito := (
-      SELECT saldocredito
-      FROM creditos
-      WHERE idcreditos = NEW.idcreditos
-    );
-   -- SI EL SALDO ES IGUAL A CERO "0" ENTONCES CLIENTE HA TERMINADO DE PAGAR SU RESPONSABILIDAD CREDITICIA Y AUTOMATICAMENTE EL CREDITO TOMA EL ESTADO << CANCELADO >>
-   IF _saldocredito<1 THEN
-   SET _saldocredito=0;
-   END IF;
-   IF _saldocredito<0 THEN
-   SET _saldocredito=0;
-   END IF;
-   IF _saldocredito = 0 THEN
-   UPDATE creditos SET estado="cancelado" WHERE idcreditos=new.idcreditos;
-   END IF;
-END */;;
-DELIMITER ;
-/*!50003 SET sql_mode              = @saved_sql_mode */ ;
-/*!50003 SET character_set_client  = @saved_cs_client */ ;
-/*!50003 SET character_set_results = @saved_cs_results */ ;
-/*!50003 SET collation_connection  = @saved_col_connection */ ;
 /*!50003 SET @saved_cs_client      = @@character_set_client */ ;
 /*!50003 SET @saved_cs_results     = @@character_set_results */ ;
 /*!50003 SET @saved_col_connection = @@collation_connection */ ;
@@ -1011,6 +978,61 @@ DELIMITER ;
 /*!50003 SET sql_mode              = 'NO_ZERO_IN_DATE,NO_ZERO_DATE,NO_ENGINE_SUBSTITUTION' */ ;
 DELIMITER ;;
 /*!50003 CREATE*/ /*!50017 DEFINER=`root`@`localhost`*/ /*!50003 TRIGGER RegistroTransaccionesCuotasCreditosClientes_Historico AFTER INSERT ON transacciones FOR EACH ROW INSERT INTO historicotransacciones (idusuarios,idproducto,idcreditos,idcuotas,referencia,monto,fecha,dias_incumplimiento,empleado_gestion) VALUES (NEW.idusuarios,NEW.idproducto,NEW.idcreditos,NEW.idcuotas,NEW.referencia,NEW.monto,NEW.fecha,NEW.dias_incumplimiento,NEW.empleado_gestion) */;;
+DELIMITER ;
+/*!50003 SET sql_mode              = @saved_sql_mode */ ;
+/*!50003 SET character_set_client  = @saved_cs_client */ ;
+/*!50003 SET character_set_results = @saved_cs_results */ ;
+/*!50003 SET collation_connection  = @saved_col_connection */ ;
+/*!50003 SET @saved_cs_client      = @@character_set_client */ ;
+/*!50003 SET @saved_cs_results     = @@character_set_results */ ;
+/*!50003 SET @saved_col_connection = @@collation_connection */ ;
+/*!50003 SET character_set_client  = utf8mb4 */ ;
+/*!50003 SET character_set_results = utf8mb4 */ ;
+/*!50003 SET collation_connection  = utf8mb4_unicode_ci */ ;
+/*!50003 SET @saved_sql_mode       = @@sql_mode */ ;
+/*!50003 SET sql_mode              = 'NO_ZERO_IN_DATE,NO_ZERO_DATE,NO_ENGINE_SUBSTITUTION' */ ;
+DELIMITER ;;
+/*!50003 CREATE*/ /*!50017 DEFINER=`root`@`localhost`*/ /*!50003 TRIGGER `CambioEstadoCancelacionCreditosClientes_UltimaCuotaPagada` AFTER INSERT ON `transacciones` FOR EACH ROW BEGIN
+
+	-- VARIABLE DE DATO SALDO CREDITO CLIENTES
+
+   DECLARE _saldocredito decimal(15,6);
+
+   -- OBTENER LAS CONSULTA DE LOS DATOS REQUERIDOS
+
+   SET
+
+    _saldocredito := (
+
+      SELECT saldocredito
+
+      FROM creditos
+
+      WHERE idcreditos = NEW.idcreditos
+
+    );
+
+   -- SI EL SALDO ES IGUAL A CERO "0" ENTONCES CLIENTE HA TERMINADO DE PAGAR SU RESPONSABILIDAD CREDITICIA Y AUTOMATICAMENTE EL CREDITO TOMA EL ESTADO << CANCELADO >>
+
+   IF _saldocredito<1 THEN
+
+   UPDATE creditos SET estado="cancelado" WHERE idcreditos=new.idcreditos;
+
+   END IF;
+
+   IF _saldocredito<0 THEN
+
+   UPDATE creditos SET estado="cancelado" WHERE idcreditos=new.idcreditos;
+
+   END IF;
+
+   IF _saldocredito = 0 THEN
+
+   UPDATE creditos SET estado="cancelado" WHERE idcreditos=new.idcreditos;
+
+   END IF;
+
+END */;;
 DELIMITER ;
 /*!50003 SET sql_mode              = @saved_sql_mode */ ;
 /*!50003 SET character_set_client  = @saved_cs_client */ ;
@@ -1296,7 +1318,7 @@ CREATE TABLE `usuarios` (
 
 LOCK TABLES `usuarios` WRITE;
 /*!40000 ALTER TABLE `usuarios` DISABLE KEYS */;
-INSERT INTO `usuarios` VALUES (1,'Daniel','Rivera','daniel.rivera','2amd2u6R8VO3w','dan@gmail.com','211543_6214078166f67_b2.PNG',1,'activo','si','si','no','si','si','si','daniel.rivera'),(2,'Norma','Boix','norma.boix','f7GC9/YfeAzBc','normaboix@yahoo.es','foto_usuarios_nuevos.png',1,'activo','si','no','no','no','no','si','daniel.rivera'),(3,'Avelino','Blanco','avelino.blanco','f7GC9/YfeAzBc','avelinoblanco@gmail.com','foto_usuarios_nuevos.png',1,'activo','si','no','no','no','no','si','daniel.rivera'),(4,'Ester','Cuenca','ester.cuenca','f7GC9/YfeAzBc','estercuenca@gmail.com','foto_usuarios_nuevos.png',2,'activo','si','no','no','no','no','si','daniel.rivera'),(5,'Faustino','Padron','faustino.padron','f7GC9/YfeAzBc','faustopadron@gmail.com','foto_usuarios_nuevos.png',3,'activo','si','no','no','no','no','si','daniel.rivera'),(6,'Marco','Almagro','marco.almagro','f7GC9/YfeAzBc','marco111@gmail.com','foto_usuarios_nuevos.png',4,'activo','si','no','no','no','no','si','daniel.rivera'),(7,'Jenifer Abigail','Castañeda','jenifer.abigail','f7GC9/YfeAzBc','jeniferabg@gmail.com','foto_usuarios_nuevos.png',5,'activo','si','si','no','si','no','si','daniel.rivera'),(8,'Maria Cristina','Frances Rosas','maria.frances','f7GC9/YfeAzBc','mariacristinaf@yahoo.com','foto_usuarios_nuevos.png',5,'inactivo','si','si','no','si','no','si','daniel.rivera'),(9,'Luz Mancebo','Llabrés','luz.mancebo','f7GC9/YfeAzBc','luzmcllabres@gmail.com','foto_usuarios_nuevos.png',5,'bloqueado','si','si','no','si','no','si','daniel.rivera'),(10,'Leonel Alexander','Franco González','leonel.franco','e1LW4NPXPhoo.','modificarcorreoreal@gmail.com','foto_usuarios_nuevos.png',5,'activo','si','si','si','si','no','si','daniel.rivera'),(11,'Javier Ernesto','Ponce Díaz','javier.ponce','f7GC9/YfeAzBc','javierponcedi1@yahoo.es','foto_usuarios_nuevos.png',5,'bloqueado','si','si','no','no','no','si','daniel.rivera');
+INSERT INTO `usuarios` VALUES (1,'Daniel','Rivera','daniel.rivera','f7GC9/YfeAzBc','dan@gmail.com','211543_6214078166f67_b2.PNG',1,'activo','si','si','no','si','si','si','daniel.rivera'),(2,'Norma','Boix','norma.boix','f7GC9/YfeAzBc','normaboix@yahoo.es','foto_usuarios_nuevos.png',1,'activo','si','no','no','no','no','si','daniel.rivera'),(3,'Avelino','Blanco','avelino.blanco','f7GC9/YfeAzBc','avelinoblanco@gmail.com','foto_usuarios_nuevos.png',1,'activo','si','no','no','no','no','si','daniel.rivera'),(4,'Ester','Cuenca','ester.cuenca','f7GC9/YfeAzBc','estercuenca@gmail.com','foto_usuarios_nuevos.png',2,'activo','si','no','no','no','no','si','daniel.rivera'),(5,'Faustino','Padron','faustino.padron','f7GC9/YfeAzBc','faustopadron@gmail.com','foto_usuarios_nuevos.png',3,'activo','si','no','no','no','no','si','daniel.rivera'),(6,'Marco','Almagro','marco.almagro','f7GC9/YfeAzBc','marco111@gmail.com','foto_usuarios_nuevos.png',4,'activo','si','no','no','no','no','si','daniel.rivera'),(7,'Jenifer Abigail','Castañeda','jenifer.abigail','f7GC9/YfeAzBc','jeniferabg@gmail.com','foto_usuarios_nuevos.png',5,'activo','si','si','no','si','no','si','daniel.rivera'),(8,'Maria Cristina','Frances Rosas','maria.frances','f7GC9/YfeAzBc','mariacristinaf@yahoo.com','foto_usuarios_nuevos.png',5,'inactivo','si','si','no','si','no','si','daniel.rivera'),(9,'Luz Mancebo','Llabrés','luz.mancebo','f7GC9/YfeAzBc','luzmcllabres@gmail.com','foto_usuarios_nuevos.png',5,'bloqueado','si','si','no','si','no','si','daniel.rivera'),(10,'Leonel Alexander','Franco González','leonel.franco','e1LW4NPXPhoo.','modificarcorreoreal@gmail.com','foto_usuarios_nuevos.png',5,'activo','si','si','si','si','no','si','daniel.rivera'),(11,'Javier Ernesto','Ponce Díaz','javier.ponce','f7GC9/YfeAzBc','javierponcedi1@yahoo.es','foto_usuarios_nuevos.png',5,'bloqueado','si','si','no','no','no','si','daniel.rivera');
 /*!40000 ALTER TABLE `usuarios` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -1830,6 +1852,7 @@ SET @saved_cs_client     = @@character_set_client;
 /*!50001 CREATE VIEW `vista_consultacuotashistoricocreditosclientes` AS SELECT 
  1 AS `idhistorico`,
  1 AS `idcreditos`,
+ 1 AS `idcuotas`,
  1 AS `idproducto`,
  1 AS `idusuarios`,
  1 AS `montocancelar`,
@@ -2427,13 +2450,11 @@ DROP TABLE IF EXISTS `vista_detallesfacturacioncreditosclienteshistoricos`;
 SET @saved_cs_client     = @@character_set_client;
 /*!50503 SET character_set_client = utf8mb4 */;
 /*!50001 CREATE VIEW `vista_detallesfacturacioncreditosclienteshistoricos` AS SELECT 
- 1 AS `idhistoricotransaccion`,
- 1 AS `idusuarios`,
- 1 AS `idproducto`,
- 1 AS `codigo`,
- 1 AS `nombreproducto`,
+ 1 AS `idhistorico`,
  1 AS `idcreditos`,
  1 AS `idcuotas`,
+ 1 AS `idproducto`,
+ 1 AS `idusuarios`,
  1 AS `nombres`,
  1 AS `apellidos`,
  1 AS `dui`,
@@ -2441,10 +2462,12 @@ SET @saved_cs_client     = @@character_set_client;
  1 AS `cuotamensual`,
  1 AS `montocapital`,
  1 AS `montocancelar`,
+ 1 AS `nombreproducto`,
+ 1 AS `codigo`,
  1 AS `fechavencimiento`,
+ 1 AS `dias_incumplimiento`,
  1 AS `referencia`,
  1 AS `fecha`,
- 1 AS `dias_incumplimiento`,
  1 AS `empleado_gestion`*/;
 SET character_set_client = @saved_cs_client;
 
@@ -3165,12 +3188,12 @@ DELIMITER ;
 /*!50003 SET @saved_col_connection = @@collation_connection */ ;
 /*!50003 SET character_set_client  = utf8mb4 */ ;
 /*!50003 SET character_set_results = utf8mb4 */ ;
-/*!50003 SET collation_connection  = utf8mb4_general_ci */ ;
+/*!50003 SET collation_connection  = utf8mb4_unicode_ci */ ;
 /*!50003 SET @saved_sql_mode       = @@sql_mode */ ;
 /*!50003 SET sql_mode              = 'NO_ZERO_IN_DATE,NO_ZERO_DATE,NO_ENGINE_SUBSTITUTION' */ ;
 DELIMITER ;;
-CREATE DEFINER=`root`@`localhost` PROCEDURE `ConsultaCompleta_CuotasGeneradasClientes_CreditosCancelados`(IN _idusuarios INT, IN _idcreditos INT)
-SELECT * FROM vista_consultacuotashistoricocreditosclientes WHERE idusuarios=_idusuarios AND idcreditos=_idcreditos ;;
+CREATE DEFINER=`root`@`localhost` PROCEDURE `ConsultaCompleta_CuotasGeneradasClientes_CreditosCancelados`(IN `_idusuarios` INT, IN `_idcreditos` INT)
+SELECT * FROM vista_detallesfacturacioncreditosclienteshistoricos WHERE idusuarios=_idusuarios AND idusuarios=_idusuarios AND idcreditos = _idcreditos ;;
 DELIMITER ;
 /*!50003 SET sql_mode              = @saved_sql_mode */ ;
 /*!50003 SET character_set_client  = @saved_cs_client */ ;
@@ -4750,12 +4773,12 @@ DELIMITER ;
 /*!50003 SET @saved_col_connection = @@collation_connection */ ;
 /*!50003 SET character_set_client  = utf8mb4 */ ;
 /*!50003 SET character_set_results = utf8mb4 */ ;
-/*!50003 SET collation_connection  = utf8mb4_general_ci */ ;
+/*!50003 SET collation_connection  = utf8mb4_unicode_ci */ ;
 /*!50003 SET @saved_sql_mode       = @@sql_mode */ ;
 /*!50003 SET sql_mode              = 'NO_ZERO_IN_DATE,NO_ZERO_DATE,NO_ENGINE_SUBSTITUTION' */ ;
 DELIMITER ;;
-CREATE DEFINER=`root`@`localhost` PROCEDURE `MostrarDetallesDatosClientes_FacturacionCreditosHistoricos`(IN _idcuotas INT, IN _idusuarios INT, IN _idhistoricotransaccion INT)
-SELECT * FROM vista_detallesfacturacioncreditosclienteshistoricos WHERE idcuotas=_idcuotas AND idusuarios=_idusuarios AND idhistoricotransaccion=_idhistoricotransaccion ;;
+CREATE DEFINER=`root`@`localhost` PROCEDURE `MostrarDetallesDatosClientes_FacturacionCreditosHistoricos`(IN `_idcuotas` INT, IN `_idusuarios` INT, IN `_idhistorico` INT)
+SELECT * FROM vista_detallesfacturacioncreditosclienteshistoricos WHERE idcuotas=_idcuotas AND idusuarios=_idusuarios AND idhistorico=_idhistorico ;;
 DELIMITER ;
 /*!50003 SET sql_mode              = @saved_sql_mode */ ;
 /*!50003 SET character_set_client  = @saved_cs_client */ ;
@@ -5701,10 +5724,10 @@ DELIMITER ;
 /*!50001 SET @saved_col_connection     = @@collation_connection */;
 /*!50001 SET character_set_client      = utf8mb4 */;
 /*!50001 SET character_set_results     = utf8mb4 */;
-/*!50001 SET collation_connection      = utf8mb4_general_ci */;
+/*!50001 SET collation_connection      = utf8mb4_unicode_ci */;
 /*!50001 CREATE ALGORITHM=UNDEFINED */
 /*!50013 DEFINER=`root`@`localhost` SQL SECURITY DEFINER */
-/*!50001 VIEW `vista_consultacuotashistoricocreditosclientes` AS select `historicocuotascreditos`.`idhistorico` AS `idhistorico`,`historicocuotascreditos`.`idcreditos` AS `idcreditos`,`historicocuotascreditos`.`idproducto` AS `idproducto`,`historicocuotascreditos`.`idusuarios` AS `idusuarios`,`historicocuotascreditos`.`montocancelar` AS `montocancelar`,`historicocuotascreditos`.`nombreproducto` AS `nombreproducto`,`historicocuotascreditos`.`montocapital` AS `montocapital`,`historicocuotascreditos`.`fechavencimiento` AS `fechavencimiento` from `historicocuotascreditos` */;
+/*!50001 VIEW `vista_consultacuotashistoricocreditosclientes` AS select `historicocuotascreditos`.`idhistorico` AS `idhistorico`,`historicocuotascreditos`.`idcreditos` AS `idcreditos`,`historicotransacciones`.`idcuotas` AS `idcuotas`,`historicocuotascreditos`.`idproducto` AS `idproducto`,`historicocuotascreditos`.`idusuarios` AS `idusuarios`,`historicocuotascreditos`.`montocancelar` AS `montocancelar`,`historicocuotascreditos`.`nombreproducto` AS `nombreproducto`,`historicocuotascreditos`.`montocapital` AS `montocapital`,`historicocuotascreditos`.`fechavencimiento` AS `fechavencimiento` from (`historicocuotascreditos` join `historicotransacciones` on(`historicotransacciones`.`idhistoricotransaccion` = `historicocuotascreditos`.`idcreditos`)) */;
 /*!50001 SET character_set_client      = @saved_cs_client */;
 /*!50001 SET character_set_results     = @saved_cs_results */;
 /*!50001 SET collation_connection      = @saved_col_connection */;
@@ -6259,10 +6282,10 @@ DELIMITER ;
 /*!50001 SET @saved_col_connection     = @@collation_connection */;
 /*!50001 SET character_set_client      = utf8mb4 */;
 /*!50001 SET character_set_results     = utf8mb4 */;
-/*!50001 SET collation_connection      = utf8mb4_general_ci */;
+/*!50001 SET collation_connection      = utf8mb4_unicode_ci */;
 /*!50001 CREATE ALGORITHM=UNDEFINED */
 /*!50013 DEFINER=`root`@`localhost` SQL SECURITY DEFINER */
-/*!50001 VIEW `vista_detallesfacturacioncreditosclienteshistoricos` AS select `historicotransacciones`.`idhistoricotransaccion` AS `idhistoricotransaccion`,`historicotransacciones`.`idusuarios` AS `idusuarios`,`historicotransacciones`.`idproducto` AS `idproducto`,`productos`.`codigo` AS `codigo`,`productos`.`nombreproducto` AS `nombreproducto`,`historicotransacciones`.`idcreditos` AS `idcreditos`,`historicotransacciones`.`idcuotas` AS `idcuotas`,`usuarios`.`nombres` AS `nombres`,`usuarios`.`apellidos` AS `apellidos`,`detalleusuarios`.`dui` AS `dui`,`detalleusuarios`.`nit` AS `nit`,`historicocreditos`.`cuotamensual` AS `cuotamensual`,`historicocuotascreditos`.`montocapital` AS `montocapital`,`historicocuotascreditos`.`montocancelar` AS `montocancelar`,`historicocuotascreditos`.`fechavencimiento` AS `fechavencimiento`,`historicotransacciones`.`referencia` AS `referencia`,`historicotransacciones`.`fecha` AS `fecha`,`historicotransacciones`.`dias_incumplimiento` AS `dias_incumplimiento`,`historicotransacciones`.`empleado_gestion` AS `empleado_gestion` from (((((`historicotransacciones` join `historicocreditos` on(`historicocreditos`.`idcreditos` = `historicotransacciones`.`idcreditos`)) join `historicocuotascreditos` on(`historicotransacciones`.`idhistoricotransaccion` = `historicocuotascreditos`.`idhistorico`)) join `usuarios` on(`historicotransacciones`.`idusuarios` = `usuarios`.`idusuarios`)) join `productos` on(`historicotransacciones`.`idproducto` = `productos`.`idproducto`)) join `detalleusuarios` on(`historicotransacciones`.`idusuarios` = `detalleusuarios`.`idusuarios`)) */;
+/*!50001 VIEW `vista_detallesfacturacioncreditosclienteshistoricos` AS select `vista_consultacuotashistoricocreditosclientes`.`idhistorico` AS `idhistorico`,`vista_consultacuotashistoricocreditosclientes`.`idcreditos` AS `idcreditos`,`vista_consultacuotashistoricocreditosclientes`.`idcuotas` AS `idcuotas`,`vista_consultacuotashistoricocreditosclientes`.`idproducto` AS `idproducto`,`vista_consultacuotashistoricocreditosclientes`.`idusuarios` AS `idusuarios`,`usuarios`.`nombres` AS `nombres`,`usuarios`.`apellidos` AS `apellidos`,`detalleusuarios`.`dui` AS `dui`,`detalleusuarios`.`nit` AS `nit`,`historicocreditos`.`cuotamensual` AS `cuotamensual`,`vista_consultacuotashistoricocreditosclientes`.`montocapital` AS `montocapital`,`vista_consultacuotashistoricocreditosclientes`.`montocancelar` AS `montocancelar`,`vista_consultacuotashistoricocreditosclientes`.`nombreproducto` AS `nombreproducto`,`productos`.`codigo` AS `codigo`,`vista_consultacuotashistoricocreditosclientes`.`fechavencimiento` AS `fechavencimiento`,`historicotransacciones`.`dias_incumplimiento` AS `dias_incumplimiento`,`historicotransacciones`.`referencia` AS `referencia`,`historicotransacciones`.`fecha` AS `fecha`,`historicotransacciones`.`empleado_gestion` AS `empleado_gestion` from ((((((`vista_consultacuotashistoricocreditosclientes` join `productos` on(`vista_consultacuotashistoricocreditosclientes`.`idproducto` = `productos`.`idproducto`)) join `usuarios` on(`vista_consultacuotashistoricocreditosclientes`.`idusuarios` = `usuarios`.`idusuarios`)) join `detalleusuarios` on(`vista_consultacuotashistoricocreditosclientes`.`idusuarios` = `detalleusuarios`.`idusuarios`)) join `historicotransacciones` on(`vista_consultacuotashistoricocreditosclientes`.`idhistorico` = `historicotransacciones`.`idhistoricotransaccion`)) join `historicocuotascreditos` on(`vista_consultacuotashistoricocreditosclientes`.`idhistorico` = `historicocuotascreditos`.`idhistorico`)) join `historicocreditos` on(`vista_consultacuotashistoricocreditosclientes`.`idcreditos` = `historicocreditos`.`idcreditos`)) */;
 /*!50001 SET character_set_client      = @saved_cs_client */;
 /*!50001 SET character_set_results     = @saved_cs_results */;
 /*!50001 SET collation_connection      = @saved_col_connection */;
@@ -6438,4 +6461,4 @@ DELIMITER ;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2022-04-19 16:08:47
+-- Dump completed on 2022-08-31 17:05:51
