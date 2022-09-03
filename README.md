@@ -124,7 +124,7 @@
 <h2>Modelo Entidad Relación (m-ER) Base de Datos</h2>
 
 
-![MER](https://user-images.githubusercontent.com/44457989/162854283-df1bf407-afca-4cbf-ad6d-cb17a25852d8.png)
+![DiagramaER_CashmanHa](https://user-images.githubusercontent.com/44457989/188288230-ecff7211-7b97-49b8-bdec-5dbe8afc6246.png)
 
 
 
