@@ -830,7 +830,7 @@ if ($_SESSION['comprobar_iniciosesion_primeravez'] == "si") {
                                                         <th>#</th>
                                                         <th>Producto</th>
                                                         <th>Estado</th>
-                                                        <th>Vencimiento</th>
+                                                        <th>Fecha Transacci&oacute;n</th>
                                                         <th>Cuota</th>
                                                         <th>Capital</th>
                                                         <th>Saldo Final</th>
@@ -873,8 +873,9 @@ if ($_SESSION['comprobar_iniciosesion_primeravez'] == "si") {
                                                             echo '
 								</td>
 							<td>';
-                                                            $FechaVencimientoCuotas = date_create($filas['fechavencimiento']);
-                                                            echo date_format($FechaVencimientoCuotas, "d-m-Y");
+                                                            echo '<span class="badge badge-light">';
+                                                            echo $filas['fecha'];
+                                                            echo '</span>';
                                                             echo '
 						</td>
 							<td class="color-primary">$';
