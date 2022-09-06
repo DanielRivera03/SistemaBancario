@@ -1,0 +1,2 @@
+- Diferentes copias de seguridad generadas cashmanha
+se recomienda encarecidamente el uso de MySQL Workbench
