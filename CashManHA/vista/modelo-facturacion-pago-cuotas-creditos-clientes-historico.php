@@ -1,10 +1,22 @@
 <?php
-// NO PERMITIR INGRESO SI PARAMETRO NO HA SIDO ESPECIFICADO
-if (empty($_GET['idusuario'])) {
+// NO PERMITIR INGRESO SI PARAMETRO IDUSUARIO NO HA SIDO ESPECIFICADO
+if (empty($_GET['idusuarios'])) {
     header('location:../controlador/cGestionesCashman.php?cashmanhagestion=error-404');
 }
-// NO PERMITIR INGRESO SI CUOTA SELECCIONADA ES DIFERENTE A LA CONSULTADA
-if ($_GET['idcuota'] != $Gestiones->getIdCuotasClientes()) {
+// NO PERMITIR INGRESO SI PARAMETRO IDHISTORICOTRANSACCION NO HA SIDO ESPECIFICADO
+if (empty($_GET['idhistoricotransaccion'])) {
+    header('location:../controlador/cGestionesCashman.php?cashmanhagestion=error-404');
+}
+// NO PERMITIR INGRESO SI PARAMETRO IDCREDITOS NO HA SIDO ESPECIFICADO
+if (empty($_GET['idcreditos'])) {
+    header('location:../controlador/cGestionesCashman.php?cashmanhagestion=error-404');
+}
+// NO PERMITIR INGRESO SI PARAMETRO IDCREDITOS NO HA SIDO ESPECIFICADO
+if (empty($_GET['idcuotas'])) {
+    header('location:../controlador/cGestionesCashman.php?cashmanhagestion=error-404');
+}
+// SI EXISTE AL MENOS UN CAMPO VACIO -> QUIERE DECIR QUE DATOS DE CLIENTE CONSULTADO NO COINCIDEN, POR LO TANTO BLOQUEAR VISTA
+if(empty($Gestiones->getIdCuotasClientesHistorico())){
     header('location:../controlador/cGestionesCashman.php?cashmanhagestion=error-404');
 }
 require('../FPDF/fpdf.php');
@@ -64,7 +76,9 @@ $pdf->MultiCell(199, 4, utf8_decode("Transacción: " . $Gestiones->getReferencia
 $pdf->Ln(31);
 $pdf->SetFont('Arial', '', 9);
 $pdf->MultiCell(190, 4, utf8_decode("Nombre del Cliente: " . $Gestiones->getNombresUsuarios() . " " . $Gestiones->getApellidosUsuarios()));
-$pdf->MultiCell(190, 0, utf8_decode("Fecha de Vencimiento: " . date_format($FechaVencimiento, "d/m/Y")), 0, 'R');
+$pdf->SetTextColor(161,47,23);
+$pdf->MultiCell(190, 0, utf8_decode("~~COPIA TRANSACCION~~"), 0, 'R');
+$pdf->SetTextColor(0,0,0);
 $pdf->MultiCell(190, 4, utf8_decode("Dui: " . $Gestiones->getDuiUsuarios()));
 $pdf->MultiCell(190, 4, utf8_decode("Nit: " . $Gestiones->getNitUsuarios()));
 $pdf->Ln(40);
