@@ -825,12 +825,12 @@ if ($_SESSION['comprobar_iniciosesion_primeravez'] == "si") {
                                             </div>
 
                                             <table class="table table-striped table-responsive-sm">
-                                                <thead class="thead-info">
+                                                <thead style="background-color: #10ac84; color: #fff;">
                                                     <tr>
                                                         <th>#</th>
                                                         <th>Producto</th>
                                                         <th>Estado</th>
-                                                        <th>Vencimiento</th>
+                                                        <th>Fecha Transacci&oacute;n</th>
                                                         <th>Cuota</th>
                                                         <th>Capital</th>
                                                         <th>Saldo Final</th>
@@ -874,8 +874,9 @@ if ($_SESSION['comprobar_iniciosesion_primeravez'] == "si") {
                                                             echo '
 								</td>
 							<td>';
-                                                            $FechaVencimientoCuotas = date_create($filas['fechavencimiento']);
-                                                            echo date_format($FechaVencimientoCuotas, "d-m-Y");
+                                                            echo '<span class="badge badge-light">';
+                                                            echo $filas['fecha'];
+                                                            echo '</span>';
                                                             echo '
 						</td>
 							<td class="color-primary">$';
@@ -891,13 +892,15 @@ if ($_SESSION['comprobar_iniciosesion_primeravez'] == "si") {
                                                             <td>';
                                                             echo '<a href="';
 																echo $UrlGlobal;
-																echo 'controlador/cGestionesCashman.php?cashmanhagestion=facturacion-pago-ordenes-pago-cuotas-clientes-historicos&idcuota=';
-																echo $filas['idcuotas'];
-																echo '&idusuario=';
+																echo 'controlador/cGestionesCashman.php?cashmanhagestion=facturacion-pago-ordenes-pago-cuotas-clientes-historicos&idhistoricotransaccion=';
+																echo $filas['idhistoricotransaccion'];
+																echo '&idusuarios=';
 																echo $filas['idusuarios'];
-                                                                echo '&idhistoricotransaccion=';
-																echo $filas['idhistorico'];
-																echo '";><span class="badge badge-info"><i class="fa fa-print "></i> Imprimir</span></a>';
+                                                                echo '&idcreditos=';
+																echo $filas['idcreditos'];
+                                                                echo '&idcuotas=';
+																echo $filas['idcuotas'];
+																echo '";><span class="badge badge-dark"><i class="fa fa-print "></i> Imprimir</span></a>';
                                                                 echo'
                                                             </td>
 						</tr>';
