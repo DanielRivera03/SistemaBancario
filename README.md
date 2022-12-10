@@ -104,14 +104,53 @@
   <li>Envío de dinero por medio de transferencia a otras cuentas personales registradas en la aplicación.</li>
   <li>Consulta de mi perfil personal, con mantenimientos de interés y consulta de datos de interés tales como información personal e información de sesión activa y sesiones anteriores.</li>
   <li>Consulta de estado de cuenta y la posibilidad de generar una versión impresa.</li>
-  <li>Tpdos los nuevos usuarios, es de estricto cumplimiento que deben cambiar sus credenciales de acceso. Además de la posibilidad de cambiar su usuario único por una sola vez (según roles de usuario).</li>
+  <li>Todos los nuevos usuarios, es de estricto cumplimiento que deben cambiar sus credenciales de acceso. Además de la posibilidad de cambiar su usuario único por una sola vez (según roles de usuario).</li>
+  <li><strong>Requisitos créditos:
+
+ <br>Préstamos Personales:
+<br>▪ Disponible para asalariados, independientes y jubilados
+<br>▪ Tasas de interés mensual desde el 3% hasta el 20% mensual 
+sobre el crédito
+<br>▪ Monto máximo a financiar hasta $10,000.00 USD para 
+asalariados y jubilados, y $15,000.00 para independientes
+<br>▪ Plazo máximo de financiamiento de hasta 120 meses
+
+<br>Préstamos Hipotecarios:
+<br>▪ Disponible para asalariados e independientes
+<br>▪ Tasas de interés mensual desde 1.05% hasta 12% mensual 
+sobre el crédito
+<br>▪ Monto mínimo de financiamiento desde $30,000.00 USD hasta 
+un máximo de $3,000000.00
+<br>▪ Plazo máximo de financiamiento hasta 20 años
+
+<br>Préstamos de Vehículos:
+<br>▪ Disponible para asalariados e independientes
+<br>▪ Tasas de interés mensual desde 10% hasta 60% mensual 
+sobre el crédito
+<br>▪ Monto máximo de financiamiento de $100,000.00 USD para 
+asalariados y $200,000.00 USD para independientes
+<br>▪ Plazo máximo de financiamiento hasta 90 meses
+
+
+<br> Todos los créditos se someten a un estudio, que, en base al salario 
+devengado por el cliente interesado, tendrá que ser aprobado por 
+presidencia y gerencia, antes de ser aprobado finalmente, y registrar su crédito en el sistema, con sus cuotas a cumplir, dar de alta a ese 
+cliente en el sistema y entregar el estado de cuenta y copia de contrato 
+celebrado con el que el debe de cumplir a cabalidad.
+
+
+</strong><li>
 </ul>Son algunas de las funciones más principales e importantes que tú puedes realizar dentro de esta plataforma. Tome nota que son acciones descritas de manera general, por cada rol de usuario existen limitaciones según a lo descrito anteriormente</p>
+
 
 
 <h2>¿Deseas probar la demo en vivo?</h2>
 
 
-<p>Se ha habilitado un espacio dentro de un hosting gratuito para efectuar pruebas de este sistema, por favor tome en cuenta que la velocidad de respuesta así como su ancho de banda y cantidad de usuarios se ve limitada al ser un hosting gratuito. Puede acceder a la demo en el siguiente enlace: http://cashmanha.unaux.com/ A continación se detallan los datos de acceso para ingresar (puede hacerlo por medio de su usuario único o correo electrónico)<ul>
+<p>Se ha habilitado un espacio dentro de un hosting gratuito para efectuar pruebas de este sistema, por favor tome en cuenta que la velocidad de respuesta así como su ancho de banda y cantidad de usuarios se ve limitada al ser un hosting gratuito. Puede acceder a la demo en el siguiente enlace: http://cashmanha.unaux.com/ A continación se detallan los datos de acceso para ingresar (puede hacerlo por medio de su usuario único o correo electrónico)<br><br>
+<strong>Actualización: Se ha realizado la migración de la base de datos, hacia otro proveedor. Por lo cual se ha realizado una limpieza de la misma y restaurados los datos por defecto que se encuentran en los respectivos backup de este repositorio. Ahora los procesos tardan menos tiempo respecto al proveedor anterior.</strong>
+<br>
+<ul>
   <li>Administrador: usuario = norma.boix | correo: normaboix@yahoo.es | clave: 123456789</li>
   <li>Presidencia: usuario = ester.cuenca | correo: estercuenca@gmail.com | clave: 123456789</li>
   <li>Gerencia: usuario = 	faustino.padron | correo: faustopadron@gmail.com | clave: 123456789</li>
