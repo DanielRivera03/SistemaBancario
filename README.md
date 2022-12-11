@@ -80,7 +80,8 @@
 
 
 
-![GIF](https://user-images.githubusercontent.com/44457989/206834958-d88bd369-3ec2-4684-b8df-5d5e252596e3.gif)
+![ezgif-1-afbd8fd598](https://user-images.githubusercontent.com/44457989/206926940-4f334e61-4ee1-4315-9ede-8d0edef82cdf.gif)
+
 
 
 <p>Este sistema a nivel de código y base de datos se encuentra distribuido de la siguiente manera:<ul><li>Base de Datos:</li><ul><li>21 Tablas.</li><li>148 Procedimientos Almacenados.</li><li>67 Vistas.</li><li>21 Disparadores.</li><li>5 Eventos.</li></ul></ul><ul><li>Sistema:</li><ul><li>Lenguaje de Programación PHP.</li><li>Versión 8.XX</li><li>Patrón MVC (Modelo, Vista, Controlador).</li><li>Gestiones AJAX, JQuery.</li><li>Complementos JQuery, Javascript</li><li>Plantilla Bootstrap.</li><li>División de cinco roles de usuarios, los cuales son (administradores, presidencia, gerencia, atención al cliente y clientes).</li></ul></ul></p>
