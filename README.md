@@ -146,10 +146,52 @@ cliente en el sistema y entregar el estado de cuenta y copia de contrato
 celebrado con el que el debe de cumplir a cabalidad.
 
 
-</strong><li>
+</strong>
 </ul>Son algunas de las funciones más principales e importantes que tú puedes realizar dentro de esta plataforma. Tome nota que son acciones descritas de manera general, por cada rol de usuario existen limitaciones según a lo descrito anteriormente</p>
 
 
+<h2>Fórmulas Matemáticas</h2>
+
+<h4>* Préstamos Personales</h4>
+
+![carbon (6)](https://user-images.githubusercontent.com/44457989/211438399-fb9d9c56-9883-40b8-8c21-e55272e7f446.png)
+
+
+<h4>* Seguro de deuda y gastos administrativos según rango de crédito solicitado</h4>
+
+
+![carbon (1)](https://user-images.githubusercontent.com/44457989/211431285-c93bff73-52cd-47fa-b17f-d85c8b45faf1.png)
+
+
+<h4>* Préstamos Hipotecarios: Financiamiento máximo hasta un 90% sobre el valor del inmueble</h4>
+
+![carbon (2)](https://user-images.githubusercontent.com/44457989/211434769-5c7b9b50-ec2b-452f-ae5b-0628cbd5e0bb.png)
+
+
+<h4>* Seguro de deuda y gastos administrativos según rango de crédito solicitado</h4>
+
+
+
+![carbon (3)](https://user-images.githubusercontent.com/44457989/211435024-90e18b01-ac14-476c-b18e-2cabe1d7fcbb.png)
+
+
+<h4>* Préstamos de Vehículos:</h4>
+
+
+![carbon (4)](https://user-images.githubusercontent.com/44457989/211437019-a691a440-4f19-4a95-b18f-65397900bc4c.png)
+
+
+<h4>* Seguro de deuda, gastos administrativos y servicio de GPS según rango de crédito solicitado</h4>
+
+
+![carbon (5)](https://user-images.githubusercontent.com/44457989/211437663-6b1303fe-b3ca-4798-9070-9282dabc4976.png)
+
+
+
+<h5>* Seguro de deuda: Monto añadido a la cuota de los clientes, protección desempleo.</h5>
+<h5>* Gastos administrativos: Monto que se descuenta al préstamo solicitado por los clientes.</h5>
+<h5>* Servicio GPS: Monto añadido a la cuota de los clientes exclusivamente en créditos de vehículos.</h5>
+<h5>* Total Desembolso: Monto final que recibirá el cliente, en concepto del crédito solicitado.</h5>
 
 <h2>¿Deseas probar la demo en vivo?</h2>
 
