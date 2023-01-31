@@ -378,10 +378,20 @@ celebrado con el que el debe de cumplir a cabalidad.
 
 
 
-<h4>* Contrato generado automáticamente, según producto asociado créditos clientes</h4>
+<h4>* Contrato generado automáticamente, según producto asociado créditos clientes (Préstamos Hipotecarios)</h4>
 
 
 ![CopiaContratoHipoteca](https://user-images.githubusercontent.com/44457989/172271973-1dde6934-d271-45b4-877f-dd3814277318.png)
+
+<h4>* Contrato generado automáticamente, según producto asociado créditos clientes (Préstamos Personales)</h4>
+
+![CopiaContratoPersonales](https://user-images.githubusercontent.com/44457989/215891253-2fa76259-e87a-4284-b9d3-3e1452d73d59.png)
+
+<h4>* Contrato generado automáticamente, según producto asociado créditos clientes (Préstamos de Vehículos)</h4>
+
+![CopiaContratoVehiculos](https://user-images.githubusercontent.com/44457989/215891464-ec33c8cf-676b-4ce5-80df-822b55d3c69a.png)
+
+
 
 
 
