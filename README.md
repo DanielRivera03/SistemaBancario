@@ -196,8 +196,10 @@ celebrado con el que el debe de cumplir a cabalidad.
 <h2>¿Deseas probar la demo en vivo?</h2>
 
 
-<p>Se ha habilitado un espacio dentro de un hosting gratuito para efectuar pruebas de este sistema, por favor tome en cuenta que la velocidad de respuesta así como su ancho de banda y cantidad de usuarios se ve limitada al ser un hosting gratuito. Puede acceder a la demo en el siguiente enlace: http://cashmanha.unaux.com/ A continación se detallan los datos de acceso para ingresar (puede hacerlo por medio de su usuario único o correo electrónico)<br><br>
+<p>Se ha habilitado un espacio dentro de un hosting gratuito para efectuar pruebas de este sistema, por favor tome en cuenta que la velocidad de respuesta así como su ancho de banda y cantidad de usuarios se ve limitada al ser un hosting gratuito. Puede acceder a la demo en el siguiente enlace: https://cashmanha.helioho.st/ A continación se detallan los datos de acceso para ingresar (puede hacerlo por medio de su usuario único o correo electrónico)<br><br>
 <strong>Actualización: Se ha realizado la migración de la base de datos, hacia otro proveedor. Por lo cual se ha realizado una limpieza de la misma y restaurados los datos por defecto que se encuentran en los respectivos backup de este repositorio. Ahora los procesos tardan menos tiempo respecto al proveedor anterior.</strong>
+<br><br>
+<strong>Actualización Hosting: Se ha realizado la migración hacia otro proveedor de hosting, por lo cuál ahora la velocidad de transferencia de datos, carga y tráfico ha mejorado notablemente. Además de contar con un certificaco SSL y encriptación de todos los datos que se procesen dentro de la aplicación</strong>
 <br>
 <ul>
   <li>Administrador: usuario = norma.boix | correo: normaboix@yahoo.es | clave: 123456789</li>
