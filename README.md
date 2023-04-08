@@ -199,14 +199,17 @@ celebrado con el que el debe de cumplir a cabalidad.
 <p>Se ha habilitado un espacio dentro de un hosting gratuito para efectuar pruebas de este sistema, por favor tome en cuenta que la velocidad de respuesta así como su ancho de banda y cantidad de usuarios se ve limitada al ser un hosting gratuito. Puede acceder a la demo en el siguiente enlace: https://cashmanha.helioho.st/ A continación se detallan los datos de acceso para ingresar (puede hacerlo por medio de su usuario único o correo electrónico)<br><br>
 <strong>Actualización: Se ha realizado la migración de la base de datos, hacia otro proveedor. Por lo cual se ha realizado una limpieza de la misma y restaurados los datos por defecto que se encuentran en los respectivos backup de este repositorio. Ahora los procesos tardan menos tiempo respecto al proveedor anterior.</strong>
 <br><br>
-<strong>Actualización Hosting: Se ha realizado la migración hacia otro proveedor de hosting, por lo cuál ahora la velocidad de transferencia de datos, carga y tráfico ha mejorado notablemente. Además de contar con un certificaco SSL y encriptación de todos los datos que se procesen dentro de la aplicación</strong>
+<strong>Actualización Hosting: Se ha realizado la migración hacia otro proveedor de hosting, por lo cuál ahora la velocidad de transferencia de datos, carga y tráfico ha mejorado notablemente. Además de contar con un certificaco SSL y encriptación de todos los datos que se procesen dentro de la aplicación.</strong>
+<br>
+<br>
+<strong>* Por motivos de mantenimiento iniciado el día 06 de abril 2023 hasta 07 de abril 2023, los usuarios han cambiado, ya que se ha realizado la migración de la base de datos a otro proveedor. POR LO CUAL TODOS LOS REGISTROS SE HAN DEPURADO Y HA QUEDADO EN UN ESTADO INICIAL DE PRUEBAS. </strong>
 <br>
 <ul>
-  <li>Administrador: usuario = norma.boix | correo: normaboix@yahoo.es | clave: 123456789</li>
-  <li>Presidencia: usuario = ester.cuenca | correo: estercuenca@gmail.com | clave: 123456789</li>
-  <li>Gerencia: usuario = 	faustino.padron | correo: faustopadron@gmail.com | clave: 123456789</li>
-  <li>Atención al Cliente: usuario = 	marco.almagro | correo: marco111@gmail.com | clave: 123456789</li>
-  <li>Clientes: usuario = 	leonel.franco | correo: modificarcorreoreal@gmail.com | clave: 123456789</li>
+  <li>Administrador: usuario = francisco.salcedo | correo: franciscosalcedo@correo1.com | clave: 123456789</li>
+  <li>Presidencia: usuario = 	julio.cesar | correo: julio@correo2.com | clave: 123456789</li>
+  <li>Gerencia: usuario = 	victor.jurado | correo: victor@correo3.com | clave: 123456789</li>
+  <li>Atención al Cliente: usuario = 	alicia.fernandez | correo: alicia@correo4.com | clave: 123456789</li>
+  <li>Clientes: usuario = 	leonel.franco | correo: leonel@correo6.com | clave: 123456789</li>
   <li>Para la recepción de correos automáticos, debe establecer su correo real; de lo contrario lamentamos informarle que no podrá visualizar el contenido deseado.</li>
 </ul>Accesos validados dentro de la plataforma, por favor tome nota de cada uno de los roles de usuario asignados.</p>
 
