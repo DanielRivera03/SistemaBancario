@@ -202,11 +202,12 @@ celebrado con el que el debe de cumplir a cabalidad.
 <strong>Actualización Hosting: Se ha realizado la migración hacia otro proveedor de hosting, por lo cuál ahora la velocidad de transferencia de datos, carga y tráfico ha mejorado notablemente. Además de contar con un certificaco SSL y encriptación de todos los datos que se procesen dentro de la aplicación</strong>
 <br>
 <ul>
-  <li>Administrador: usuario = norma.boix | correo: normaboix@yahoo.es | clave: 123456789</li>
-  <li>Presidencia: usuario = ester.cuenca | correo: estercuenca@gmail.com | clave: 123456789</li>
-  <li>Gerencia: usuario = 	faustino.padron | correo: faustopadron@gmail.com | clave: 123456789</li>
-  <li>Atención al Cliente: usuario = 	marco.almagro | correo: marco111@gmail.com | clave: 123456789</li>
-  <li>Clientes: usuario = 	leonel.franco | correo: modificarcorreoreal@gmail.com | clave: 123456789</li>
+  <li>Administrador: usuario = francisco.salcedo | correo: franciscosalcedo@correo1.com| clave: 123456789</li>
+  <li>Presidencia: usuario = julio.cesar | correo: julio@correo2.com  | clave: 123456789</li>
+  <li>Gerencia: usuario = 	victor.jurado | correo: victor@correo3.com | clave: 123456789</li>
+  <li>Atención al Cliente: usuario = 	alicia.fernandez | correo: alicia@correo4.com | clave: 123456789</li>
+  <li>Clientes: usuario = 	leonel.franco | correo: leonel@correo6.com | clave: 123456789</li>
+  <li>Clientes: usuario = 	natalia.jazmin| correo: nathy@correo5.com | clave: 123456789</li>
   <li>Para la recepción de correos automáticos, debe establecer su correo real; de lo contrario lamentamos informarle que no podrá visualizar el contenido deseado.</li>
 </ul>Accesos validados dentro de la plataforma, por favor tome nota de cada uno de los roles de usuario asignados.</p>
 
