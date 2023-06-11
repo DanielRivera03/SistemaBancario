@@ -1,0 +1,18 @@
+name: Repository Traffic
+
+on:
+  schedule:
+    - cron: '0 0 * * *' # Ejecutar diariamente a medianoche (hora UTC)
+
+jobs:
+  repository_traffic:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v2
+
+    - name: Repository Traffic
+      uses: githubocto/repository-traffic-action@v2
+      with:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
