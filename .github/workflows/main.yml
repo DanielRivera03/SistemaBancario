@@ -12,7 +12,14 @@ jobs:
     - name: Checkout repository
       uses: actions/checkout@v2
 
+    - name: Install Repository Traffic Action
+      run: |
+        git clone https://github.com/githubocto/repository-traffic-action.git
+        cd repository-traffic-action
+        npm install
+        npm run build
+
     - name: Repository Traffic
-      uses: githubocto/repository-traffic-action@v2
+      uses: ./repository-traffic-action
       with:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
