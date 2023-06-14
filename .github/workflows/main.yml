@@ -1,28 +1,32 @@
-name: Repository Traffic
-
 on:
-  schedule:
-    #- cron: '0 0 * * *' # Ejecutar diariamente a medianoche (hora UTC)
-     - cron: '* * * * *' # Ejecutar cada minuto
-
+  schedule: 
+    # runs once a week on sunday
+    - cron: "*/1 * * * *"
+    
 jobs:
-  repository_traffic:
+  # This workflow contains a single job called "traffic"
+  traffic:
+    # The type of runner that the job will run on
     runs-on: ubuntu-latest
 
+    # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
-    - name: Checkout repository
-      uses: actions/checkout@v2
+    # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
+    - uses: actions/checkout@v2
       with:
-        node-version: '16'
-
-    - name: Install Repository Traffic Action
-      run: |
-        git clone https://github.com/githubocto/repository-traffic-action.git
-        cd repository-traffic-action
-        npm install
-        npm run build
-
-    - name: Repository Traffic
-      uses: ./repository-traffic-action
+        ref: "traffic"
+    
+    # Calculates traffic and clones and stores in CSV file
+    - name: GitHub traffic 
+      uses: sangonzal/repository-traffic-action@v.0.1.6
+      env:
+        TRAFFIC_ACTION_TOKEN: ${{ secrets.TRAFFIC_ACTION_TOKEN }} 
+     
+    # Commits files to repository
+    - name: Commit changes
+      uses: EndBug/add-and-commit@v4
       with:
-        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        author_name: Santiago Gonzalez
+        message: "GitHub traffic"
+        add: "./traffic/*"
+        ref: "traffic"  # commits to branch "traffic" 
