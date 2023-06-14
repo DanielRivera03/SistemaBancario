@@ -2,7 +2,8 @@ name: Repository Traffic
 
 on:
   schedule:
-    - cron: '0 0 * * *' # Ejecutar diariamente a medianoche (hora UTC)
+    #- cron: '0 0 * * *' # Ejecutar diariamente a medianoche (hora UTC)
+     - cron: '* * * * *' # Ejecutar cada minuto
 
 jobs:
   repository_traffic:
