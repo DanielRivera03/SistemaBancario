@@ -193,6 +193,7 @@ celebrado con el que el debe de cumplir a cabalidad.
 <h5>* Servicio GPS: Monto añadido a la cuota de los clientes exclusivamente en créditos de vehículos.</h5>
 <h5>* Total Desembolso: Monto final que recibirá el cliente, en concepto del crédito solicitado.</h5>
 
+<!--
 <h2>¿Deseas probar la demo en vivo?</h2>
 
 
@@ -210,7 +211,7 @@ celebrado con el que el debe de cumplir a cabalidad.
   <li>Clientes: usuario = 	natalia.jazmin| correo: nathy@correo5.com | clave: 123456789</li>
   <li>Para la recepción de correos automáticos, debe establecer su correo real; de lo contrario lamentamos informarle que no podrá visualizar el contenido deseado.</li>
 </ul>Accesos validados dentro de la plataforma, por favor tome nota de cada uno de los roles de usuario asignados.</p>
-
+-->
 
 <h2>Modelo Entidad Relación (m-ER) Base de Datos</h2>
 
